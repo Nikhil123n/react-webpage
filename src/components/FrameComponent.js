@@ -1,4 +1,9 @@
 import "./FrameComponent.css";
+<<<<<<< HEAD
+=======
+import React from "react";
+
+>>>>>>> 6fafdca (updatess)
 
 const FrameComponent = () => {
   return (

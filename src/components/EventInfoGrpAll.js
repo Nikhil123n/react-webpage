@@ -1,4 +1,9 @@
 import { useMemo } from "react";
+<<<<<<< HEAD
+=======
+import React from "react";
+
+>>>>>>> 6fafdca (updatess)
 import "./EventInfoGrpAll.css";
 
 const EventInfoGrpAll = ({

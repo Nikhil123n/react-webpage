@@ -1,4 +1,9 @@
 import DivowlItem from "./DivowlItem";
+<<<<<<< HEAD
+=======
+import React from "react";
+
+>>>>>>> 6fafdca (updatess)
 import "./Container.css";
 
 const Container = () => {

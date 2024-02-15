@@ -1,5 +1,10 @@
 import Event1 from "./Event1";
 import EventInfoGrpAll from "./EventInfoGrpAll";
+<<<<<<< HEAD
+=======
+import React from "react";
+
+>>>>>>> 6fafdca (updatess)
 import "./EventInfoAll.css";
 
 const EventInfoAll = () => {

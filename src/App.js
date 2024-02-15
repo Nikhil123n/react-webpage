@@ -1,4 +1,9 @@
 import { useEffect } from "react";
+<<<<<<< HEAD
+=======
+import React from "react";
+
+>>>>>>> 6fafdca (updatess)
 import {
   Routes,
   Route,

@@ -1,4 +1,9 @@
 import "./Footer.css";
+<<<<<<< HEAD
+=======
+import React from "react";
+
+>>>>>>> 6fafdca (updatess)
 
 const Footer = () => {
   return (

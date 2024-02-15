@@ -1,6 +1,11 @@
 import Programs from "./Programs";
 import Figure from "./Figure";
 import Figure1 from "./Figure1";
+<<<<<<< HEAD
+=======
+import React from "react";
+
+>>>>>>> 6fafdca (updatess)
 import "./FutureDoctors.css";
 
 const FutureDoctors = () => {
