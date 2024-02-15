@@ -1,0 +1,201 @@
+.students-and-alumni {
+  margin: 0;
+  height: 51px;
+  position: relative;
+  font-size: inherit;
+  line-height: 54.6px;
+  font-weight: 600;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.what-people-are {
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 27px;
+  color: var(--color-gray-100);
+}
+.students-love-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+  max-width: 100%;
+}
+.divfusion-separator-border {
+  position: absolute;
+  top: -1.3px;
+  right: -1485.6px;
+  border: 1px solid var(--color-darkslategray-200);
+  box-sizing: border-box;
+  width: 3096px;
+  height: 2px;
+}
+.divfusion-layout-column2 {
+  align-self: stretch;
+  height: 20px;
+  position: relative;
+}
+.students-love-frame-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-83xl);
+  max-width: 100%;
+}
+.join-the-changemakers {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.24px;
+  line-height: 37.84px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.join-the-changemakers-wrapper {
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-9xs);
+  box-sizing: border-box;
+}
+.enter-your-email-id,
+.input {
+  display: flex;
+  align-items: center;
+}
+.enter-your-email-id {
+  width: 144.3px;
+  border: 0;
+  outline: 0;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  height: 20px;
+  position: relative;
+  color: var(--color-gray-200);
+  text-align: left;
+}
+.input {
+  flex: 1;
+  border-radius: var(--br-9xs);
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) var(--padding-2xs);
+  min-width: 144px;
+}
+.submit {
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-inter);
+  color: var(--color-goldenrod);
+  text-align: center;
+}
+.button1 {
+  cursor: pointer;
+  border: 1px solid var(--color-goldenrod);
+  padding: var(--padding-3xs) var(--padding-4xs) var(--padding-4xs);
+  background-color: transparent;
+  width: 142px;
+  border-radius: var(--br-8xs);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button1:hover {
+  background-color: var(--color-darkgoldenrod-100);
+  border: 1px solid var(--color-darkgoldenrod);
+  box-sizing: border-box;
+}
+.join-form-frame {
+  width: 422px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  min-height: 42px;
+}
+.frame-group,
+.frame-parent,
+.frame-wrapper,
+.join-form-frame {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.frame-group {
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.frame-parent,
+.frame-wrapper {
+  width: 889px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-16xl) 0 0;
+  box-sizing: border-box;
+  text-align: right;
+  font-size: var(--font-size-3xl);
+  color: var(--color-dimgray-100);
+}
+.frame-parent {
+  width: 1350px;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 var(--padding-xl) var(--padding-5xs);
+  gap: var(--gap-37xl);
+  flex-shrink: 0;
+  text-align: center;
+  font-size: var(--font-size-23xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 1150px) {
+  .frame-group {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .students-and-alumni {
+    font-size: var(--font-size-15xl);
+    line-height: 44px;
+  }
+  .students-love-frame-parent {
+    gap: var(--gap-83xl);
+  }
+  .frame-parent {
+    gap: var(--gap-37xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .students-and-alumni {
+    font-size: var(--font-size-6xl);
+    line-height: 33px;
+  }
+  .what-people-are {
+    font-size: var(--font-size-base);
+    line-height: 22px;
+  }
+  .students-love-frame-parent {
+    gap: var(--gap-83xl);
+  }
+  .join-the-changemakers {
+    font-size: var(--font-size-lg);
+    line-height: 30px;
+  }
+  .join-form-frame {
+    flex-wrap: wrap;
+  }
+}

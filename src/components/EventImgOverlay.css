@@ -1,0 +1,126 @@
+.left-arrowsvg-icon,
+.right-arrowsvg-icon4 {
+  align-self: stretch;
+  width: 30px;
+  position: relative;
+  max-height: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  transform: rotate(-180deg);
+  min-height: 19px;
+}
+.divowl-controls,
+.impact-and-research-fellowship {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.divowl-controls {
+  flex: 1;
+  justify-content: space-between;
+  padding: var(--padding-6xl) var(--padding-3xl) var(--padding-xl)
+    var(--padding-1166xl);
+  transform: rotate(180deg);
+  gap: var(--gap-xl);
+}
+.impact-and-research-fellowship {
+  align-self: stretch;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xs) 0 0;
+}
+.whatsapp-image-2023-07-14-at-0-icon {
+  height: 570px;
+  width: 849px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: -369.2px;
+  left: -726px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.link-fellowships {
+  height: 202px;
+  flex: 1;
+  position: relative;
+  letter-spacing: 16.63px;
+  line-height: 100.8px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  z-index: 1;
+}
+.event-list {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+}
+.divcol-lg-5-wrapper,
+.event-img-overlay,
+.event-list,
+.input-text {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.divcol-lg-5-wrapper {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 var(--padding-mid) 0 var(--padding-14xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-9xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.event-img-overlay,
+.input-text {
+  flex-direction: column;
+}
+.input-text {
+  width: 596px;
+  align-items: center;
+  gap: var(--gap-11xl);
+}
+.event-img-overlay {
+  align-self: stretch;
+  align-items: flex-end;
+  gap: var(--gap-6xl);
+  text-align: center;
+  font-size: var(--font-size-81xl-8);
+  color: var(--color-goldenrod-100);
+  font-family: var(--font-bebas-neue);
+}
+@media screen and (max-width: 1350px) {
+  .divowl-controls {
+    flex-wrap: wrap;
+    padding-left: var(--padding-573xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .divowl-controls {
+    padding-left: var(--padding-277xl);
+    box-sizing: border-box;
+  }
+  .link-fellowships {
+    font-size: var(--font-size-31xl);
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .divowl-controls {
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .link-fellowships {
+    font-size: var(--font-size-11xl);
+    line-height: 40px;
+  }
+}

@@ -1,0 +1,89 @@
+.link-900x550-2-aboutjpg {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.heading-5 {
+  position: relative;
+  line-height: 14px;
+}
+.img-overlay-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-12xl) 0 0;
+}
+.start-date-october {
+  position: relative;
+  letter-spacing: 0.24px;
+  line-height: 20px;
+}
+.event-info-group-all {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+}
+.develop-social-innovation,
+.entrepreneurial-spirit {
+  margin: 0;
+}
+.develop-social-innovation-container {
+  position: relative;
+  letter-spacing: 0.24px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.right-arrowsvg-icon {
+  height: 15px;
+  width: 25px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.divcitemcontent,
+.divowl-item,
+.weeks {
+  display: flex;
+  justify-content: flex-start;
+}
+.weeks {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-9xl);
+  color: var(--color-goldenrod);
+}
+.divcitemcontent,
+.divowl-item {
+  align-self: stretch;
+  flex-direction: column;
+}
+.divcitemcontent {
+  background: linear-gradient(0deg, #000 70%, rgba(255, 255, 255, 0));
+  align-items: center;
+  padding: var(--padding-14xl) var(--padding-3xs) var(--padding-smi);
+  gap: var(--gap-8xs);
+  z-index: 1;
+  margin-top: -115px;
+}
+.divowl-item {
+  width: 322.2px;
+  border-radius: var(--br-mini);
+  background-color: var(--color-black);
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: flex-start;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-100);
+  font-family: var(--font-inter);
+}

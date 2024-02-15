@@ -1,0 +1,118 @@
+.hdfc-capital-advisors,
+.internship-project {
+  margin: 0;
+}
+.link-heading-container {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 30.8px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.application-deadline,
+.program-starts {
+  position: relative;
+  letter-spacing: 0.24px;
+  line-height: 27px;
+}
+.event-date-grp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  max-width: 100%;
+}
+.december-2023,
+.december-20231 {
+  position: relative;
+  letter-spacing: 0.24px;
+  line-height: 27px;
+}
+.event-date-grp1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+}
+.img-overlay1 {
+  flex-direction: column;
+  gap: var(--gap-7xs);
+  font-size: var(--font-size-lg);
+  color: var(--color-darkgray-200);
+}
+.heading,
+.heading-wrapper,
+.img-overlay1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.heading {
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+.heading-wrapper {
+  flex-direction: row;
+  padding: 0 var(--padding-17xl) 0 var(--padding-xl);
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.in-collaboration-with {
+  margin: 0;
+}
+.collective-and-learn {
+  font-family: var(--font-inter);
+}
+.address-the-impact-of-green-fi,
+.collective-and-learn-with-lead,
+.real-world-business-problem-g,
+.undergraduate-mentor-to-craft,
+.week-experiential-learning-pro {
+  margin: 0;
+}
+.in-collaboration-with-container {
+  height: 156px;
+  position: relative;
+  font-size: var(--font-size-lg);
+  letter-spacing: 0.24px;
+  line-height: 27px;
+  color: var(--color-darkgray-200);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.divcol-lg-5 {
+  flex: 1;
+  background-color: var(--color-gray-400);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-14xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+  max-width: 100%;
+  z-index: 1;
+  text-align: left;
+  font-size: var(--font-size-9xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 800px) {
+  .event-date-grp1 {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .link-heading-container {
+    font-size: var(--font-size-3xl);
+    line-height: 25px;
+  }
+}
