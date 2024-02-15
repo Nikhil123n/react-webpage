@@ -7,17 +7,17 @@ const EventImgOverlay = () => {
   return (
     <div className="event-img-overlay">
       <div className="impact-and-research-fellowship">
-        <div className="divowl-controls">
+        <div className="divowl-controls">          
+          <img
+            className="right-arrowsvg-icon4"
+            alt=""
+            src="/rightarrowsvg-16.svg"
+          />
           <img
             className="left-arrowsvg-icon"
             loading="eager"
             alt=""
             src="/leftarrowsvg-2.svg"
-          />
-          <img
-            className="right-arrowsvg-icon4"
-            alt=""
-            src="/rightarrowsvg-16.svg"
           />
         </div>
       </div>
