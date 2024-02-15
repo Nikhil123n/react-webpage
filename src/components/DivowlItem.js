@@ -1,9 +1,6 @@
 import { useMemo } from "react";
-<<<<<<< HEAD
-=======
 import React from "react";
 
->>>>>>> 6fafdca (updatess)
 import "./DivowlItem.css";
 
 const DivowlItem = ({

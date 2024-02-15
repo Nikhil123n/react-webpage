@@ -1,11 +1,8 @@
 import Programs from "./Programs";
 import Figure1 from "./Figure1";
 import Figure from "./Figure";
-<<<<<<< HEAD
-=======
 import React from "react";
 
->>>>>>> 6fafdca (updatess)
 import "./DivFusionColumnWrapper1.css";
 
 const DivFusionColumnWrapper1 = () => {

@@ -1,8 +1,5 @@
 import { useMemo } from "react";
-<<<<<<< HEAD
-=======
 import React from "react";
->>>>>>> 6fafdca (updatess)
 import "./DivcolLg1.css";
 
 const DivcolLg1 = ({ propFlex, propAlignSelf }) => {

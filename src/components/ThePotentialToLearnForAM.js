@@ -1,9 +1,6 @@
 import DivfusionColumnWrapper from "./DivfusionColumnWrapper";
-<<<<<<< HEAD
-=======
 import React from "react";
 
->>>>>>> 6fafdca (updatess)
 import "./ThePotentialToLearnForAM.css";
 
 const ThePotentialToLearnForAM = () => {

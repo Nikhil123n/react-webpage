@@ -10,11 +10,8 @@ import EventInfoAll from "../components/EventInfoAll";
 import ThePotentialToLearnForAM from "../components/ThePotentialToLearnForAM";
 import FrameComponent from "../components/FrameComponent";
 import Footer from "../components/Footer";
-<<<<<<< HEAD
-=======
 import React from "react";
 
->>>>>>> 6fafdca (updatess)
 import "./Home.css";
 
 const Home = () => {

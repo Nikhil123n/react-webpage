@@ -1,10 +1,7 @@
 import Img1 from "./Img1";
 import Img from "./Img";
-<<<<<<< HEAD
-=======
 import React from "react";
 
->>>>>>> 6fafdca (updatess)
 import "./Timeline.css";
 
 const Timeline = () => {

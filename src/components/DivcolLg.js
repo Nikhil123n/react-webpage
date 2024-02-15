@@ -1,9 +1,6 @@
 import DivcolLg1 from "./DivcolLg1";
-<<<<<<< HEAD
-=======
 import React from "react";
 
->>>>>>> 6fafdca (updatess)
 import "./DivcolLg.css";
 
 const DivcolLg = () => {
