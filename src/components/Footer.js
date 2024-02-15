@@ -1,6 +1,7 @@
 import "./Footer.css";
 import React from "react";
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faFacebookF, faTwitter, faInstagram, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
@@ -37,10 +38,10 @@ const Footer = () => {
       </div>
       <div className="disclaimer-text">
         <div className="symbols-frame">
-          <h3 className="symbol2"></h3>
-          <h3 className="symbol3"></h3>
-          <h3 className="symbol4"></h3>
-          <h3 className="symbol5"></h3>
+          <a href=""> <FontAwesomeIcon icon={faFacebookF} /> </a>
+          <a href=""> <FontAwesomeIcon icon={faTwitter} /> </a>
+          <a href=""> <FontAwesomeIcon icon={faInstagram} /> </a>
+          <a href=""> <FontAwesomeIcon icon={faLinkedinIn} /> </a>       
         </div>
         <div className="learnwithleaders-all-rights">
           © 2022 Learnwithleaders. All rights reserved

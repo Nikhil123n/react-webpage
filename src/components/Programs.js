@@ -43,12 +43,7 @@ const Programs = ({
           <h3 className="certificate-programs">{certificatePrograms}</h3>
           <div className="experience-global-learning-container">
             <p className="experience-global-learning">
-              {experienceGlobalLearning}
-            </p>
-            <p className="participate-in-projects">
-              {participateInProjectsAndB}
-            </p>
-            <p className="networks-globally">{networksGlobally}</p>
+              {experienceGlobalLearning}{participateInProjectsAndB}{networksGlobally}</p>
           </div>
         </div>
         <div className="img-overlay">

@@ -9,6 +9,9 @@
   transform: rotate(-180deg);
   min-height: 19px;
 }
+.left-arrowsvg-icon {
+  margin-left: 30px;
+}
 .divowl-controls,
 .impact-and-research-fellowship {
   display: flex;
@@ -19,9 +22,9 @@
 }
 .divowl-controls {
   flex: 1;
-  justify-content: space-between;
-  padding: var(--padding-6xl) var(--padding-3xl) var(--padding-xl)
-    var(--padding-1166xl);
+  justify-content: flex-start;
+  /* padding: var(--padding-6xl) var(--padding-1166xl) var(--padding-xl)
+    var(--padding-3xl); */
   transform: rotate(180deg);
   gap: var(--gap-xl);
 }
@@ -71,8 +74,7 @@
 .divcol-lg-5-wrapper {
   align-self: stretch;
   flex-direction: row;
-  align-items: flex-start;
-  padding: 0 var(--padding-mid) 0 var(--padding-14xl);
+  align-items: flex-start;  
   box-sizing: border-box;
   text-align: left;
   font-size: var(--font-size-9xl);
@@ -85,13 +87,12 @@
 }
 .input-text {
   width: 596px;
-  align-items: center;
-  gap: var(--gap-11xl);
+  align-items: center;  
 }
 .event-img-overlay {
   align-self: stretch;
   align-items: flex-end;
-  gap: var(--gap-6xl);
+  /* gap: var(--gap-6xl); */
   text-align: center;
   font-size: var(--font-size-81xl-8);
   color: var(--color-goldenrod-100);
@@ -99,14 +100,12 @@
 }
 @media screen and (max-width: 1350px) {
   .divowl-controls {
-    flex-wrap: wrap;
-    padding-left: var(--padding-573xl);
+    flex-wrap: wrap;    
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 800px) {
-  .divowl-controls {
-    padding-left: var(--padding-277xl);
+  .divowl-controls {    
     box-sizing: border-box;
   }
   .link-fellowships {

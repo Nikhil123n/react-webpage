@@ -11,7 +11,7 @@ const EventImgOverlay = () => {
           <img
             className="right-arrowsvg-icon4"
             alt=""
-            src="/rightarrowsvg-16.svg"
+            src="/rightarrowsvg-16.svg"             
           />
           <img
             className="left-arrowsvg-icon"

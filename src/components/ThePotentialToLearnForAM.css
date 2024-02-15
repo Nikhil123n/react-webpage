@@ -53,6 +53,7 @@
   align-items: center;
   padding: var(--padding-83xl) var(--padding-5xl) var(--padding-5xl);
   gap: var(--gap-16xl);
+  background-color: var(--color-gray-500);
 }
 .the-potential-to-learn-for-a-m {
   align-self: stretch;

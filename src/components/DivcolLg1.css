@@ -1,5 +1,4 @@
-.hdfc-capital-advisors,
-.internship-project {
+.hdfc-capital-advisors {
   margin: 0;
 }
 .link-heading-container {
@@ -57,22 +56,14 @@
   gap: var(--gap-sm);
 }
 .heading-wrapper {
-  flex-direction: row;
-  padding: 0 var(--padding-17xl) 0 var(--padding-xl);
+  flex-direction: row;  
   box-sizing: border-box;
   flex-shrink: 0;
 }
 .in-collaboration-with {
   margin: 0;
 }
-.collective-and-learn {
-  font-family: var(--font-inter);
-}
-.address-the-impact-of-green-fi,
-.collective-and-learn-with-lead,
-.real-world-business-problem-g,
-.undergraduate-mentor-to-craft,
-.week-experiential-learning-pro {
+.address-the-impact-of-green-fi{
   margin: 0;
 }
 .in-collaboration-with-container {
@@ -104,6 +95,7 @@
   font-size: var(--font-size-9xl);
   color: var(--color-white);
   font-family: var(--font-inter);
+  padding: 35px;
 }
 @media screen and (max-width: 800px) {
   .event-date-grp1 {
