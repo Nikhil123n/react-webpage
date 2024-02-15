@@ -51,24 +51,16 @@ const Footer = () => {
           <p className="disclaimer-all-the">
             Disclaimer: All the courses and programs provided on our website are
             not provided by Harvard or any other university. All the courses and
-            programs are
-          </p>
-          <p className="created-and-organized">
+            programs are          
             created and organized by student clubs and student organizations of
             various universities. The student clubs and student organisations
-            are run and
-          </p>
-          <p className="operated-independently-by">
+            are run and          
             operated independently by undergraduates of universities. We, Learn
             with Leaders, are the partner platform of the student clubs and
-            student
-          </p>
-          <p className="organisations-amplifying-the">
+            student       
             organisations amplifying the remarkable autonomy and responsibility
             shouldered by these driven clubs and organisations, promoting the
-            significance
-          </p>
-          <p className="and-effectiveness-of">
+            significance        
             and effectiveness of these impactful programs.
           </p>
         </span>

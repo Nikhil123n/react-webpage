@@ -14,10 +14,7 @@ const EventInfoGrid = () => {
         <div className="tab-grp-11">
           <button className="c-13">
             <div className="upcoming-events">Upcoming Events</div>
-          </button>
-          <button className="c-21">
-            <div className="past-events">Past Events</div>
-          </button>
+          </button>          
         </div>
         <div className="heading-text">
           <Event1

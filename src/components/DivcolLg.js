@@ -13,12 +13,8 @@ const DivcolLg = () => {
       />
       <div className="into-arrow-svg">
         <DivcolLg1 propFlex="unset" propAlignSelf="stretch" />
-        <img className="left-arrowsvg-icon1" alt="" src="/leftarrowsvg.svg" />
-        <img
-          className="right-arrowsvg-icon5"
-          alt=""
-          src="/rightarrowsvg-12.svg"
-        />
+        <img className="left-arrowsvg-icon1" alt="" src="/leftarrowsvg-2.svg" />
+        <img className="right-arrowsvg-icon5" alt="" src="/rightarrowsvg-16.svg" />
       </div>
       <div className="link-fellowships1">Fellowships</div>
     </div>

@@ -24,22 +24,19 @@ const ThePotentialToLearnForAM = () => {
             divfusionImageElement="/divfusionimageelement-1.svg"
             quickLinksParent="80+"
             programs="Countries"
-            propOverflow="unset"
-            propPadding="0px 30px 428px 20px"
+            propOverflow="unset"            
           />
           <DivfusionColumnWrapper
             divfusionImageElement="/divfusionimageelement-2.svg"
             quickLinksParent="15k+"
             programs="Participants"
-            propOverflow="unset"
-            propPadding="0px 30px 428px 20px"
+            propOverflow="unset"            
           />
           <DivfusionColumnWrapper
             divfusionImageElement="/divfusionimageelement-3.svg"
             quickLinksParent="1k+"
             programs="Schools"
-            propOverflow="unset"
-            propPadding="0px 30px 428px 20px"
+            propOverflow="unset"            
           />
         </div>
       </div>

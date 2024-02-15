@@ -44,6 +44,9 @@
     var(--padding-xl);
   gap: var(--gap-11xs);
 }
+.nav-btn-1:hover{
+  border: 0.1px solid #F1B537;
+}
 .button-link {
   align-self: stretch;
   align-items: flex-end;
@@ -91,11 +94,9 @@
   line-height: 19.2px;
   font-weight: 500;
   white-space: nowrap;
-}
-.symbol {
-  position: relative;
-  line-height: 16px;
-  font-family: var(--font-font-awesome-5-free);
+  font-family: var(--button_typography-font-family);
+  font-style: var(--button_typography-font-style, normal);
+  font-size: var(--font-size-lg);
 }
 .container-frame,
 .link {
@@ -105,7 +106,7 @@
 }
 .link {
   border-radius: var(--br-9xs);
-  background-color: var(--color-goldenrod);
+  /* background-color: var(--color-goldenrod); */
   align-items: flex-end;
   padding: var(--padding-xs) var(--padding-lg) var(--padding-smi);
   gap: var(--gap-4xs);
@@ -140,6 +141,10 @@
   font-size: var(--font-size-base);
   color: var(--color-white);
   font-family: var(--font-inter);
+}
+.angle-right-icon {    
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
 }
 @media screen and (max-width: 800px) {
   .link {

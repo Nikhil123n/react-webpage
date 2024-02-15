@@ -24,7 +24,7 @@ const DivFusionColumnWrapper1 = () => {
             </div>
             <div className="small2">
               <div className="cultivate-your-acumen">
-                Cultivate your acumen in Python, Artificia…
+                Cultivate your acumen in Python, Artificial…
               </div>
             </div>
             <img

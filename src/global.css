@@ -10,6 +10,14 @@ body {
   margin: 0;
   line-height: normal;
 }
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
 :root {
   /* fonts */
   --font-inter: Inter;

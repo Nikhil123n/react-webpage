@@ -1,5 +1,7 @@
 import DivowlItem from "./DivowlItem";
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
 import "./Container.css";
 
@@ -46,12 +48,8 @@ const Container = () => {
         <div className="future-doctors-event-info-grou">
           <div className="learn-with-the">{`Learn with the World’s Best Teachers, Mentors & Students`}</div>
           <button className="button">
-            <div className="get-started">Get Started</div>
-            <img
-              className="vector-1-1png-icon"
-              alt=""
-              src="/vector11png@2x.png"
-            />
+            <div className="get-started">Get Started</div>            
+            <FontAwesomeIcon icon={faAngleRight} className="angle-right-icon" swapOpacity size="lg" />            
           </button>
         </div>
       </div>

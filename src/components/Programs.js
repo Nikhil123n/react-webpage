@@ -2,6 +2,8 @@ import { useMemo } from "react";
 import React from "react";
 
 import "./Programs.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 
 const Programs = ({
   certificatePrograms,
@@ -51,7 +53,9 @@ const Programs = ({
         </div>
         <div className="img-overlay">
           <div className="link-explore">Explore all</div>
-          <div className="symbol1"></div>
+          <div className="symbol1">
+            <FontAwesomeIcon icon={faArrowRightLong} className="angle-right-icon" swapOpacity />            
+          </div>
         </div>
       </div>
       <div className="certificates" style={cERTIFICATESStyle}>

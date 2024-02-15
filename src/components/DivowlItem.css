@@ -17,6 +17,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0 var(--padding-12xl) 0 0;
+  align-self: start;
 }
 .start-date-october {
   position: relative;

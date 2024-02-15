@@ -99,7 +99,7 @@
   background-color: var(--color-gray-500);
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   padding: var(--padding-6xl) var(--padding-71xl) var(--padding-60xl);
   box-sizing: border-box;
   gap: var(--gap-241xl);

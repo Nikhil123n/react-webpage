@@ -12,12 +12,12 @@ const EventImgOverlay = () => {
             className="left-arrowsvg-icon"
             loading="eager"
             alt=""
-            src="/leftarrowsvg.svg"
+            src="/leftarrowsvg-2.svg"
           />
           <img
             className="right-arrowsvg-icon4"
             alt=""
-            src="/rightarrowsvg-12.svg"
+            src="/rightarrowsvg-16.svg"
           />
         </div>
       </div>

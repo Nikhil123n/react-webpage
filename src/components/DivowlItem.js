@@ -38,9 +38,8 @@ const DivowlItem = ({
         <div className="weeks">
           <div className="develop-social-innovation-container">
             <p className="develop-social-innovation">
-              {developSocialInnovationAn}
-            </p>
-            <p className="entrepreneurial-spirit">{entrepreneurialSpirit}</p>
+              {developSocialInnovationAn} {entrepreneurialSpirit}
+            </p>            
           </div>
           <img
             className="right-arrowsvg-icon"

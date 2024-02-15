@@ -1,5 +1,7 @@
 import "./NavigationLinks.css";
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleRight, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
 
 const NavigationLinks = () => {
@@ -10,7 +12,7 @@ const NavigationLinks = () => {
         <div className="nav-btn-1">
           <div className="item" />
           <div className="our-offerings">Our offerings</div>
-          <img className="chevron-down-icon" alt="" src="/chevrondown@2x.png" />
+          <FontAwesomeIcon icon={faAngleDown} className="angle-right-icon" swapOpacity />                      
         </div>
       </div>
       <div className="event-image-overlay">
@@ -23,9 +25,12 @@ const NavigationLinks = () => {
             />
             <img className="search-icon" alt="" src="/search@2x.png" />
           </div>
+
           <div className="link">
-            <div className="lets-talk">Let’s Talk</div>
-            <div className="symbol"></div>
+            <button className="button" >
+              <div className="lets-talk">Let’s Talk</div>
+              <FontAwesomeIcon icon={faAngleRight} className="angle-right-icon" swapOpacity />            
+            </button>
           </div>
         </div>
       </div>
