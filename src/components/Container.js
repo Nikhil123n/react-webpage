@@ -2,9 +2,10 @@ import DivowlItem from "./DivowlItem";
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import { Link } from "react-router-dom";
 
 import "./Container.css";
-import '@coreui/coreui/dist/css/coreui.min.css';
+// import '@coreui/coreui/dist/css/coreui.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Container = () => {
@@ -50,7 +51,7 @@ const Container = () => {
         <div className="future-doctors-event-info-grou">
           <div className="learn-with-the">{`Learn with the World’s Best Teachers, Mentors & Students`}</div>
           <button className="button">
-            <div className="get-started">Get Started</div>            
+            <div className="get-started">Get Started</div> 
             <FontAwesomeIcon icon={faAngleRight} className="angle-right-icon" swapOpacity size="lg" />            
           </button>
         </div>
