@@ -8,7 +8,7 @@ const EventInfoGrid = () => {
   return (
     <section className="event-info-grid">
       <h2 className="masterclass-in-different">
-        Masterclass (In Different Countries)
+        Offline Programs (In Different Countries)
       </h2>
       <div className="entrepreneurship-program-frame">
         <div className="tab-grp-11">
@@ -16,24 +16,38 @@ const EventInfoGrid = () => {
             <div className="upcoming-events">Upcoming Events</div>
           </button>          
         </div>
+        <div className="img-overlay-frame1">
+          <div className="left-arrowsvg-parent">
+            <img
+              className="left-arrowsvg-icon2"
+              alt=""
+              src="/leftarrowsvg-2.svg"
+            />
+            <img
+              className="right-arrowsvg-icon8"
+              alt=""
+              src="/rightarrowsvg-16.svg"
+            />
+          </div>
+        </div>
         <div className="heading-text">
           <Event1
             eventImg1="/event-img-1@2x.png"
-            fellowships="Fellowships"
-            heading="HDFC Capital Advisors: Corporate Internship Project"
+            fellowships="India"
+            heading="The Young Global Leadership Program - Hosted by JBCN"
             sTARTSON="STARTS ON"
-            december2023="16 December, 2023"
+            december2023="19 August, 2023"
             dURATION="DURATION"
-            weeks="8 Weeks"
+            weeks="5 DAYS"
           />
           <Event1
             eventImg1="/event-img-1@2x.png"
-            fellowships="Certificate programs"
-            heading="World Sustainability Stars Program"
+            fellowships="Indonesia"
+            heading="The Young Global Leadership Program - Hosted by SIS Kelapa Galding"
             sTARTSON="STARTS ON"
-            december2023="17 February, 2024"
+            december2023="17 July, 2024"
             dURATION="DURATION"
-            weeks="2 Weekends"
+            weeks="3 DAYS"
             propBackgroundImage="url('/event-img-1@2x.png')"
             propWidth="309px"
             propFlex="unset"
@@ -48,28 +62,14 @@ const EventInfoGrid = () => {
             propWidth3="unset"
             propAlignSelf2="unset"
           />
-          <div className="event-frame">
-            <div className="img-overlay-frame1">
-              <div className="left-arrowsvg-parent">
-                <img
-                  className="left-arrowsvg-icon2"
-                  alt=""
-                  src="/leftarrowsvg-2.svg"
-                />
-                <img
-                  className="right-arrowsvg-icon8"
-                  alt=""
-                  src="/rightarrowsvg-16.svg"
-                />
-              </div>
-            </div>
+          <div className="event-frame">          
             <div className="t-i-m-e-l-i-n-e">
               <Event1
                 eventImg1="/event-img-1@2x.png"
-                fellowships="Certificate programs"
-                heading="Future Entrepreneurs Program by Harvard Student Agencies"
+                fellowships="Malaysia"
+                heading="The Young Global Leadership Program - Hosted by Straits..."
                 sTARTSON="STARTS ON"
-                december2023="17 February, 2024"
+                december2023="16 August, 2024"
                 dURATION="DURATION"
                 weeks="3 Days"
                 propBackgroundImage="url('/event-img-1@2x.png')"
@@ -97,16 +97,14 @@ const EventInfoGrid = () => {
                 </div>
                 <div className="event-4-inner">
                   <button className="certificate-programs-wrapper">
-                    <div className="certificate-programs1">
-                      Certificate programs
-                    </div>
+                    <div className="certificate-programs1"> India </div>
                   </button>
                 </div>
                 <EventInfoGrpAll
-                  heading="Future Entrepreneurs Program by Harvard Student Agencies"
+                  heading="The Young Global Leadership Program..."
                   sTARTSON="STARTS ON"
-                  december2023="2 December, 2023"
-                  dURATION="DURATION"
+                  december2023="19 August, 2023"
+                  dURATION="DURATION"                  
                 />
               </div>
             </div>

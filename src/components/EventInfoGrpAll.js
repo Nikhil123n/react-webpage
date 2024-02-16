@@ -34,7 +34,7 @@ const EventInfoGrpAll = ({
           </div>
           <div className="event-date-grp-31">
             <div className="duration1">{dURATION}</div>
-            <div className="weekends">2 Weekends</div>
+            <div className="weekends">5 Days</div>
           </div>
         </div>
       </div>

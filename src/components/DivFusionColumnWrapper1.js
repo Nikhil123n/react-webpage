@@ -16,6 +16,8 @@ const DivFusionColumnWrapper1 = () => {
           networksGlobally="networks globally."
           cERTIFICATES="CERTIFICATES"
         />
+
+        
         <div className="divfusion-layout-column">
           <div className="figure2">
             <img className="ai-ml-1jpg-icon" alt="" src="/aiml1jpg@2x.png" />

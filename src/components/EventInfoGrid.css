@@ -91,6 +91,7 @@
   justify-content: flex-start;
   padding: 0 var(--padding-29xl);
   box-sizing: border-box;
+  align-self: end;
 }
 .event-img-11 {
   max-width: 100%;

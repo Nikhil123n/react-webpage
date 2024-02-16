@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
 import "./Container.css";
+import '@coreui/coreui/dist/css/coreui.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Container = () => {
   return (
