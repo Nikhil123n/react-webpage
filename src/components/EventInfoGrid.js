@@ -47,6 +47,16 @@ const EventInfoGrid = () => {
             sTARTSON="STARTS ON"
             december2023="17 July, 2024"
             dURATION="DURATION"
+            weeks="3 Days"
+          />
+          
+          {/* <Event1
+            eventImg1="/event-img-1@2x.png"
+            fellowships="Indonesia"
+            heading="The Young Global Leadership Program - Hosted by SIS Kelapa Galding"
+            sTARTSON="STARTS ON"
+            december2023="17 July, 2024"
+            dURATION="DURATION"
             weeks="3 DAYS"
             propBackgroundImage="url('/event-img-1@2x.png')"
             propWidth="309px"
@@ -61,15 +71,33 @@ const EventInfoGrid = () => {
             propAlignSelf1="stretch"
             propWidth3="unset"
             propAlignSelf2="unset"
+          /> */}
+          <Event1
+            eventImg1="/event-img-1@2x.png"
+            fellowships="Malaysia"
+            heading="The Young Global Leadership Program - Hosted by Straits..."
+            sTARTSON="STARTS ON"
+            december2023="16 August, 2024"
+            dURATION="DURATION"
+            weeks="3 Days"
           />
-          <div className="event-frame">          
+          <Event1
+            eventImg1="/event-img-1@2x.png"
+            fellowships="India"
+            heading="The Young Global Leadership Program - Hosted by Straits..."
+            sTARTSON="STARTS ON"
+            december2023="16 August, 2024"
+            dURATION="DURATION"
+            weeks="2 Weekends"
+          />
+          {/* <div className="event-frame">          
             <div className="t-i-m-e-l-i-n-e">
               <Event1
                 eventImg1="/event-img-1@2x.png"
                 fellowships="Malaysia"
-                heading="The Young Global Leadership Program - Hosted by Straits..."
+                heading="The Young Global Leadership Program..."
                 sTARTSON="STARTS ON"
-                december2023="16 August, 2024"
+                december2023="19 August, 2024"
                 dURATION="DURATION"
                 weeks="3 Days"
                 propBackgroundImage="url('/event-img-1@2x.png')"
@@ -108,7 +136,7 @@ const EventInfoGrid = () => {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="event-img-overlay1">

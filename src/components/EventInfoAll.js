@@ -10,6 +10,20 @@ const EventInfoAll = () => {
       <div className="student-achievements-wrapper">
         <h2 className="student-achievements">Student Achievements</h2>
       </div>
+      <div className="leftarrowsvg">
+        <div className="leftarrowsvgrightarrowsvg">
+          <img
+            className="left-arrowsvg-icon3"
+            alt=""
+            src="/leftarrowsvg-2.svg"
+          />
+          <img
+            className="right-arrowsvg-icon10"
+            alt=""
+            src="/rightarrowsvg-16.svg"
+          />
+        </div>
+      </div>
       <div className="event1">
         <Event1
           eventImg1="/event-img-1@2x.png"
@@ -62,21 +76,7 @@ const EventInfoAll = () => {
             />
           </div>
         </div>
-        <div className="leftarrowsvg-parent">
-          <div className="leftarrowsvg">
-            <div className="leftarrowsvgrightarrowsvg">
-              <img
-                className="left-arrowsvg-icon3"
-                alt=""
-                src="/leftarrowsvg-2.svg"
-              />
-              <img
-                className="right-arrowsvg-icon10"
-                alt=""
-                src="/rightarrowsvg-16.svg"
-              />
-            </div>
-          </div>
+        <div className="leftarrowsvg-parent">         
           <div className="reach-us">
             <div className="event-3">
               <img className="event-img-13" alt="" src="/event-img-1@2x.png" />
