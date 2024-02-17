@@ -10,6 +10,7 @@ const EventInfoAll = () => {
       <div className="student-achievements-wrapper">
         <h2 className="student-achievements">Student Achievements</h2>
       </div>
+
       <div className="leftarrowsvg">
         <div className="leftarrowsvgrightarrowsvg">
           <img
@@ -24,7 +25,140 @@ const EventInfoAll = () => {
           />
         </div>
       </div>
-      <div className="event1">
+      
+
+      <div className="entrepreneurship-program-frame">        
+        
+        <div className="heading-text">
+          <Event1
+            eventImg1="/event-img-1@2x.png"
+            fellowships="Fellowships"
+            heading="HDFC Capital Advisors: Corporate Internship Project"
+            sTARTSON="STARTS ON"
+            december2023="16 December, 2023"
+            dURATION="DURATION"
+            weeks="8 Weeks"
+          />
+          <Event1
+            eventImg1="/event-img-1@2x.png"
+            fellowships="Certificate Programs"
+            heading="World Sustainability Stars Program"
+            sTARTSON="STARTS ON"
+            december2023="17 February, 2024"
+            dURATION="DURATION"
+            weeks="2 Weekends"
+          />
+          
+          {/* <Event1
+            eventImg1="/event-img-1@2x.png"
+            fellowships="Indonesia"
+            heading="The Young Global Leadership Program - Hosted by SIS Kelapa Galding"
+            sTARTSON="STARTS ON"
+            december2023="17 July, 2024"
+            dURATION="DURATION"
+            weeks="3 DAYS"
+            propBackgroundImage="url('/event-img-1@2x.png')"
+            propWidth="309px"
+            propFlex="unset"
+            propMinWidth="unset"
+            propGap="213px"
+            propHeight="unset"
+            propPadding="var(--padding-7xs) var(--padding-xs) var(--padding-7xs) var(--padding-base)"
+            propWidth1="unset"
+            propAlignSelf="stretch"
+            propWidth2="124px"
+            propAlignSelf1="stretch"
+            propWidth3="unset"
+            propAlignSelf2="unset"
+          /> */}
+          <Event1
+            eventImg1="/event-img-1@2x.png"
+            fellowships="Certificate Programs"
+            heading="Future Entrepreneurs Program by Harvard Student Agencies"
+            sTARTSON="STARTS ON"
+            december2023="17 February, 2024"
+            dURATION="DURATION"
+            weeks="3 Days"
+          />
+          <Event1
+            eventImg1="/event-img-1@2x.png"
+            fellowships="Certificate Programs"
+            heading="Future Entrepreneurs Program by Harvard Student Agencies"
+            sTARTSON="STARTS ON"
+            december2023="2 December, 2024"
+            dURATION="DURATION"
+            weeks="2 Weekends"
+          />
+          {/* <div className="event-frame">          
+            <div className="t-i-m-e-l-i-n-e">
+              <Event1
+                eventImg1="/event-img-1@2x.png"
+                fellowships="Malaysia"
+                heading="The Young Global Leadership Program..."
+                sTARTSON="STARTS ON"
+                december2023="19 August, 2024"
+                dURATION="DURATION"
+                weeks="3 Days"
+                propBackgroundImage="url('/event-img-1@2x.png')"
+                propWidth="unset"
+                propFlex="1"
+                propMinWidth="201px"
+                propGap="213px"
+                propHeight="unset"
+                propPadding="var(--padding-7xs) var(--padding-xs) var(--padding-7xs) var(--padding-base)"
+                propWidth1="unset"
+                propAlignSelf="stretch"
+                propWidth2="124px"
+                propAlignSelf1="stretch"
+                propWidth3="62px"
+                propAlignSelf2="stretch"
+              />
+              <div className="event-4">
+                <div className="event-img-1-parent">
+                  <img
+                    className="event-img-11"
+                    alt=""
+                    src="/event-img-1@2x.png"
+                  />
+                  <div className="img-overlay-13" />
+                </div>
+                <div className="event-4-inner">
+                  <button className="certificate-programs-wrapper">
+                    <div className="certificate-programs1"> India </div>
+                  </button>
+                </div>
+                <EventInfoGrpAll
+                  heading="The Young Global Leadership Program..."
+                  sTARTSON="STARTS ON"
+                  december2023="19 August, 2023"
+                  dURATION="DURATION"                  
+                />
+              </div>
+            </div>
+          </div> */}
+        </div>
+      </div>
+      {/* <div className="event1">
+        <Event1
+          eventImg1="/event-img-1@2x.png"
+          fellowships="Entrepreneurship Program"
+          heading="India Dance Classes through AI"
+          sTARTSON="STUDENT NAME"
+          december2023="Isha Toshniwal"
+          dURATION="DURATION"
+          weeks="8 Weeks"
+        />
+        <Event1
+          eventImg1="/event-img-1@2x.png"
+          fellowships="Future Changemakers"
+          heading="Romania Financial App"
+          sTARTSON="STUDENT NAME"
+          december2023="Ema Bacalu"
+          dURATION="DURATION"
+          weeks="2 Weekends"
+        />
+        
+
         <Event1
           eventImg1="/event-img-1@2x.png"
           fellowships="Entrepreneurship Program"
@@ -132,7 +266,7 @@ const EventInfoAll = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="submit-btn-container">
         <button className="submit-btn2">
           <div className="view-all1">View All</div>

@@ -108,3 +108,11 @@
     line-height: 25px;
   }
 }
+
+
+.applynow a {
+  text-transform: uppercase;
+  color: #f1b537;
+  font-weight: 500 !important;
+  text-decoration: none;
+}

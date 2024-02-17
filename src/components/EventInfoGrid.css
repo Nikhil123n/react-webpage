@@ -40,8 +40,7 @@
   color: var(--color-gray-200);
   text-align: center;
 }
-.c-21,
-.tab-grp-11 {
+.c-21 {
   border-bottom: 1px solid var(--color-darkslategray-100);
   display: flex;
   flex-direction: row;
@@ -59,12 +58,7 @@
 .c-21:hover {
   background-color: var(--color-dimgray-200);
 }
-.tab-grp-11 {
-  align-self: stretch;
-  align-items: flex-start;
-  justify-content: flex-start;
-  row-gap: 20px;
-}
+
 .left-arrowsvg-icon2,
 .right-arrowsvg-icon8 {
   align-self: stretch;
@@ -261,10 +255,7 @@
 @media screen and (max-width: 800px) {
   .masterclass-in-different {
     font-size: var(--font-size-8xl);
-  }
-  .tab-grp-11 {
-    flex-wrap: wrap;
-  }
+  }  
   .event-frame {
     gap: var(--gap-13xl);
   }

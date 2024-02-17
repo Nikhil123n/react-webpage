@@ -7,6 +7,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import Home from "./pages/Home";
+import GetStartedFormDefaultV from "./pages/get-started-form-default-v";
 
 function App() {
   const action = useNavigationType();
@@ -25,6 +26,10 @@ function App() {
 
     switch (pathname) {
       case "/":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/get-started-form-default-v-2":
         title = "";
         metaDescription = "";
         break;
@@ -47,7 +52,11 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-    </Routes>
+      <Route
+        path="/get-started-form-default-v-2"
+        element={<GetStartedFormDefaultV />}
+      />
+    </Routes>    
   );
 }
 export default App;

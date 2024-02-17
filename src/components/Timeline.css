@@ -34,7 +34,7 @@
   position: relative;
   font-size: var(--font-size-lg);
   font-family: var(--font-inter);
-  color: var(--color-gray-200);
+  color: #888;
   text-align: center;
 }
 .c-2 {
@@ -60,7 +60,7 @@
   position: relative;
   font-size: var(--font-size-lg);
   font-family: var(--font-inter);
-  color: var(--color-gray-200);
+  color: #888;
   text-align: center;
 }
 .c-3 {
@@ -81,7 +81,7 @@
   position: relative;
   font-size: var(--font-size-lg);
   font-family: var(--font-inter);
-  color: var(--color-gray-200);
+  color: #888;
   text-align: center;
 }
 .c-4 {

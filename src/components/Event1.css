@@ -134,6 +134,7 @@
 }
 .event-2 {
   width: 309px;
+  height: 440px;
   flex-shrink: 0;
   align-items: center;
   padding: var(--padding-base);

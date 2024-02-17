@@ -1,0 +1,110 @@
+.student-info,
+.student-mobile-number {
+  position: relative;
+}
+.column-1,
+.no-text,
+.text-desc {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.column-1 {
+  flex: 1;
+  flex-direction: column;
+  min-width: 210px;
+}
+.no-text,
+.text-desc {
+  align-self: stretch;
+}
+.no-text {
+  flex-direction: row;
+  gap: var(--gap-5xs);
+}
+.text-desc {
+  flex-direction: column;
+}
+.spacer-1 {
+  height: 48px;
+  width: 30px;
+  position: relative;
+  background-color: var(--color-gray-200);
+}
+.chevron-down-icon1,
+.india-icon {
+  position: absolute;
+  overflow: hidden;
+}
+.india-icon {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-9xs);
+  width: 30.1px;
+  height: 20px;
+  object-fit: cover;
+}
+.chevron-down-icon1 {
+  top: 2px;
+  left: 36.1px;
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+.india-parent {
+  height: 20px;
+  width: 52px;
+  position: relative;
+}
+.mobile-no {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  min-width: 57px;
+}
+.opt-3 {
+  flex: 1;
+  border: 1px solid var(--color-darkslategray);
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-2xl) var(--padding-sm)
+    var(--padding-xl);
+  gap: var(--gap-xs);
+  min-width: 207px;
+}
+.opt-3,
+.spacer-1-parent,
+.text-desc-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.spacer-1-parent {
+  align-self: stretch;
+  flex-direction: row;
+  row-gap: 20px;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+}
+.text-desc-parent {
+  width: 348px;
+  flex-direction: column;
+  gap: var(--gap-5xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 450px) {
+  .student-info {
+    width: 100%;
+    height: 17px;
+  }
+  .no-text,
+  .opt-3,
+  .spacer-1-parent {
+    flex-wrap: wrap;
+  }
+}

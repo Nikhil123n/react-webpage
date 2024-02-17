@@ -300,3 +300,8 @@
     line-height: 27px;
   }
 }
+.event-img-overlay1, 
+.submit-btn-container,
+.submit-btn-wrapper {
+  display: none;
+}

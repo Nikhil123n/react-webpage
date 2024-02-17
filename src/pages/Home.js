@@ -6,6 +6,7 @@ import EventImgOverlay from "../components/EventImgOverlay";
 import DivcolLg from "../components/DivcolLg";
 import Timeline from "../components/Timeline";
 import EventInfoGrid from "../components/EventInfoGrid";
+import EventInfoMasterclass from "../components/EventInfoMasterclass";
 import EventInfoAll from "../components/EventInfoAll";
 import ThePotentialToLearnForAM from "../components/ThePotentialToLearnForAM";
 import FrameComponent from "../components/FrameComponent";
@@ -33,6 +34,7 @@ const Home = () => {
         </div>
       </section>
       <EventInfoGrid />
+      <EventInfoMasterclass />
       <EventInfoAll />
       <ThePotentialToLearnForAM />
       <FrameComponent />

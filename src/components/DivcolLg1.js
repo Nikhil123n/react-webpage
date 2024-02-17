@@ -31,10 +31,11 @@ const DivcolLg1 = ({ propFlex, propAlignSelf }) => {
         </div>
       </div>
       <div className="in-collaboration-with-container">
-        <span>
+        <span className="applynow">
           <p className="in-collaboration-with">
             <i> In collaboration with Harvard Entrepreneurship Collective and Learn with Leaders. Embark on an 8-week Experiential Learning Project Tackling a Fortune 500 real-world business problem, guided by a Harvard undergraduate mentor to craft live solutions that address the impact of Green Finance for residential</i>
           </p>
+          <a target="_blank" href="https://forms.gle/Cb1UpeTdcXesBw9K6">Apply Now</a>
         </span>
       </div>
     </div>

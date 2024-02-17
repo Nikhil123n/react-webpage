@@ -84,7 +84,7 @@
   z-index: 2;
     
   flex-wrap: wrap;
-  min-height: 790px;
+  min-height: 840px;
   font-size: var(--font-size-base);
 }
 @media (max-width: 768px) {

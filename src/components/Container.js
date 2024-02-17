@@ -2,13 +2,20 @@ import DivowlItem from "./DivowlItem";
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
-import { Link } from "react-router-dom";
+import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 
 import "./Container.css";
 // import '@coreui/coreui/dist/css/coreui.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Container = () => {
+  const navigate = useNavigate();
+
+  const onButtonContainerClick = useCallback(() => {
+    navigate("/get-started-form-default-v-2");
+  }, [navigate]);
+
   return (
     <div className="container">
       <div className="carousel-img-catelog-grp-1">
@@ -50,7 +57,7 @@ const Container = () => {
         </h1>
         <div className="future-doctors-event-info-grou">
           <div className="learn-with-the">{`Learn with the World’s Best Teachers, Mentors & Students`}</div>
-          <button className="button">
+          <button className="button" onClick={onButtonContainerClick}>
             <div className="get-started">Get Started</div> 
             <FontAwesomeIcon icon={faAngleRight} className="angle-right-icon" swapOpacity size="lg" />            
           </button>

@@ -10,12 +10,8 @@ const EventInfoGrid = () => {
       <h2 className="masterclass-in-different">
         Offline Programs (In Different Countries)
       </h2>
-      <div className="entrepreneurship-program-frame">
-        <div className="tab-grp-11">
-          <button className="c-13">
-            <div className="upcoming-events">Upcoming Events</div>
-          </button>          
-        </div>
+      
+      <div className="entrepreneurship-program-frame">        
         <div className="img-overlay-frame1">
           <div className="left-arrowsvg-parent">
             <img
