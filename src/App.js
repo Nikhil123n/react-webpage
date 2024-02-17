@@ -29,7 +29,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/get-started-form-default-v-2":
+      case "/program-reg":
         title = "";
         metaDescription = "";
         break;
@@ -53,7 +53,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route
-        path="/get-started-form-default-v-2"
+        path="/program-reg"
         element={<GetStartedFormDefaultV />}
       />
     </Routes>    

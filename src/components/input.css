@@ -15,7 +15,9 @@
   flex-direction: column;
   min-width: 211px;
 }
-.no-text1,
+.no-text1 {
+  /* align-self: stretch; */
+}
 .text-desc1 {
   align-self: stretch;
 }
@@ -92,7 +94,9 @@
   flex-direction: column;
   min-width: 211px;
 }
-.no-text2,
+.no-text2 {
+  /* align-self: stretch; */
+}
 .text-desc2 {
   align-self: stretch;
 }
@@ -177,17 +181,22 @@
   .div {
     width: 100%;
     height: 16px;
-  }
-  .no-text1,
+  }  
   .spacer-1-group {
     flex-wrap: wrap;
   }
   .div1 {
     width: 100%;
     height: 16px;
-  }
-  .no-text2,
+  }  
   .spacer-1-container {
     flex-wrap: wrap;
+  }
+  .text-desc1 {
+    width: min-content;
+  }
+  .column-11,
+  .column-12 {
+    min-width: max-content;
   }
 }

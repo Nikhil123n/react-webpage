@@ -1,8 +1,15 @@
-import { useMemo } from "react";
+import { useMemo, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import React from "react";
 import "./DivcolLg1.css";
 
 const DivcolLg1 = ({ propFlex, propAlignSelf }) => {
+
+  const navigate = useNavigate();
+  const onLinkExploreClick = useCallback(() => {
+    navigate("/program-reg");
+  }, [navigate]);
+  
   const divcolLg5Style = useMemo(() => {
     return {
       flex: propFlex,
@@ -35,7 +42,7 @@ const DivcolLg1 = ({ propFlex, propAlignSelf }) => {
           <p className="in-collaboration-with">
             <i> In collaboration with Harvard Entrepreneurship Collective and Learn with Leaders. Embark on an 8-week Experiential Learning Project Tackling a Fortune 500 real-world business problem, guided by a Harvard undergraduate mentor to craft live solutions that address the impact of Green Finance for residential</i>
           </p>
-          <a target="_blank" href="https://forms.gle/Cb1UpeTdcXesBw9K6">Apply Now</a>
+          <a href="" onClick={onLinkExploreClick} >Apply Now</a>
         </span>
       </div>
     </div>

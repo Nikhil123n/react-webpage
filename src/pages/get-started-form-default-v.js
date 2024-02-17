@@ -1,5 +1,5 @@
 // import FormGrp from "../components/form-grp";
-import FrameComponent2 from "../components/frame-component";
+import FrameComponent from "../components/frame-component";
 import Input from "../components/input";
 import "./get-started-form-default-v.css";
 
@@ -60,7 +60,7 @@ const GetStartedFormDefaultV = () => {
         </div>
       </div>
       <div className="input-3-4">
-        <FrameComponent2
+        <FrameComponent
           studentInfo="3."
           studentMobileNumber="Student Mobile Number*"
           india="/india@2x.png"
@@ -107,7 +107,7 @@ const GetStartedFormDefaultV = () => {
         schoolName1="Your answer"
       />
       <div className="input-9-10">
-        <FrameComponent2
+        <FrameComponent
           studentInfo="9."
           studentMobileNumber="Parent's/ Guardian Mobile Number*"
           india="/india-1@2x.png"

@@ -143,7 +143,7 @@
   }
   .text-desc4 {
     width: 348px;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-start;
     justify-content: flex-start;
   }
@@ -316,7 +316,7 @@
     gap: var(--gap-5xs);
   }
   .text-desc5 {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   .spacer-15 {
     height: 48px;
@@ -682,22 +682,20 @@
   }
   @media screen and (max-width: 450px) {
     .no-text3 {
-      flex-wrap: wrap;
+      /* flex-wrap: wrap; */
     }
     .city-text {
       width: 100%;
       height: 16px;
     }
     .email-opt-frame,
-    .frame-div,
-    .no-text4 {
+    .frame-div {
       flex-wrap: wrap;
     }
     .logo-frame {
       width: 100%;
       height: 12px;
-    }
-    .no-text5,
+    }    
     .no-text6,
     .no-text7,
     .no-text8,
@@ -708,6 +706,9 @@
     }
     .form-grp-1 {
       gap: var(--gap-21xl);
+    }
+    .email-opt-frame {
+      width: auto;
     }
   }
   

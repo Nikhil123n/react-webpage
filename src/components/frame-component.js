@@ -1,6 +1,6 @@
 import "./frame-component.css";
 
-const FrameComponent2 = ({
+const FrameComponent = ({
   studentInfo,
   studentMobileNumber,
   india,
@@ -30,4 +30,4 @@ const FrameComponent2 = ({
   );
 };
 
-export default FrameComponent2;
+export default FrameComponent;

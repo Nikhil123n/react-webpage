@@ -9,7 +9,7 @@ import EventInfoGrid from "../components/EventInfoGrid";
 import EventInfoMasterclass from "../components/EventInfoMasterclass";
 import EventInfoAll from "../components/EventInfoAll";
 import ThePotentialToLearnForAM from "../components/ThePotentialToLearnForAM";
-import FrameComponent from "../components/FrameComponent";
+import ConnectUs from "../components/ConnectUs";
 import Footer from "../components/Footer";
 import React from "react";
 
@@ -37,7 +37,7 @@ const Home = () => {
       <EventInfoMasterclass />
       <EventInfoAll />
       <ThePotentialToLearnForAM />
-      <FrameComponent />
+      <ConnectUs />
       <div className="s-2-wrapper">
         <div className="s-2">
           <div className="section">

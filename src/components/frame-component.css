@@ -15,7 +15,9 @@
   flex-direction: column;
   min-width: 210px;
 }
-.no-text,
+.no-text {  
+  /* align-self: stretch; */
+}
 .text-desc {
   align-self: stretch;
 }
@@ -101,10 +103,12 @@
   .student-info {
     width: 100%;
     height: 17px;
-  }
-  .no-text,
+  }  
   .opt-3,
   .spacer-1-parent {
     flex-wrap: wrap;
   }
+  .text-desc {
+    width: min-content;
+  }  
 }

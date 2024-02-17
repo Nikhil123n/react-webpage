@@ -1,8 +1,8 @@
-import "./FrameComponent.css";
+import "./ConnectUs.css";
 import React from "react";
 
 
-const FrameComponent = () => {
+const ConnectUs = () => {
   return (
     <section className="frame-parent">
       <div className="students-love-frame-parent">
@@ -39,4 +39,4 @@ const FrameComponent = () => {
   );
 };
 
-export default FrameComponent;
+export default ConnectUs;
