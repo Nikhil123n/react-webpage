@@ -59,6 +59,7 @@
   flex-direction: row;  
   box-sizing: border-box;
   flex-shrink: 0;
+  margin-bottom: -10px;
 }
 .in-collaboration-with {
   margin: 0;
@@ -67,7 +68,7 @@
   margin: 0;
 }
 .in-collaboration-with-container {
-  height: 156px;
+  /* height: 156px; */
   position: relative;
   font-size: var(--font-size-lg);
   letter-spacing: 0.24px;
@@ -115,4 +116,12 @@
   color: #f1b537;
   font-weight: 500 !important;
   text-decoration: none;
+}
+/* For making the grey box of fellowship and corporate internship box overflow hidden and scrollebal */
+.divcol-lg-5 {
+  height: 368px!important;
+  overflow-y: auto!important;
+  overflow-x: hidden!important;
+  padding-bottom: 0;
+  -webkit-transition: all 0.3s;
 }

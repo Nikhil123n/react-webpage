@@ -13,7 +13,7 @@ const Container = () => {
   const navigate = useNavigate();
 
   const onButtonContainerClick = useCallback(() => {
-    navigate("/get-started-form-default-v-2");
+    navigate("/stepper-1");
   }, [navigate]);
 
   return (

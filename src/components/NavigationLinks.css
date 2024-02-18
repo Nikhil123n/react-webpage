@@ -5,6 +5,7 @@
   overflow: hidden;
   flex-shrink: 0;
   object-fit: contain;
+  cursor: pointer;
 }
 .item {
   height: 39.5px;

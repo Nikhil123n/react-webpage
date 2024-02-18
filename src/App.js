@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home";
 import GetStartedFormDefaultV from "./pages/get-started-form-default-v";
+import StepperForm1 from "./pages/StepperForm1";
 
 function App() {
   const action = useNavigationType();
@@ -30,6 +31,10 @@ function App() {
         metaDescription = "";
         break;
       case "/program-reg":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/stepper-1":
         title = "";
         metaDescription = "";
         break;
@@ -56,6 +61,7 @@ function App() {
         path="/program-reg"
         element={<GetStartedFormDefaultV />}
       />
+      <Route path="/stepper-1" element={<StepperForm1 />} />
     </Routes>    
   );
 }

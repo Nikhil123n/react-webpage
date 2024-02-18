@@ -141,6 +141,12 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
+@media screen and (max-width: 1200px) {
+  
+  .learn-with-the {
+    height: 140px;
+  }
+}
 @media screen and (max-width: 800px) {
   .heading-1-container {
     font-size: var(--font-size-29xl);

@@ -189,6 +189,8 @@
   letter-spacing: 0.25px;
   line-height: 29.24px;
   color: var(--color-white);
+  align-items: center;
+  width: 1300.8px;
 }
 .footer {
   align-self: stretch;

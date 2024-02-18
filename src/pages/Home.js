@@ -1,5 +1,6 @@
 import NavigationLinks from "../components/NavigationLinks";
 import Container from "../components/Container";
+import LogoSlider from "../components/LogoSlider";
 import DivFusionColumnWrapper1 from "../components/DivFusionColumnWrapper1";
 import FutureDoctors from "../components/FutureDoctors";
 import EventImgOverlay from "../components/EventImgOverlay";
@@ -24,6 +25,32 @@ const Home = () => {
           <Container />
         </div>
       </section>
+
+      <section className="arrow-svg">
+      <div className="input-enter-your-emailid-butto">
+        <div className="frame-programs-divfusioncolumn">
+          <h2 className="benefit-from-our">
+            Benefit from our collaborations with the world’s best
+          </h2>
+          <div className="democratising-ivy-league">
+            Democratising Ivy League education for all
+          </div>
+          <LogoSlider />
+          
+        </div>
+      </div>
+      </section>
+      {/* <section className="arrow-svg">
+        <div className="event-img-overlay-parent">
+          <div >          
+              <h2>Benefit from our collaborations with the world’s best</h2>
+          </div>
+          <EventImgOverlay />          
+        </div>
+      </section> */}
+
+
+
       <DivFusionColumnWrapper1 />
       <FutureDoctors />
       <section className="arrow-svg">
