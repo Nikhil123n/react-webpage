@@ -72,7 +72,7 @@
 .divfusion-layout-column {
   width: 983px;
   display: grid;
-  flex-direction: row;
+  flex-direction: row;  
   align-items: flex-start;
   justify-content: flex-start;
   padding: var(--padding-xl) var(--padding-22xl) var(--padding-11xl) var(--padding-6xl);
@@ -81,16 +81,19 @@
   max-width: 100%;
   grid-template-columns: repeat(3, minmax(221px, 1fr));
   z-index: 2;
+    
   flex-wrap: wrap;
   min-height: 840px;
   font-size: var(--font-size-base);
 }
 @media (max-width: 768px) {
   .divfusion-layout-column {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));  */
+    grid-template-columns: minmax(221px, 1fr);
     flex-direction: column;
     margin-top: 10rem !important;
     padding: 0 !important;
+    
   }
 }
 .div-fusion-column-wrapper,
@@ -131,8 +134,15 @@
     padding-top: var(--padding-16xl);
     padding-bottom: var(--padding-16xl);
     box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px){
+  .s-3 {
+    /* padding-left: var(--padding-6xl);
+    padding-right: var(--padding-6xl); */
     padding-left: var(--padding-13xl);
     padding-right: var(--padding-13xl);
+    box-sizing: border-box;
   }
 }
 @media screen and (max-width: 450px) {
