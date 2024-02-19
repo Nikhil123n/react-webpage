@@ -182,7 +182,7 @@
     font-size: var(--font-size-8xl);
   }
   .tab-grp-1 {
-    gap: var(--gap-46xl);
+    gap: 5px;
   }
   .event {
     gap: var(--gap-23xl);
@@ -190,13 +190,16 @@
   .timeline {
     gap: var(--gap-13xl);
   }
+  .c-1 {
+    width: 170px !important;
+  }
 }
 @media screen and (max-width: 450px) {
   .gallery {
     font-size: var(--font-size-xl);
   }
   .tab-grp-1 {
-    gap: var(--gap-46xl);
+    gap: 2px;
   }
 }
 

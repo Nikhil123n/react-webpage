@@ -10,12 +10,17 @@ const Timeline = () => {
   const programs = eventData.school_programs;
   // console.log(eventData, programs);
 
-  const toggleTab = (index) =>  {
-    setToggleState(index);
-    console.log(index.school_programs);
-  };
+  // const toggleTab = (index) =>  {
+  //   setToggleState(index);
+  //   console.log(index.school_programs);
+  // };
   
-
+  const toggleTab = (index) => {
+    if (toggleState !== index) {
+      setToggleState(index);
+      console.log(index.school_programs);
+    }
+  };
 
   return (
     <div className="timeline">

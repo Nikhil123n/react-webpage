@@ -124,9 +124,10 @@
     font-size: var(--font-size-31xl);
     line-height: 60px;
     min-width: 100%;
+    justify-content: flex-start;
   }
   .programs {
-    gap: var(--gap-241xl);
+    gap: 2px;
     padding-left: var(--padding-3xl);
     padding-right: var(--padding-3xl);
     box-sizing: border-box;
@@ -140,8 +141,9 @@
   .certificates {
     font-size: var(--font-size-11xl);
     line-height: 40px;
+    justify-content: flex-start;
   }
   .programs {
-    gap: var(--gap-241xl);
+    gap: 2px;
   }
 }

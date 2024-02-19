@@ -15,10 +15,10 @@ const FutureDoctors = () => {
           participateInProjectsAndB="global peer group. Win at a"
           networksGlobally="global stage."
           cERTIFICATES="COMPETITIONS"
-          propGap="284px"
-          propMinWidth="229px"
-          propWidth="562px"
-          propMinWidth1="562px"
+          // propGap="284px"
+          // propMinWidth="229px"
+          // propWidth="562px"
+          // propMinWidth1="562px"
         />
         <div className="divfusion-layout-column1">
           <Figure
