@@ -55,6 +55,8 @@
 @media screen and (max-width: 800px) {
   .divfusion-layout-column1 {
     grid-template-columns: minmax(221px, 1fr);
+    margin-top: 10rem !important;
+    padding: 0 !important;
   }
   .s-4 {
     padding-top: var(--padding-xl);

@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import FrameComponent from "../components/frame-component";
 import Input from "../components/input";
 import "./get-started-form-default-v.css";
@@ -7,6 +7,8 @@ import axios from "axios";
 
 const GetStartedFormDefaultV = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const eventData = location.state;
 
   const onPreviousButtonClick = useCallback(() => {
     navigate("/");
@@ -36,7 +38,7 @@ const GetStartedFormDefaultV = () => {
         <img className="logo-icon" loading="eager" alt="" src="/logo@2x.png" onClick={onPreviousButtonClick} />
       </header>
       <section className="artificial-intelligence-mach-parent">
-        <h2 className="artificial-intelligence">{`HDFC Capital Advisors: Corporate Internship Project`}</h2>
+        <h2 className="artificial-intelligence">{eventData}</h2>
         
         <form onSubmit={handleSubmit}>
         <div className="form-grp-2">
