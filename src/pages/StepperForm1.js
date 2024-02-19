@@ -1,7 +1,9 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./StepperForm1.css";
 import styled from 'styled-components';
+
+
 
 
 const RadioButton = styled.input`
@@ -29,9 +31,13 @@ const Label = styled.label`
   }
 `;
 
-const StepperForm1 = () => {  
+const StepperForm1 = () => {    
   const navigate = useNavigate();
+  const [q1, setQ1] = useState();
+  const [checked, setChecked] = useState("Business");
+  console.log(q1);
 
+  
   const onPreviousButtonClick = useCallback(() => {
     navigate("/");
   }, [navigate]);
@@ -98,9 +104,11 @@ const StepperForm1 = () => {
                   <RadioButton
                     type="radio"
                     id="lang-1"
-                    value="A. Grade 5-7"                                     
+                    name="q1"
+                    value="A. Grade 5-7"             
+                    onChange={e=> setQ1(e.target.value)}                        
                   />
-                  <Label htmlFor="lang-1" >A. Grade 5-7</Label>
+                  <Label htmlFor="lang-1" className="label-1" >A. Grade 5-7</Label>
                 </div>
               </div>
               <div className="grade-opt-c">
@@ -108,9 +116,11 @@ const StepperForm1 = () => {
                   <RadioButton
                     type="radio"
                     id="lang-2"
+                    name="q1"
                     value="B. Grade 8-10"
+                    onChange={e=> setQ1(e.target.value)}   
                   />
-                  <Label htmlFor="lang-2" >B. Grade 8-10</Label>
+                  <Label htmlFor="lang-2" className="label-2">B. Grade 8-10</Label>
                 </div>
               </div>
               <div className="email-input1">
@@ -118,18 +128,24 @@ const StepperForm1 = () => {
                   <RadioButton
                     type="radio"
                     id="lang-3"
+                    name="q1"
                     value="C. Grade 11-12"
+                    onChange={e=> setQ1(e.target.value)}   
                   />
-                  <Label htmlFor="lang-3" >C. Grade 11-12</Label>
+                  <Label htmlFor="lang-3" className="label-3">C. Grade 11-12</Label>
                 </div>
               </div>
-              <div className="opt-8">
-                  <RadioButton
-                    type="radio"
-                    id="lang-4"
-                    value="D. College student"
-                  />
-                  <Label htmlFor="lang-4" >D. College student</Label>
+              <div className="email-input2">
+                <div className="opt-8">
+                    <RadioButton
+                      type="radio"
+                      id="lang-4"
+                      name="q1"
+                      value="D. College student"
+                      onChange={e=> setQ1(e.target.value)}   
+                    />
+                    <Label htmlFor="lang-4" className="label-4">D. College student</Label>
+                </div>
               </div>
             </div>
           </div>
@@ -155,7 +171,7 @@ const StepperForm1 = () => {
                       id="interest-1"
                       value="Business"                                     
                     />
-                    <Label htmlFor="interest-1" >A. Business</Label>
+                    <Label htmlFor="interest-1" className="form-cheked">A. Business</Label>
                   </div>
                 </div>
                 <div className="opt-2">

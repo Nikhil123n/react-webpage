@@ -148,7 +148,15 @@
     font-weight: 900;
 }
 @media screen and (max-width: 800px) {
-  .link {
-    display: none;
+  .navigation-links{
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+  .container-frame{
+    gap: 0;
+  }
+  .link{
+    padding-left: 0;
+    margin-left: 10px;
   }
 }

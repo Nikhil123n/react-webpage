@@ -102,7 +102,7 @@
 }
 .container,
 .heading-cta {
-  overflow: hidden;
+  /* overflow: hidden; */
   max-width: 100%;
 }
 .heading-cta {

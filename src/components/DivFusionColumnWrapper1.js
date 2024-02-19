@@ -19,7 +19,7 @@ const DivFusionColumnWrapper1 = () => {
 
         
         <div className="divfusion-layout-column">
-          <div className="figure2">
+          {/* <div className="figure2">
             <img className="ai-ml-1jpg-icon" alt="" src="/aiml1jpg@2x.png" />
             <div className="student-name">
               <div className="ai-and-ml">AI and ML Bootcamp</div>
@@ -34,7 +34,13 @@ const DivFusionColumnWrapper1 = () => {
               alt=""
               src="/rightarrowsvg-3.svg"
             />
-          </div>
+          </div> */}
+          <Figure1
+            whatsAppImage20230714At12="/aiml1jpg@2x.png"
+            futureLawyersProgramByHar="AI and ML Bootcamp"
+            useThePowerOfLawToBringAb="Cultivate your acumen in Python, Artificial…"
+            rightArrowsvg="/rightarrowsvg-3.svg"
+          />
           <Figure1
             whatsAppImage20230714At12="/whatsappimage20230714at125555amjpeg@2x.png"
             futureLawyersProgramByHar="Future Lawyers’ Program by Harv…"
