@@ -1,29 +1,45 @@
 import Img1 from "./Img1";
 import Img from "./Img";
-import React from "react";
-
+import React, { useState } from "react";
+import eventData from "./student-events.json";
 import "./Timeline.css";
 
 const Timeline = () => {
+  const [toggleState, setToggleState] = useState(1);
+
+  const programs = eventData.school_programs;
+  // console.log(eventData, programs);
+
+  const toggleTab = (index) =>  {
+    setToggleState(index);
+    console.log(index.school_programs);
+  };
+  
+
+
   return (
     <div className="timeline">
       <h2 className="gallery">Gallery</h2>
+
+
       <div className="event">
         <div className="tab-grp-1">
           <button className="c-1">
-            <div className="in-school-programs">In-School Programs</div>
+            <div className={toggleState === 1 ? "in-school-programs active-tabs" : "in-school-programs"} onClick={() => toggleTab(1)} >In-School Programs </div>
           </button>
           <button className="c-2">
-            <div className="impact-stories">Impact Stories</div>
+            <div className={toggleState === 2 ? "impact-stories active-tabs" : "impact-stories"} onClick={() => toggleTab(2) }>Impact Stories</div>
           </button>
           <button className="c-3">
-            <div className="testimonials">Testimonials</div>
+            <div className={toggleState === 3 ? "testimonials active-tabs" : "testimonials"} onClick={() => toggleTab(3)} >Testimonials</div>
           </button>
           <button className="c-4">
-            <div className="community-events">Community Events</div>
+            <div className="community-events" onClick={() => toggleTab(4)} >Community Events</div>
           </button>
         </div>
-        <div className="div-fusion-image-element">
+
+
+        <div className={toggleState === 1 ? "div-fusion-image-element active-content" : "div-fusion-image-element"}  >    
           <Img1
             catelogImg1="/catelog-img-1@2x.png"
             heading="Indonesia| Binus School Simprug"
@@ -66,7 +82,28 @@ const Timeline = () => {
             propBackgroundImage="url('/catelog-img-1@2x.png')"
           />
         </div>
+          
+        <div className={toggleState === 1 ? "div-fusion-image-element active-content" : "div-fusion-image-element"}  >    
+        {programs.map((event, index) => (          
+            <Img1
+              catelogImg1={event.img}
+              heading={event.location + '|' + event.venue}              
+            />
+            // console.log(img);          
+        ))}  
+        </div>    
+        
+
+        <div className={toggleState === 2 ? "div-fusion-image-element active-content" : "div-fusion-image-element"}  >    
+          <Img1
+            catelogImg1="/catelog-img-1@2x.png"
+            heading="Indonesia| Binus School Simprug"
+            studentsConceptualizedNov="Students conceptualized novel business ideas addressing real-world issues"
+          />
+        </div>
+
       </div>
+
       <div className="submit-btn-wrapper">
         <button className="submit-btn">
           <div className="view-more">View More</div>

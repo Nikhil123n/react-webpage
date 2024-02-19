@@ -22,8 +22,8 @@ const FrameComponent = ({
           <div className="india-parent">
             <img className="india-icon" alt="" src={india} />
             <img className="chevron-down-icon1" alt="" src={chevronDown} />
-          </div>
-          <div className="mobile-no">Mobile no</div>
+          </div>          
+          <input className="mobile-no" placeholder="Mobile no" type="number" min="1000000000" max="999999999999"/>
         </div>
       </div>
     </div>

@@ -32,11 +32,25 @@
   height: 48px;
   width: 30px;
   position: relative;
-  background-color: var(--color-gray-200);
+  background-color: var(--color-gray-800);
 }
 .select-your-country {
   flex: 1;
   position: relative;
+}
+.select-your-country, 
+.select-your-class {
+  width: 100%;
+    border: 0;
+    outline: 0;
+    font-family: var(--font-inter);
+    font-size: var(--font-size-base);
+    background-color: transparent;
+    height: 19px;
+    position: relative;
+    color: var(--color-gray-100);
+    text-align: left;
+    min-width: 173px;
 }
 .chevron-down-icon2 {
   height: 16px;
@@ -111,7 +125,7 @@
   height: 48px;
   width: 30px;
   position: relative;
-  background-color: var(--color-gray-200);
+  background-color: var(--color-gray-800);
 }
 .school-name1 {
   display: flex;

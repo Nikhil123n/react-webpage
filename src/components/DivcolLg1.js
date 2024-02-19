@@ -5,6 +5,8 @@ import "./DivcolLg1.css";
 
 const DivcolLg1 = ({ propFlex, propAlignSelf }) => {
 
+  const eventName = "HDFC Capital Advisors: Corporate Internship Project";
+
   const navigate = useNavigate();
   const onLinkExploreClick = useCallback(() => {
     navigate("/program-reg");

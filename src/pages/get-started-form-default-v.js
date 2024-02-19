@@ -1,18 +1,46 @@
-// import FormGrp from "../components/form-grp";
+import { useCallback, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import FrameComponent from "../components/frame-component";
 import Input from "../components/input";
 import "./get-started-form-default-v.css";
+import axios from "axios";
 
 const GetStartedFormDefaultV = () => {
+  const navigate = useNavigate();
+
+  const onPreviousButtonClick = useCallback(() => {
+    navigate("/");
+  }, [navigate]);
+
+  const [post, setPost] = useState({
+    title: '',
+    body: ''
+  })
+  const handleInput = (event) => {
+    setPost({...post, [event.target.name]: event.target.value})
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    axios.post('https://jsonplaceholder.typicode.com/posts', {post})
+    .then(response => console.log(response))
+    .catch (err => console.log(err))
+  }
+
+
+
+
   return (
     <div className="get-started-form-default-v-2">
       <header className="div-headermaincontent">
-        <img className="logo-icon" loading="eager" alt="" src="/logo@2x.png" />
+        <img className="logo-icon" loading="eager" alt="" src="/logo@2x.png" onClick={onPreviousButtonClick} />
       </header>
       <section className="artificial-intelligence-mach-parent">
-        <h2 className="artificial-intelligence">{`Artificial Intelligence & Machine Learning Bootcamp`}</h2>
-        <div className="form-grp-1">
-
+        <h2 className="artificial-intelligence">{`HDFC Capital Advisors: Corporate Internship Project`}</h2>
+        
+        <form onSubmit={handleSubmit}>
+        <div className="form-grp-2">
+      
       <div className="input-1-2">
         <div className="name-frame">
           <div className="text-desc3">
@@ -34,6 +62,7 @@ const GetStartedFormDefaultV = () => {
                   className="full-name"
                   placeholder="Full name"
                   type="text"
+                  onChange={handleInput}
                 />
               </div>
             </div>
@@ -54,7 +83,8 @@ const GetStartedFormDefaultV = () => {
           <div className="email-opt-frame">
             <div className="spacer-14" />
             <div className="opt-34">
-              <input className="email" placeholder="Email" type="text" />
+              <input className="email" placeholder="Email" onChange={handleInput} type="text" />
+              
             </div>
           </div>
         </div>
@@ -77,13 +107,8 @@ const GetStartedFormDefaultV = () => {
           </div>
           <div className="spacer-1-parent1">
             <div className="spacer-15" />
-            <div className="opt-35">
-              <div className="select-your-city">Select your city</div>
-              <img
-                className="chevron-down-icon3"
-                alt=""
-                src="/chevrondown-1@2x.png"
-              />
+            <div className="opt-35">              
+              <input className="select-your-city" placeholder="Select your city" type="text" />
             </div>
           </div>
         </div>
@@ -92,6 +117,7 @@ const GetStartedFormDefaultV = () => {
         prop="5."
         country="Country*"
         selectYourCountry="Select your country"
+        classname ="select-your-country"
         chevronDown="/chevrondown-1@2x.png"
         prop1="6."
         schoolName="School Name*"
@@ -101,6 +127,7 @@ const GetStartedFormDefaultV = () => {
         prop="7."
         country="Currently studying in Class*"
         selectYourCountry="Select your class"
+        classname="select-your-class"
         chevronDown="/chevrondown-3.svg"
         prop1="8."
         schoolName="Parent’s/ Guardian Name*"
@@ -175,6 +202,7 @@ const GetStartedFormDefaultV = () => {
         <div className="submit1">Submit</div>
       </button>
     </div>
+    </form>
       </section>
     </div>
   );

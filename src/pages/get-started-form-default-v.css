@@ -46,6 +46,7 @@
     font-size: 32px;
     color: var(--color-white);
     font-family: var(--font-inter);
+    padding-bottom: 96px;
   }
   .get-started-form-default-v-2 {
     width: 100%;
@@ -167,7 +168,7 @@
     height: 48px;
     width: 30px;
     position: relative;
-    background-color: var(--color-gray-200);
+    background-color: var(--color-gray-800);
   }
   .full-name,
   .opt-33 {
@@ -218,7 +219,7 @@
     height: 38px;
     width: 30px;
     position: relative;
-    background-color: var(--color-gray-200);
+    background-color: var(--color-gray-800);
   }
   .email,
   .opt-34 {
@@ -322,7 +323,7 @@
     height: 48px;
     width: 30px;
     position: relative;
-    background-color: var(--color-gray-200);
+    background-color: var(--color-gray-800);
   }
   .select-your-city {
     flex: 1;
@@ -407,9 +408,10 @@
     height: 48px;
     width: 30px;
     position: relative;
-    background-color: var(--color-gray-200);
+    background-color: var(--color-gray-800);
   }
-  .email1 {
+  .email1, 
+  .select-your-city {
     width: 100%;
     border: 0;
     outline: 0;
@@ -500,7 +502,7 @@
     height: 48px;
     width: 30px;
     position: relative;
-    background-color: var(--color-gray-200);
+    background-color: var(--color-gray-800);
   }
   .opt-37,
   .your-answer {
@@ -624,7 +626,7 @@
     color: var(--color-gray-300);
     text-align: center;
   }
-  .form-grp-1,
+  .form-grp-2,
   .submit-btn {
     display: flex;
     align-items: center;
@@ -645,10 +647,10 @@
     border: 1px solid var(--color-darkgoldenrod);
     box-sizing: border-box;
   }
-  .form-grp-1 {
+  .form-grp-2 {
     align-self: stretch;
     border-radius: var(--br-3xs);
-    background-color: var(--color-gray-200);
+    background-color: var(--color-gray-800);
     flex-direction: column;
     justify-content: flex-start;
     padding: var(--padding-21xl);
@@ -667,14 +669,14 @@
     .parents-guardian-email-address {
       flex-wrap: wrap;
     }
-    .form-grp-1 {
+    .form-grp-2 {
       padding-top: var(--padding-7xl);
       padding-bottom: var(--padding-7xl);
       box-sizing: border-box;
     }
   }
   @media screen and (max-width: 800px) {
-    .form-grp-1 {
+    .form-grp-2 {
       padding-top: var(--padding-xl);
       padding-bottom: var(--padding-xl);
       box-sizing: border-box;
@@ -704,7 +706,7 @@
     .spacer-1-parent3 {
       flex-wrap: wrap;
     }
-    .form-grp-1 {
+    .form-grp-2 {
       gap: var(--gap-21xl);
     }
     .email-opt-frame {

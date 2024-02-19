@@ -1,0 +1,29 @@
+{
+    "school_programs": [
+      {
+        "id": 1,
+        "img": "Ahmedabad International School-India-HMCSF.jpeg",
+        "location": "Ahmedabad",
+        "venue": "Stonehill School-Bangalore"
+      },
+      {
+        "id": 2,
+        "img": "Germany-St George British International School-HYPL.jpg",
+        "location": "Germany",
+        "venue": "St George British International School-HYPL"
+      },
+      {
+        "id": 3,
+        "img": "public/Gallery/India-Stonehill School-Bangalore.png",
+        "location": "India",
+        "venue": "Stonehill School-Bangalore"
+      },
+      {
+        "id": 4,
+        "img": "./Turkey-MEF International School-HMCSF.jpeg",
+        "location": "Turkey",
+        "venue": "MEF International School-HMCSF"
+      }
+    ]
+  }
+  

@@ -199,3 +199,35 @@
     gap: var(--gap-46xl);
   }
 }
+
+
+
+/* Multi tabs css */
+*.active-tabs {
+  color: var(--color-goldenrod);
+  font-weight: 500;
+}
+
+.active-tabs {
+  /* background: white; */
+  /* border-bottom: 1px solid transparent; */
+}
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
+  /* background: rgb(88, 147, 241); */
+
+}
+.div-fusion-image-element.active-content {
+  display: flex;
+}
+
+.div-fusion-image-element {
+  display: none;
+}

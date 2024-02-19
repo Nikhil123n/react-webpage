@@ -4,6 +4,7 @@ const Input = ({
   prop,
   country,
   selectYourCountry,
+  classname,
   chevronDown,
   prop1,
   schoolName,
@@ -23,8 +24,7 @@ const Input = ({
         <div className="spacer-1-group">
           <div className="spacer-11" />
           <div className="opt-31">
-            <div className="select-your-country">{selectYourCountry}</div>
-            <img className="chevron-down-icon2" alt="" src={chevronDown} />
+            <input className={classname} placeholder={selectYourCountry} type="text" />            
           </div>
         </div>
       </div>
