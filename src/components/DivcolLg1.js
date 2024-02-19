@@ -9,9 +9,9 @@ const DivcolLg1 = ({ propFlex, propAlignSelf }) => {
 
   const navigate = useNavigate();
   const onLinkExploreClick = useCallback(() => {
-    navigate("/program-reg"),{
-      state: 'HDFC Capital Advisors: Corporate Internship Project'
-    };
+    navigate("/program-reg",{
+      state: "HDFC Capital Advisors: Corporate Internship Project"
+    });
   }, [navigate]);
   
   const divcolLg5Style = useMemo(() => {
