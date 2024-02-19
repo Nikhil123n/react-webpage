@@ -35,6 +35,9 @@ const StepperForm1 = () => {
   const onPreviousButtonClick = useCallback(() => {
     navigate("/");
   }, [navigate]);
+  const onNextButtonClick = useCallback(() => {
+    navigate("/stepper-2");
+  }, [navigate]);
 
   return (
     <div className="stepper-form-p-1">
@@ -438,7 +441,7 @@ const StepperForm1 = () => {
                 <div className="previous">Previous</div>
               </button>
               <button className="submit-btn2">
-                <div className="next">Next</div>
+                <div className="next"  onClick={onNextButtonClick}>Next</div>
               </button>
             </div>
           </div>

@@ -64,6 +64,9 @@
     color: var(--color-white);
     font-family: var(--font-inter);
   }
+  .wcolor{
+    background-color: #ffffff;
+  }
   .stepper-form-p-1 {
     width: 100%;
     position: relative;
@@ -151,10 +154,11 @@
     margin: 0 !important;
     top: 20px;
     background-color: var(--color-darkslategray);
-  } 
+  }
   .connector-l-1 {
     width: 211px;
     left: -130.5px;
+    background-color: #ffffff !important;
   }
   .connector-l-2 {
     width: 225px;

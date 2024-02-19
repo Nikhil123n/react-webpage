@@ -9,6 +9,9 @@ import {
 import Home from "./pages/Home";
 import GetStartedFormDefaultV from "./pages/get-started-form-default-v";
 import StepperForm1 from "./pages/StepperForm1";
+import StepperForm2 from "./pages/StepperForm2";
+import StepperForm3 from "./pages/StepperForm3";
+import Certificate from "./pages/certificate";
 
 function App() {
   const action = useNavigationType();
@@ -62,6 +65,9 @@ function App() {
         element={<GetStartedFormDefaultV />}
       />
       <Route path="/stepper-1" element={<StepperForm1 />} />
+      <Route path="/stepper-2" element={<StepperForm2 />} />
+      <Route path="/stepper-3" element={<StepperForm3 />} />
+      <Route path="/certificate" element={<Certificate />} />
     </Routes>    
   );
 }

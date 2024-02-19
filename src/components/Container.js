@@ -18,6 +18,21 @@ const Container = () => {
 
   return (
     <div className="container">
+      <div className="heading-cta">
+        <h1 className="heading-1-container">
+          <span>
+            <p className="ivy-league-education">Ivy League Education</p>
+            <p className="unbounded">Unbounded</p>
+          </span>
+        </h1>
+        <div className="future-doctors-event-info-grou">
+          <div className="learn-with-the">{`Learn with the World’s Best Teachers, Mentors & Students`}</div>
+          <button className="button" onClick={onButtonContainerClick}>
+            <div className="get-started">Get Started</div> 
+            <FontAwesomeIcon icon={faAngleRight} className="angle-right-icon" swapOpacity size="lg" />            
+          </button>
+        </div>
+      </div>
       <div className="carousel-img-catelog-grp-1">
         <div className="divowl-stage-outer">
           <DivowlItem
@@ -46,21 +61,6 @@ const Container = () => {
             rightArrowsvg="/rightarrowsvg-2@2x.png"
             propPadding="var(--padding-14xl) var(--padding-4xs) var(--padding-smi) var(--padding-3xs)"
           />
-        </div>
-      </div>
-      <div className="heading-cta">
-        <h1 className="heading-1-container">
-          <span>
-            <p className="ivy-league-education">Ivy League Education</p>
-            <p className="unbounded">Unbounded</p>
-          </span>
-        </h1>
-        <div className="future-doctors-event-info-grou">
-          <div className="learn-with-the">{`Learn with the World’s Best Teachers, Mentors & Students`}</div>
-          <button className="button" onClick={onButtonContainerClick}>
-            <div className="get-started">Get Started</div> 
-            <FontAwesomeIcon icon={faAngleRight} className="angle-right-icon" swapOpacity size="lg" />            
-          </button>
         </div>
       </div>
     </div>
