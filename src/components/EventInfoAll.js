@@ -29,7 +29,7 @@ const EventInfoAll = () => {
 
       <div className="entrepreneurship-program-frame">        
         
-        <div className="heading-text">
+        <div className="heading-text2">
           <Event1
             eventImg1="/event-img-1@2x.png"
             fellowships="Fellowships"

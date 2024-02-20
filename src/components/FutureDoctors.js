@@ -15,6 +15,7 @@ const FutureDoctors = () => {
           participateInProjectsAndB="global peer group. Win at a"
           networksGlobally="global stage."
           cERTIFICATES="COMPETITIONS"
+          url="/competition"
           // propGap="284px"
           // propMinWidth="229px"
           // propWidth="562px"

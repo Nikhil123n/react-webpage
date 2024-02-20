@@ -1,0 +1,44 @@
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel-outer {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 0 16px;
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 300px;
+    box-sizing: border-box;
+  }
+  .carousel-header {
+    padding: 20px;
+  }
+  .carousel-header h2 {
+    /* font-size: 24px; */
+    font-size: 42px;
+    margin-bottom: 10px;
+    text-color: #ffffff;
+    font-weight: 600;
+  }
+  
+  .carousel-header div {
+    font-size: 16px;
+    color: #878D92;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-style: italic;
+  }
+  @media screen and (max-width: 600px) {
+    .carousel-header h2 {
+      font-size: 20px;
+    }
+  
+    .carousel-header div {
+      font-size: 14px;
+    }
+  }

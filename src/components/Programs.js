@@ -15,6 +15,7 @@ const Programs = ({
   propMinWidth,
   propWidth,
   propMinWidth1,
+  url,
 }) => {
   const programsStyle = useMemo(() => {
     return {
@@ -46,12 +47,12 @@ const Programs = ({
               {experienceGlobalLearning}{participateInProjectsAndB}{networksGlobally}</p>
           </div>
         </div>
-        <div className="img-overlay">
+        <a className="img-overlay" href={url} style={{ textDecoration: 'none', cursor: 'pointer' }}>
           <div className="link-explore">Explore all</div>
           <div className="symbol1">
             <FontAwesomeIcon icon={faArrowRightLong} className="angle-right-icon" swapOpacity />            
           </div>
-        </div>
+        </a>
       </div>
       <div className="certificates" style={cERTIFICATESStyle}>
         {cERTIFICATES}

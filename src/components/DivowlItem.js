@@ -14,6 +14,7 @@ const DivowlItem = ({
   propPadding1,
   propAlignSelf,
   propGap,
+  className,
 }) => {
   const divcitemcontentStyle = useMemo(() => {
     return {
@@ -22,7 +23,7 @@ const DivowlItem = ({
   }, [propPadding]);
 
   return (
-    <div className="divowl-item">
+    <div className="divowl-item" style={className}>
       <img
         className="link-900x550-2-aboutjpg"
         alt=""

@@ -152,6 +152,26 @@
     font-size: var(--font-size-29xl);
     line-height: 62px;
   }
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heading-cta,
+  .carousel-img-catelog-grp-1 {
+    flex: 1;
+    width: 100%;
+  }
+  .carousel-img-catelog-grp-1 {
+    top: auto; /* Reset the top property */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto; /* Adjust the height based on your design */
+    position: absolute;
+  }
 }
 @media screen and (max-width: 450px) {
   .heading-1-container {

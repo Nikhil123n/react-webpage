@@ -9,18 +9,34 @@ const DivfusionColumnWrapper = ({
   programs,
   propOverflow,
   propPadding,
+  borderStyle,
+
+
 }) => {
-  const divfusionColumnWrapperStyle = useMemo(() => {
-    return {
-      overflow: propOverflow,
-      padding: propPadding,
-    };
-  }, [propOverflow, propPadding]);
+    const divfusionColumnWrapperStyle = useMemo(() => {
+      const style = {
+        overflow: propOverflow,
+        padding: propPadding,
+      };
+    
+      if (borderStyle) {
+        style.border = '1px solid #4a4a4a'
+        style.borderStyle = 'inset';
+        style.borderRadius = '12px 12px 12px 12px;';
+        style.boxShadow = 'none';
+        style.borderColor = '#878d92';
+      }
+    
+      return style;
+    }, [propOverflow, propPadding, borderStyle]);
+  
+
+  const background = borderStyle ? {backgroundColor: 'rgba(0, 0, 0, 0)'} : { };
 
   return (
     <div
       className="divfusion-column-wrapper"
-      style={divfusionColumnWrapperStyle}
+      style={{ ...divfusionColumnWrapperStyle, ...background }}
     >
       <img
         className="divfusion-image-element-icon"

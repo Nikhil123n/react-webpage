@@ -1,10 +1,19 @@
 import Event1 from "./Event1";
 import EventInfoGrpAll from "./EventInfoGrpAll";
-import React from "react";
+import React, { useState } from "react";
 
 import "./EventInfoGrid.css";
 
 const EventInfoGrid = () => {
+  const [toggleState, setToggleState] = useState(1);
+
+  const toggleTab = (index) => {
+    if (toggleState !== index) {
+      setToggleState(index);
+      console.log(index.school_programs);
+    }
+  };
+
   return (
     <section className="event-info-grid">
       <h2 className="masterclass-in-different">
@@ -13,11 +22,11 @@ const EventInfoGrid = () => {
       
       <div className="entrepreneurship-program-frame">
       <div className="tab-grp-11">
-          <button className="c-13">
-            <div className="upcoming-events">Upcoming Events</div>
+          <button className="c-13"  onClick={() => toggleTab(1)}>
+            <div className={toggleState === 1 ? "upcoming-events active-tabs" : "upcoming-events"}>Upcoming Events</div>
           </button>
-          <button className="c-21">
-            <div className="past-events">Past Events</div>
+          <button className="c-21"  onClick={() => toggleTab(2)}>
+            <div className={toggleState === 2 ? "past-events active-tabs" : "past-events"}>Past Events</div>
           </button>
         </div>
                 
@@ -35,7 +44,8 @@ const EventInfoGrid = () => {
             />
           </div>
         </div>
-        <div className="heading-text">
+
+        <div className={toggleState === 1 ? "heading-text active-content" : "heading-text"}  >
           <Event1
             eventImg1="/event-img-1@2x.png"
             fellowships="India"
@@ -74,6 +84,19 @@ const EventInfoGrid = () => {
             weeks="2 Weekends"
           />          
         </div>
+
+        <div className={toggleState === 2 ? "heading-text active-content" : "heading-text"}  >
+          <Event1
+              eventImg1="/event-img-1@2x.png"
+              fellowships="India"
+              heading="The Young Global Leadership Program - Hosted by JBCN"
+              sTARTSON="STARTS ON"
+              december2023="19 August, 2023"
+              dURATION="DURATION"
+              weeks="5 DAYS"
+            />
+        </div>
+
       </div>
       <div className="event-img-overlay1">
         <button className="submit-btn1">

@@ -15,6 +15,7 @@ const DivFusionColumnWrapper1 = () => {
           participateInProjectsAndB="participate in projects and build"
           networksGlobally="networks globally."
           cERTIFICATES="CERTIFICATES"
+          url='/certificate'
         />
 
         

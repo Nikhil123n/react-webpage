@@ -54,7 +54,7 @@
   box-sizing: border-box;
   position: relative;
   gap: var(--gap-8xs);
-  background-image: url(/public/catelog-img-1@2x.png);
+  /* background-image: url("../../public/Ahmedabad\ International\ School-India-HMCSF.jpeg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;

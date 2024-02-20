@@ -2,11 +2,18 @@ import "./ConnectUs.css";
 import React from "react";
 
 
-const ConnectUs = () => {
+const ConnectUs = (
+  {divNone}
+) => {
+  console.log(divNone);
+  const makingDivNone = divNone=='none' ? { display: 'none' } : {};
+
+
+
   return (
     <section className="frame-parent">
-      <div className="students-love-frame-parent">
-        <div className="students-love-frame">
+      <div className="students-love-frame-parent" >
+        <div className="students-love-frame" style={makingDivNone} >
           <h1 className="students-and-alumni">
             Students and alumni love our programs
           </h1>

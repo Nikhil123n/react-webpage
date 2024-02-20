@@ -34,13 +34,31 @@ const Label = styled.label`
 const StepperForm1 = () => {    
   const navigate = useNavigate();
   const [q1, setQ1] = useState();
-  const [checked, setChecked] = useState("Business");
-  console.log(q1);
+  const [q2, setQ2] = useState();
+  const [q3, setQ3] = useState();
+  const [q4, setQ4] = useState();
+  const [q5, setQ5] = useState();
+  // console.log(q1, q2, q3, q4, q5);
 
   
   const onPreviousButtonClick = useCallback(() => {
     navigate("/");
   }, [navigate]);
+ 
+  const onNextButtonClick = useCallback(() => {
+    // Check if all questions have values
+    if (q1 !== undefined && q2 !== undefined && q3 !== undefined && q4 !== undefined && q5 !== undefined && q5?.trim() !== '') {
+      navigate("/stepper-2", {
+        state: { q1, q2, q3, q4, q5 }
+      });
+    } else {
+      // Show error message or handle the case when all questions are not answered      
+      alert("Please answer all questions before proceeding.");
+    }
+  }, [navigate, q1, q2, q3, q4, q5]);
+
+  console.log({q1, q2, q3, q4, q5})
+  
 
   return (
     <div className="stepper-form-p-1">
@@ -169,9 +187,11 @@ const StepperForm1 = () => {
                     <RadioButton
                       type="radio"
                       id="interest-1"
-                      value="Business"                                     
+                      name="q2"
+                      value="A. Business"
+                      onChange={e=> setQ2(e.target.value)}                                        
                     />
-                    <Label htmlFor="interest-1" className="form-cheked">A. Business</Label>
+                    <Label htmlFor="interest-1" className="label-1">A. Business</Label>
                   </div>
                 </div>
                 <div className="opt-2">
@@ -179,9 +199,11 @@ const StepperForm1 = () => {
                     <RadioButton
                         type="radio"
                         id="interest-2"
-                        value="B. Science and Technology"                                     
+                        name="q2"
+                        value="B. Science and Technology"      
+                        onChange={e=> setQ2(e.target.value)}                                                                       
                       />
-                      <Label htmlFor="interest-2" >B. Science and Technology</Label>
+                      <Label htmlFor="interest-2" className="label-2">B. Science and Technology</Label>
                   </div>
                 </div>
                 <div className="opt-38">
@@ -190,9 +212,11 @@ const StepperForm1 = () => {
                       <RadioButton
                           type="radio"
                           id="interest-3"
-                          value="C. Leadership"                                     
+                          name="q2"
+                          value="C. Leadership"    
+                          onChange={e=> setQ2(e.target.value)}                                                                         
                         />
-                        <Label htmlFor="interest-3" >C. Leadership</Label>
+                        <Label htmlFor="interest-3" className="label-3">C. Leadership</Label>
                     </div>
                   </div>
                 </div>
@@ -202,9 +226,11 @@ const StepperForm1 = () => {
                           <RadioButton
                             type="radio"
                             id="interest-4"
-                            value="D. Social Impact"                                     
+                            name="q2"
+                            value="D. Social Impact"        
+                            onChange={e=> setQ2(e.target.value)}                                                                     
                           />
-                          <Label htmlFor="interest-4" >D. Social Impact</Label>
+                          <Label htmlFor="interest-4" className="label-4">D. Social Impact</Label>
                         </div>
                     </div>
                 </div>
@@ -214,9 +240,11 @@ const StepperForm1 = () => {
                           <RadioButton
                               type="radio"
                               id="interest-5"
-                              value="E. Communication"                                     
+                              name="q2"
+                              value="E. Communication"   
+                              onChange={e=> setQ2(e.target.value)}                                                                          
                             />
-                            <Label htmlFor="interest-5" >E. Communication</Label>
+                            <Label htmlFor="interest-5" className="label-5">E. Communication</Label>
                         </div>
                     </div>
                 </div>
@@ -242,9 +270,11 @@ const StepperForm1 = () => {
                     <RadioButton
                       type="radio"
                       id="program-1"
-                      value="A. Immediately"                                     
+                      value="A. Immediately"     
+                      name="q3"
+                      onChange={e=> setQ3(e.target.value)}
                     />
-                    <Label htmlFor="program-1" >A. Immediately</Label>
+                    <Label htmlFor="program-1" className="label-1">A. Immediately</Label>
                   </div>
                 </div>
                 <div className="opt-2">
@@ -252,9 +282,11 @@ const StepperForm1 = () => {
                     <RadioButton
                         type="radio"
                         id="program-2"
-                        value="B. In the next 2-3 months"                                     
+                        value="B. In the next 2-3 months" 
+                        name="q3"
+                        onChange={e=> setQ3(e.target.value)}                                    
                       />
-                      <Label htmlFor="program-2" >B. In the next 2-3 months</Label>
+                      <Label htmlFor="program-2" className="label-2">B. In the next 2-3 months</Label>
                   </div>
                 </div>
                 <div className="opt-39">
@@ -262,9 +294,11 @@ const StepperForm1 = () => {
                   <RadioButton
                           type="radio"
                           id="program-3"
-                          value="C. During summer or winter break"                                     
+                          value="C. During summer or winter break" 
+                          name="q3"
+                          onChange={e=> setQ3(e.target.value)}                                    
                         />
-                        <Label htmlFor="program-3" >C. During summer or winter break</Label>
+                        <Label htmlFor="program-3" className="label-3">C. During summer or winter break</Label>
                   </div>
                 </div>
                 <div className="opt-41">
@@ -272,73 +306,18 @@ const StepperForm1 = () => {
                           <RadioButton
                             type="radio"
                             id="program-4"
-                            value="D. Haven’t decided yet"                                     
+                            value="D. Haven’t decided yet"
+                            name="q3"
+                            onChange={e=> setQ3(e.target.value)}                                     
                           />
-                          <Label htmlFor="program-4" >D. Haven’t decided yet</Label>
+                          <Label htmlFor="program-4" className="label-4">D. Haven’t decided yet</Label>
                     </div>                    
                 </div>                
               </div>            
             
           </div>          
 
-          {/* <FrameComponent1 /> */}
-          <div className="frameemail1">
-            
-            <div className="parent">
-              <div className="div8">4.</div>
-              <div className="socialimpact">
-                <div className="what-fields-interest">
-                  What would you like to gain from a program?
-                </div>
-                <div className="choose-all-that">Choose all that apply.</div>
-              </div>
-            </div>
-            <div className="opt-group-a-parent">
-              <div className="opt-group-a">
-                <div className="spacer-19" />
-                <div className="opt-1">
-                  <RadioButton
-                    type="radio"
-                    id="gain-1"
-                    value="A. Immediately"                                     
-                  />
-                  <Label htmlFor="gain-1" >A. Immediately</Label>
-                </div>
-              </div>
-              <div className="opt-2">
-                <div className="b-science-and">
-                  <RadioButton
-                      type="radio"
-                      id="gain-2"
-                      value="B. In the next 2-3 months"                                     
-                    />
-                    <Label htmlFor="gain-2" >B. In the next 2-3 months</Label>
-                </div>
-              </div>
-              <div className="opt-39">
-                <div className="c-during-summer">
-                <RadioButton
-                        type="radio"
-                        id="gain-3"
-                        value="C. During summer or winter break"                                     
-                      />
-                      <Label htmlFor="gain-3" >C. During summer or winter break</Label>
-                </div>
-              </div>
-              <div className="opt-41">
-                <div className="d-havent-decided">
-                        <RadioButton
-                          type="radio"
-                          id="gain-4"
-                          value="D. Haven’t decided yet"                                     
-                        />
-                        <Label htmlFor="gain-4" >D. Haven’t decided yet</Label>
-                  </div>                    
-              </div>                
-            </div>            
-          
-        </div>  
-
+          {/* <FrameComponent1 /> */}      
 
           <div className="text-desc-parent3">
             <div className="text-desc9">
@@ -380,20 +359,24 @@ const StepperForm1 = () => {
                   <div className="a-earning-a">
                   <RadioButton
                       type="radio"
-                      id="program-1"
-                      value="A. Earning a certificate from an Ivy League organization"                                     
+                      id="earning-1"
+                      value="A. Earning a certificate from an Ivy League organization"
+                      name="q4"
+                      onChange={e=> setQ4(e.target.value)}                                     
                     />
-                    <Label htmlFor="program-1" >A. Earning a certificate from an Ivy League organization</Label>                    
+                    <Label htmlFor="earning-1" className="label-1">A. Earning a certificate from an Ivy League organization</Label>                    
                   </div>
                 </div>
                 <div className="opt-22">
                   <div className="b-exploring-a">
                   <RadioButton
                       type="radio"
-                      id="program-1"
-                      value="B. Exploring a future career field with experts"                                     
+                      id="earning-2"
+                      value="B. Exploring a future career field with experts"  
+                      name="q4"
+                      onChange={e=> setQ4(e.target.value)}                                                                                              
                     />
-                    <Label htmlFor="program-1" >B. Exploring a future career field with experts</Label>                    
+                    <Label htmlFor="earning-2" className="label-2">B. Exploring a future career field with experts</Label>                    
                     
                   </div>
                 </div>
@@ -401,20 +384,24 @@ const StepperForm1 = () => {
                   <div className="c-learning-new">
                   <RadioButton
                       type="radio"
-                      id="program-1"
-                      value="C. Learning new skills and knowledge"                                     
+                      id="earning-3"
+                      value="C. Learning new skills and knowledge"           
+                      name="q4"
+                      onChange={e=> setQ4(e.target.value)}                                                               
                     />
-                    <Label htmlFor="program-1" >C. Learning new skills and knowledge</Label>  
+                    <Label htmlFor="earning-3" className="label-3">C. Learning new skills and knowledge</Label>  
                   </div>
                 </div>
                 <div className="opt-42">
                   <div className="d-building-my">
                   <RadioButton
                       type="radio"
-                      id="program-1"
+                      id="earning-4"
                       value="D. Building my profile for college and career"                                     
+                      name="q4"
+                      onChange={e=> setQ4(e.target.value)}                                     
                     />
-                    <Label htmlFor="program-1" >D. Building my profile for college and career</Label>  
+                    <Label htmlFor="earning-4" className="label-4">D. Building my profile for college and career</Label>  
                     
                   </div>
                 </div>
@@ -442,7 +429,7 @@ const StepperForm1 = () => {
             <div className="spacer-1-parent5">
               <div className="spacer-112" />
               <div className="opt-311">
-                <input className="email2" placeholder="Email" type="text" />                
+                <input className="email2" onChange={e=> setQ5(e.target.value)} placeholder="Email" type="text" />                
               </div>
             </div>
           </div>
@@ -453,8 +440,8 @@ const StepperForm1 = () => {
               <button className="submit-btn1" onClick={onPreviousButtonClick}>
                 <div className="previous">Previous</div>
               </button>
-              <button className="submit-btn2">
-                <div className="next">Next</div>
+              <button className="submit-btn2" onClick={onNextButtonClick}>                
+                <div className="next"  >Next</div>
               </button>
             </div>
           </div>
