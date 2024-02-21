@@ -2,8 +2,23 @@ import "./Footer.css";
 import React from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faFacebookF, faTwitter, faInstagram, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const onButtonClick = (sectionId) => {
+    if (sectionId === 'faq') {
+      navigate(`/faq`);
+    } else {
+      navigate(`/faq#${sectionId}`);
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <footer className="footer">
       <div className="footer-inner">
@@ -26,12 +41,12 @@ const Footer = () => {
             </div>
           </div>
           <div className="link-faqs-parent">
-            <div className="link-faqs">FAQ’s</div>
+            <div className="link-faqs" onClick={ () => onButtonClick('faq')}>FAQ’s</div>
             <div className="what-is-learn-with-leaders-parent">
-              <div className="what-is-learn">What is Learn with Leaders?</div>
-              <div className="how-to-apply">How to apply for a program?</div>
-              <div className="what-is-the">What is the selection process?</div>
-              <div className="how-do-i">How do I contact LwL?</div>
+              <div className="what-is-learn" onClick={ () => onButtonClick('learn-with-leaders')}>What is Learn with Leaders?</div>
+              <div className="how-to-apply" onClick={ () => onButtonClick('how-to-apply')}>How to apply for a program?</div>
+              <div className="what-is-the" onClick={ () => onButtonClick('selection-process')}>What is the selection process?</div>
+              <div className="how-do-i" onClick={ () => onButtonClick('contact-lwl')}>How do I contact LwL?</div>
             </div>
           </div>
         </div>
