@@ -29,16 +29,16 @@ const Timeline = () => {
 
       <div className="event">
         <div className="tab-grp-1">
-          <button className="c-1" onClick={() => toggleTab(1)}>
+          <button className="timeline-btn-border c-1" onClick={() => toggleTab(1)}>
             <div className={toggleState === 1 ? "in-school-programs active-tabs" : "in-school-programs"}  >In-School Programs </div>
           </button>
-          <button className="c-2"  onClick={() => toggleTab(2) }>
+          <button className="timeline-btn-border  c-2"  onClick={() => toggleTab(2) }>
             <div className={toggleState === 2 ? "impact-stories active-tabs" : "impact-stories"} >Impact Stories</div>
           </button>
-          <button className="c-3"  onClick={() => toggleTab(3) }>
+          <button className="timeline-btn-border  c-3"  onClick={() => toggleTab(3) }>
             <div className={toggleState === 3 ? "testimonials active-tabs" : "testimonials"} >Testimonials</div>
           </button>
-          <button className="c-4"  onClick={() => toggleTab(4) }>
+          <button className="timeline-btn-border  c-4"  onClick={() => toggleTab(4) }>
             <div className={toggleState === 4 ? "community-events active-tabs" : "community-events"} >Community Events</div>
           </button>
         </div>

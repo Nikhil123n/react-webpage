@@ -3,13 +3,18 @@ import Figure from "./Figure";
 import React from "react";
 import "./gridElements.css";
 import DivowlItem from "./DivowlItem";
+const value = 4;
 
-const GridElements = ({data}) => {
-  console.log(data)
+const GridElements = ({data, gridTemplateValue}) => {
+  console.log(data, gridTemplateValue)
+
+  const value = gridTemplateValue !== undefined ? gridTemplateValue : 4;
+  console.log(data, gridTemplateValue)
 
   return (
     <section className="figure-grid-wrapper">
-        <div className="figure-grid-container">
+              <div className="figure-grid-container" style={{ gridTemplateColumns: `repeat(${value}, 1fr)` }}>
+
             {/* <div className="figure-grid-item"> */}
             {/* {data.map((item, index) => (
               <Figure1

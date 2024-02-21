@@ -6,6 +6,10 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
+
+import Gallery from "./pages/Gallery";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Home from "./pages/Home";
 import GetStartedFormDefaultV from "./pages/get-started-form-default-v";
 import StepperForm1 from "./pages/StepperForm1";
@@ -19,6 +23,12 @@ import Fellowship from "./pages/fellowship";
 import Conference from "./pages/conference";
 import Internship from "./pages/internship";
 import Masterclass from "./pages/masterclass";
+
+import BlogMedia from "./pages/blogMedia";
+import ContactUs from "./pages/ContactUs";
+import AboutUs from "./pages/AboutUs";
+
+
 
 function App() {
   const action = useNavigationType();
@@ -72,10 +82,28 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-        case "/masterclass":
-          title = "";
-          metaDescription = "";
-          break;
+      case "/masterclass":
+        title = "";
+        metaDescription = "";
+        break;
+
+      case "/gallery":
+        title = "";
+        metaDescription = "";
+        break;
+
+      case "/blog-media":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/contact-us":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/about-us":
+        title = "";
+        metaDescription = "";
+        break;
     
     }
 
@@ -110,6 +138,11 @@ function App() {
       <Route path="/internship" element={<Internship />} />
       <Route path="/masterclass" element={<Masterclass />} />
       <Route path="/certificates-program" element={<CertificateProgram />} />
+
+      <Route path="/gallery" element={<Gallery />} />
+      <Route path="/blog-media" element={<BlogMedia />} />
+      <Route path="/contact-us" element={<ContactUs />} />
+      <Route path="/about-us" element={<AboutUs />} />
       
     </Routes>    
   );

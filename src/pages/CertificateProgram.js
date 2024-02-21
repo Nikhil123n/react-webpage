@@ -25,7 +25,7 @@ const CertificateProgram = () => {
               <NavigationLinks />                            
             </div>
           </section>    
-          <section className="container">
+          <section className="hero-container">
             <div className="carousel-img-catelog-grp-1">
                 <div className="divowl-stage-outer">
                 <DivowlItem

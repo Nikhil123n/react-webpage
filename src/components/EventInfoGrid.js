@@ -22,10 +22,10 @@ const EventInfoGrid = () => {
       
       <div className="entrepreneurship-program-frame">
       <div className="tab-grp-11">
-          <button className="c-13"  onClick={() => toggleTab(1)}>
+          <button className="timeline-btn-border c-13"  onClick={() => toggleTab(1)}>
             <div className={toggleState === 1 ? "upcoming-events active-tabs" : "upcoming-events"}>Upcoming Events</div>
           </button>
-          <button className="c-21"  onClick={() => toggleTab(2)}>
+          <button className="timeline-btn-border c-21"  onClick={() => toggleTab(2)}>
             <div className={toggleState === 2 ? "past-events active-tabs" : "past-events"}>Past Events</div>
           </button>
         </div>

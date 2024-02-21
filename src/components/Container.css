@@ -100,7 +100,7 @@
   font-size: var(--font-size-xl);
   color: var(--color-gray-100);
 }
-.container,
+.hero-container,
 .heading-cta {
   /* overflow: hidden; */
   max-width: 100%;
@@ -126,7 +126,7 @@
   font-size: var(--font-size-41xl);
   color: var(--color-white);
 }
-.container {
+.hero-container {
   align-self: stretch;
   height: 550px;
   position: relative;
@@ -152,7 +152,7 @@
     font-size: var(--font-size-29xl);
     line-height: 62px;
   }
-  .container {
+  .hero-container {
     position: relative;
     display: flex;
     flex-direction: column;

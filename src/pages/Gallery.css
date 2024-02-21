@@ -1,0 +1,140 @@
+
+/* Carousel - Header */
+.carousel-container-gallery {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel-outer {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 0 16px;
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 300px;
+    box-sizing: border-box;
+  }
+  .carousel-header-gallery {
+    padding: 20px 20px 0px;
+  }
+  .carousel-header-gallery h2 {
+    /* font-size: 24px; */
+    font-size: 34px;
+    margin-bottom: 10px;
+    text-color: #ffffff;
+    font-weight: 600;
+  }
+  
+  .carousel-header-gallery div {
+    font-size: 16px;
+    color: #878D92;
+    margin-bottom: 10px;
+    font-weight: 400;
+    /* font-style: italic; */
+}
+.card-title-gallery {
+  color: #ffffff!important;
+  font-size: 23px!important;
+  font-family: "Inter"!important;
+  font-weight: 600!important;
+}
+.card-title-gallery.bg-transparent.card {
+  --bs-card-border-color: #2c2b2b;
+  --bs-card-border: solid;
+  --bs-card-border-width: 1px;
+  --bs-card-border-radius: 0px;
+}
+
+.col-12.col-md-6.col-lg-4.card-col-gallery.col {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+nav {
+  display: flex;  
+  align-self: flex-start;
+}
+.breadcrumb-item:not(:last-child):after {
+  content: "\003E"; /* Unicode right arrow character */
+  padding: 0 5px; /* Adjust spacing */
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size:large;
+}
+.breadcrumb {
+  color: white;
+}
+
+
+/* CSS for Contact US FORM */
+.contactus-row {
+  color: #F1B537;
+  padding: 3%;
+}
+.contactus-container.container {
+  background-color: #202020; 
+  /* border-color: red; */
+  border: 5px;
+  max-width: 1352px 
+}
+.about-us-container.container {
+  background-color: #202020;   
+  align-items: left;
+  border: 5px;
+  max-width: 1352px;  
+  padding: 30px;
+  /* padding-left: 75px !important; 
+  padding-right: 75px !important; */
+  color: #878d92;
+  margin-bottom: 25px;
+  font-size : 16px;  
+}
+.about-us-container.container h2 {
+  color: #fff;
+  text-align: left;
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+.about-us-container.container p {
+  margin-bottom: 0px;
+}
+p .para-4  {
+  margin-bottom: 25px;
+
+}
+
+.contactus-row1.row {
+  align-items: center;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color:#f1b537;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.contactus-row2.row {
+  font-size: 32px;
+  line-height: 40px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+}
+
+  @media screen and (max-width: 600px) {
+    .carousel-header-gallery h2 {
+      font-size: 20px;
+    }
+  
+    .carousel-header-gallery div {
+      font-size: 14px;
+    }
+  }

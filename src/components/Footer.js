@@ -19,10 +19,24 @@ const Footer = () => {
           <div className="quick-links-group">
             <div className="quick-links1">Quick Links</div>
             <div className="quick-links-menu">
-              <div className="gallery1">Gallery</div>
-              <div className="blog-media">{`Blog & Media`}</div>
-              <div className="contact-us">Contact us</div>
-              <div className="about-us">About us</div>
+              <div className="gallery1"> 
+                <a href={'/gallery'} style={{ textDecoration: 'none', cursor: 'pointer', color: 'white' }}>
+                  Gallery
+                </a>                
+              </div>
+              <div className="blog-media">
+                <a href={'/blog-media'} style={{ textDecoration: 'none', cursor: 'pointer', color: 'white' }}>
+                  {`Blog & Media`}              
+                </a>
+              </div>
+              <div className="contact-us">
+              <a href={'/contact-us'} style={{ textDecoration: 'none', cursor: 'pointer', color: 'white' }}>
+                Contact us </a>
+              </div>
+              <div className="about-us">
+                <a href={'/about-us'} style={{ textDecoration: 'none', cursor: 'pointer', color: 'white' }}>  
+                About us</a>
+              </div>
             </div>
           </div>
           <div className="link-faqs-parent">

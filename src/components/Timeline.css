@@ -215,6 +215,14 @@
   /* background: white; */
   /* border-bottom: 1px solid transparent; */
 }
+button.timeline-btn-border:not(div.active-tabs){
+  border-bottom: none;
+}
+button.timeline-btn-border:has(div.active-tabs) {
+  border-bottom: 1px solid var(--color-goldenrod);
+}
+
+
 .active-tabs::before {
   content: "";
   display: block;

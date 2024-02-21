@@ -205,6 +205,7 @@
   font-size: var(--font-size-xl);
   color: var(--color-goldenrod);
   font-family: var(--font-inter);
+  border-top: 0;
 }
 @media screen and (max-width: 1150px) {
   .footer-frame-parent {

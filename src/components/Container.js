@@ -17,7 +17,7 @@ const Container = () => {
   }, [navigate]);
 
   return (
-    <div className="container">
+    <div className="hero-container">
       <div className="carousel-img-catelog-grp-1">
         <div className="divowl-stage-outer">
           <DivowlItem

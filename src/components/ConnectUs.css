@@ -72,7 +72,7 @@
     align-items: center;
   }
   .enter-your-email-id {
-    width: 144.3px;
+    /* width: 144.3px; */
     border: 0;
     outline: 0;
     font-family: var(--font-inter);

@@ -5,8 +5,8 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import "./global.css";
 
-const container = document.getElementById("root");
-const root = createRoot(container);
+const rootContainer = document.getElementById("root");
+const root = createRoot(rootContainer);
 
 root.render(
   <BrowserRouter>
