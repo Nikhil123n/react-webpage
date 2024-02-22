@@ -1108,7 +1108,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    opacity: 0.5;
+    /* opacity: 0.5; */
   }
   .submit-btn2:hover {
     background-color: var(--color-darkgoldenrod);

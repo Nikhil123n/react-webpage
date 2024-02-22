@@ -26,7 +26,7 @@ const Label = styled.label`
 
   &:hover {
     background-color: #888;
-    border: 0.1px solid #ddd;
+    border: 0.1px solid #F1B537;
     // border-color: white;
   }
 `;
@@ -441,7 +441,7 @@ const StepperForm1 = () => {
                 <div className="previous">Previous</div>
               </button>
               <button className="submit-btn2" onClick={onNextButtonClick}>                
-                <div className="next"  >Next</div>
+                <div className="next">Next</div>
               </button>
             </div>
           </div>

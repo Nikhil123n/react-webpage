@@ -27,18 +27,18 @@ const Home = () => {
       </section>
 
       <section className="arrow-svg">
-      <div className="input-enter-your-emailid-butto">
-        <div className="frame-programs-divfusioncolumn">
-          <h2 className="benefit-from-our">
-            Benefit from our collaborations with the world’s best
-          </h2>
-          <div className="democratising-ivy-league">
-            Democratising Ivy League education for all
+        <div className="input-enter-your-emailid-butto">
+          <div className="frame-programs-divfusioncolumn">
+            <h2 className="benefit-from-our">
+              Benefit from our collaborations with the world’s best
+            </h2>
+            <div className="democratising-ivy-league">
+              Democratising Ivy League education for all
+            </div>
+            <LogoSlider />
+            
           </div>
-          <LogoSlider />
-          
         </div>
-      </div>
       </section>
       {/* <section className="arrow-svg">
         <div className="event-img-overlay-parent">

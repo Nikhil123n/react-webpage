@@ -1,0 +1,72 @@
+.button.schedule-btn {    
+    padding: 7px 4px;
+    background-color: transparent;
+    color: #F1B537;
+    border: 1px solid;
+    border-color: #F1B537;
+}
+
+button.schedule-btn:hover {    
+    background-color: #F1B537;
+    color: black;
+}
+button.schedule-btn:active,
+button.schedule-btn:focus  {
+    background-color: #F1B537;
+}
+.schedule-row2-data {
+    padding: 15px;
+    border: 1px solid #A1A1A6;
+    border-color: #393939!important;
+    border-width: 2px!important;
+    border-radius: 15px;
+    margin: 15px 0 0 2px;
+    text-align: left;
+}
+
+.lb1 {
+    color: #A1A1A6;
+    line-height: normal;
+    /* padding-top: 10px; */
+    font-size: 18px;
+    margin: 0;
+
+}
+.lb1-white {
+    color: #fff;
+    font-weight: bold;
+}
+.lb1-row1,
+.lb1-row2 {
+    margin: 0 0 20px 0;
+}
+
+.schedule-lb2 {
+    color: #A1A1A6;
+    line-height: normal;
+    /* padding-top: 10px; */
+    font-size: 18px;    
+}
+.schedule-col2-lb2 {
+    line-height: 0.7;
+}
+
+.lb2-btn {
+    padding: 10px 15px;
+}
+
+.lets-talk.active-tabs::before {
+    color: #F1B537;
+    background-color: transparent;
+}
+.lets-talk.active-tabs {
+    color: black;
+}
+
+.schedule-row2-data.active-content {
+    display: flex;
+  }
+  
+.schedule-row2-data {
+display: none;
+}

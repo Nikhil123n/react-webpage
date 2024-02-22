@@ -3,10 +3,15 @@ import React from "react";
 
 import "./EventImgOverlay.css";
 
-const EventImgOverlay = () => {
+const EventImgOverlay = ({arrowStyles, programName, heading, paragraph, imgPath}) => {
+  // console.log(arrowStyles)
+  const imgDefault = "/whatsappimage20230714at011517scaledjpg@2x.png";
+  const programNameGolden = "corporate internship";
+  console.log(programName)
+
   return (
     <div className="event-img-overlay">
-      <div className="impact-and-research-fellowship">
+      <div className="impact-and-research-fellowship" style={arrowStyles}>
         <div className="divowl-controls">          
           <img
             className="right-arrowsvg-icon4"
@@ -27,12 +32,18 @@ const EventImgOverlay = () => {
             className="whatsapp-image-2023-07-14-at-0-icon"
             loading="eager"
             alt=""
-            src="/whatsappimage20230714at011517scaledjpg@2x.png"
+            src={imgPath ? imgPath : imgDefault}
           />
-          <div className="link-fellowships">corporate internship</div>
+          <div className="link-fellowships" > 
+              {programName ? '' : programNameGolden 
+            }</div>
         </div>
         <div className="divcol-lg-5-wrapper">
-          <DivcolLg1 />
+          <DivcolLg1 
+              arrowStyles = {arrowStyles}
+              heading={heading}
+              paragraph={paragraph}
+            />
         </div>
       </div>
     </div>

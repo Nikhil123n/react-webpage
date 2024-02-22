@@ -13,7 +13,7 @@ const GridElements = ({data, gridTemplateValue}) => {
 
   return (
     <section className="figure-grid-wrapper">
-              <div className="figure-grid-container" style={{ gridTemplateColumns: `repeat(${value}, 1fr)` }}>
+              <div className="figure-grid-container" >
 
             {/* <div className="figure-grid-item"> */}
             {/* {data.map((item, index) => (

@@ -3,9 +3,10 @@ import { useNavigate } from "react-router-dom";
 import React from "react";
 import "./DivcolLg1.css";
 
-const DivcolLg1 = ({ propFlex, propAlignSelf }) => {
+const DivcolLg1 = ({ propFlex, propAlignSelf, heading, arrowStyles, paragraph }) => {  
 
   const eventName = "HDFC Capital Advisors: Corporate Internship Project";
+  const content = "In collaboration with Harvard Entrepreneurship Collective and Learn with Leaders. Embark on an 8-week Experiential Learning Project Tackling a Fortune 500 real-world business problem, guided by a Harvard undergraduate mentor to craft live solutions that address the impact of Green Finance for residential"
 
   const navigate = useNavigate();
   const onLinkExploreClick = useCallback(() => {
@@ -27,14 +28,15 @@ const DivcolLg1 = ({ propFlex, propAlignSelf }) => {
         <div className="heading">
           <h3 className="link-heading-container">
             <p className="hdfc-capital-advisors">
-              HDFC Capital Advisors: Corporate Internship Project</p>
+              {heading ? heading : eventName}
+              </p>
           </h3>
           <div className="img-overlay1">
-            <div className="event-date-grp">
+            <div className="event-date-grp" style={arrowStyles}>
               <div className="application-deadline">Application Deadline</div>
               <div className="program-starts">Program Starts</div>
             </div>
-            <div className="event-date-grp1">
+            <div className="event-date-grp1" style={arrowStyles}>
               <div className="december-2023">13 December, 2023</div>
               <div className="december-20231">16 December, 2023</div>
             </div>
@@ -44,9 +46,9 @@ const DivcolLg1 = ({ propFlex, propAlignSelf }) => {
       <div className="in-collaboration-with-container">
         <span className="applynow">
           <p className="in-collaboration-with">
-            <i> In collaboration with Harvard Entrepreneurship Collective and Learn with Leaders. Embark on an 8-week Experiential Learning Project Tackling a Fortune 500 real-world business problem, guided by a Harvard undergraduate mentor to craft live solutions that address the impact of Green Finance for residential</i>
+            <i> {paragraph ? paragraph : content} </i>
           </p>
-          <a href="" onClick={onLinkExploreClick} >Apply Now</a>
+          <a href="" onClick={onLinkExploreClick} style={arrowStyles} >Apply Now</a>
         </span>
       </div>
     </div>

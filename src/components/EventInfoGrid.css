@@ -254,6 +254,14 @@
   color: var(--color-white);
   font-family: var(--font-inter);
 }
+
+.img-overlay-frame1, 
+.tab-grp-11, 
+.heading-text {
+    display: flex;
+    flex-direction: row;
+}
+
 @media screen and (max-width: 1150px) {
   .event-info-grid {
     padding-bottom: var(--padding-22xl);
@@ -265,7 +273,7 @@
     font-size: var(--font-size-8xl);
   }  
   .tab-grp-11 {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
   .event-frame {
     gap: var(--gap-13xl);

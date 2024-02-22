@@ -27,6 +27,8 @@ import Masterclass from "./pages/masterclass";
 import BlogMedia from "./pages/blogMedia";
 import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
+import FAQ from "./pages/faq";
+
 
 
 
@@ -55,53 +57,57 @@ function App() {
         metaDescription = "";
         break;
       case "/stepper-1":
-        title = "";
+        title = "Registration Form";
         metaDescription = "";
         break;
       case "/certificate":
-        title = "";
+        title = "Certificates";
         metaDescription = "";
         break;
       case "/certificates-program":
-        title = "";
+        title = "Certificate Programs";
         metaDescription = "";
         break;
       case "/competition":
-        title = "";
+        title = "Competitions";
         metaDescription = "";
         break;
       case "/fellowship":
-        title = "";
+        title = "Fellowships";
         metaDescription = "";
         break;
       case "/conference":
-        title = "";
+        title = "Conferences";
         metaDescription = "";
         break;
       case "/intenship":
-        title = "";
+        title = "Internship";
         metaDescription = "";
         break;
       case "/masterclass":
-        title = "";
+        title = "Masterclass";
         metaDescription = "";
         break;
 
       case "/gallery":
-        title = "";
+        title = "Gallery";
         metaDescription = "";
         break;
 
       case "/blog-media":
-        title = "";
+        title = "Blog and Media";
         metaDescription = "";
         break;
       case "/contact-us":
-        title = "";
+        title = "Contact us";
         metaDescription = "";
         break;
       case "/about-us":
-        title = "";
+        title = "About us";
+        metaDescription = "";
+        break;
+      case "/faq":
+        title = "FAQ's";
         metaDescription = "";
         break;
     
@@ -143,6 +149,7 @@ function App() {
       <Route path="/blog-media" element={<BlogMedia />} />
       <Route path="/contact-us" element={<ContactUs />} />
       <Route path="/about-us" element={<AboutUs />} />
+      <Route path="/faq" element={<FAQ />} />
       
     </Routes>    
   );

@@ -108,6 +108,7 @@
 .tab-grp-1 {
   border-bottom: 1px solid var(--color-darkslategray-100);
   overflow-x: auto;
+  scrollbar-width: none;
   flex-direction: row;
   justify-content: flex-start;
   padding: 0 var(--padding-12xs) 0 0;
@@ -177,6 +178,17 @@
   color: var(--color-white);
   font-family: var(--font-inter);
 }
+
+
+button.certificate-program-btn {
+  width: max-content;
+  border-bottom: 1px solid #fff;
+}
+button.certificate-program-btn:hover {
+  /* border-color: #f1b537; */
+
+}
+
 @media screen and (max-width: 800px) {
   .gallery {
     font-size: var(--font-size-8xl);
@@ -191,7 +203,7 @@
     gap: var(--gap-13xl);
   }
   .c-1 {
-    width: 170px !important;
+    /* width: 170px !important; */
   }
 }
 @media screen and (max-width: 450px) {

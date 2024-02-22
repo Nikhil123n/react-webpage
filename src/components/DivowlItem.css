@@ -88,3 +88,21 @@
   color: var(--color-gray-100);
   font-family: var(--font-inter);
 }
+
+@media screen and (max-width: 1350px) {
+  .divowl-item {
+    width: 32.5%;
+  }  
+}
+@media screen and (max-width: 1200px) {
+  .divowl-item {
+    width: 49%;
+  }  
+}
+@media screen and (max-width: 600px) {
+  .divowl-item {
+    width: 48%;
+    margin-top: 25px;
+  }  
+}
+

@@ -72,6 +72,18 @@
     line-height: 60px;
   }
 }
+@media screen and (max-width: 550px) {
+  .link-fellowships1 {
+    height: 70px;
+    margin-left: -99%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .whatsapp-image-2023-07-14-at-0-icon{
+    width: 100%;
+    left: 0px;
+  }
+}
 @media screen and (max-width: 450px) {
   .into-arrow-svg {
     padding-top: var(--padding-60xl);
