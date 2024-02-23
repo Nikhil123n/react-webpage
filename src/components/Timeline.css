@@ -213,6 +213,10 @@ button.certificate-program-btn:hover {
   .tab-grp-1 {
     gap: 2px;
   }
+  .c-1, .c-2, .c-3, .c-4 {
+    /* width: 170px !important; */
+    width: 50%;
+  }
 }
 
 

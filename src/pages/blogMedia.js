@@ -20,28 +20,40 @@ const BlogMedia = () => {
   const StudentLoveProgram = 'none';
   const blogAndMediaList = [
     {
-        "eventName": 'Virtual Events',
+        "title": 'Expanding Horizons & Breaking Stereotypes: My Journey through the Public Speaking Masterclass by Hala Osman',
         "url": "https://learnwithleaders.com/wp-content/uploads/2023/07/empowerment.jpg",
+        "date": "August 11, 2023",
+        "href": "",
     },
     {
-        "eventName": 'In-School Programs',
-        "url": "",
+        "title": 'Carla’s Journey: Empowering Youth, Advocating for Change, and Mastering the Art of Debate',
+        "url": "/Carla’s-Journey.jpeg",
+        "date": "July 5, 2023",
+        "href": "/blog-media/carlas-journey-empowering-youth-advocating-for-change-and-mastering-the-art-of-debate/",
     },
     {
-        "eventName": 'Impact Stories',
-        "url": "",
+        "title": 'Masterclass on Entrepreneurial Thinking & Creativity – By Leen Khaled Mansour Awamleh, Jordan',
+        "url": "/blog-media-card-cover.jpg",
+        "date": "May 11, 2023",
+        "href": "",
     },
     {
-        "eventName": 'Testimonials',
-        "url": "",
+        "title": 'My Leadership Journey: Riddhi Javali, Grade 12, Bengaluru, India',
+        "url": "/blog-media-card-4.jpg",
+        "date": "April 11, 2023",
+        "href": "",
     },
     {
-        "eventName": 'Community Events',
-        "url": "",
+        "title": 'Acing your Public Speaking and Delivering an Impactful Speech',
+        "url": "/blog-media-card-5.jpg",
+        "date": "March 13, 2023",
+        "href": "",
     },
     {
-        "eventName": 'Rewards and Recognitions',
-        "url": "",
+        "title": '5 Ways to be an Effective Leader by Theo Harper',
+        "url": "/blog-media-card-6.jpg",
+        "date": "February 25, 2023",
+        "href": "",
     },
 ]
 
@@ -78,7 +90,7 @@ const BlogMedia = () => {
                             {Array.from( blogAndMediaList ).map((item, idx) => (
                                 
                                 <Col key={idx} className="col-12 col-md-6 col-lg-4 card-col-blog">
-                                    <a key={idx} href={item.url}  style={{ textDecoration: 'none', cursor: 'pointer' }} >
+                                    <a key={idx} href={item.href}  style={{ textDecoration: 'none', cursor: 'pointer' }} >
                                         <Card className="card-title-blog bg-transparent">
                                             <Card.Img variant="top" src="https://learnwithleaders.com/wp-content/uploads/2023/07/empowerment.jpg" />
                                             <Card.Body 
@@ -97,9 +109,9 @@ const BlogMedia = () => {
                                                       color:'#fff', 
                                                       letterSpacing: '0.015em',
                                                       fontStyle: 'normal',                                                      
-                                                      lineHeight: '20px',
+                                                      lineHeight: '1.72',
                                                       fontWeight: '400'}}>
-                                              Expanding Horizons & Breaking Stereotypes: My Journey through the Public Speaking Masterclass by Hala Osman
+                                              {item.title}
                                             </Card.Title>        
 
                                               <Card.Text style={{fontSize: '16px', 
@@ -113,7 +125,7 @@ const BlogMedia = () => {
                                                       
                                                       }}>
                                                 <span><img src="/rightarrowsvg-3.svg" alt="" ></img></span>
-                                                <span>July 5, 2023</span>
+                                                <span>{item.date}</span>
 
                                               </Card.Text>
                                             </Card.Body>

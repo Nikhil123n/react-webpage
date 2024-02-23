@@ -2,11 +2,13 @@ import { useCallback, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./StepperForm3.css";
 import styled from 'styled-components';
+import axios from "axios";
 
 const StepperForm3 = () => {  
   const navigate = useNavigate();
   const location = useLocation();
   const programRegFormData = location.state;
+  console.log(programRegFormData)
   
   const [q7, setQ7] = useState();
   const [q8, setQ8] = useState();
@@ -20,18 +22,43 @@ const StepperForm3 = () => {
 
   const onPreviousButtonClick = useCallback(() => {
     navigate("/stepper-2");
-  }, [navigate]);
-  console.log(programRegFormData)
+  }, [navigate]);  
 
-  const onSubmitButtonClick = useCallback(() => {
-    if (q7 !=undefined && q7?.trim() !== '' && q8 != undefined && q8?.trim() !== ''){
-      console.log(q7, q7, q8)
+
+
+  const onSubmitButtonClick = useCallback((e) => {
+    e.preventDefault();
+
+    if (!q7 || !q8 || !q9 || !q10 || !q11) {
+          alert('Please fill in all required fields.'); // Show alert if any required field is empty
+          return; // Stop further execution
     }
-    // navigate("/stepper-2");
-    console.log('error', q7, q8)
+    const finalFormData = {
+      ...programRegFormData,
+      "What is yourname?": q7,
+      "What country do you live in?": q8,
+      "What is your Mobile Number?":q9,
+      "Do you want us to send your parents information about our programs?If so, what is their email":q10,
+      "Do you have any questions about our programs?": q11
+    };
+      
+    axios.post("https://sheet.best/api/sheets/c082c78a-749f-4289-93fa-c8c859423521", finalFormData).then((response) => {
+    console.log(response);
+    setQ7('');
+    setQ8('');
+    setQ9('');
+    setQ10('');
+    setQ11('');
+  });
+    alert('Form submitted successfully');
+    navigate("/");
 
-  }, [navigate]);
-  console.log(programRegFormData)
+    
+  }, [navigate, q7, q8, q9, q10, q11, programRegFormData]);
+
+
+
+
 
   return (
     <div className="stepper-form-p-1">
@@ -97,7 +124,7 @@ const StepperForm3 = () => {
             <div className="spacer-1-parent5">
               <div className="spacer-112" />
               <div className="opt-311">
-                <input className="email2" onChange={e=> setQ7(e.target.value)} placeholder="Full Name" type="text" />                
+                <input className="email2" onChange={e=> setQ7(e.target.value)} value={q7} placeholder="Full Name" type="text" required />                
               </div>
             </div>
           </div>
@@ -117,7 +144,7 @@ const StepperForm3 = () => {
             <div className="spacer-1-parent5">
               <div className="spacer-112" />
               <div className="opt-311">
-                <input className="email2" onChange={e=> setQ8(e.target.value)} placeholder="Enter Country" type="text" />                
+                <input className="email2" onChange={e=> setQ8(e.target.value)} value={q8} placeholder="Enter Country" type="text" required/>                
               </div>
             </div>
           </div>
@@ -136,7 +163,7 @@ const StepperForm3 = () => {
             <div className="spacer-1-parent5">
               <div className="spacer-112" />
               <div className="opt-311">
-                <input className="email2" onChange={e=> setQ9(e.target.value)} placeholder="Mobile No" type="number" />                
+                <input className="email2" onChange={e=> setQ9(e.target.value)} value={q9} placeholder="Mobile No" type="number" />                
               </div>
             </div>
           </div>
@@ -158,7 +185,7 @@ const StepperForm3 = () => {
             <div className="spacer-1-parent5">
               <div className="spacer-112" />
               <div className="opt-311">
-                <input className="email2" onChange={e=> setQ10(e.target.value)} placeholder="Email" type="email" />                
+                <input className="email2" onChange={e=> setQ10(e.target.value)} value={q10} placeholder="Email" type="email" />                
               </div>
             </div>
           </div>
@@ -179,7 +206,7 @@ const StepperForm3 = () => {
             <div className="spacer-1-parent5 w-100">
               <div className="spacer-112" />
               <div className="opt-311 h-100">
-                <textarea className="email2 h-100" onChange={e=> setQ11(e.target.value)} placeholder="Type your answer" />               
+                <textarea className="email2 h-100" onChange={e=> setQ11(e.target.value)} value={q11} placeholder="Type your answer" />               
               </div>
             </div>
           </div>

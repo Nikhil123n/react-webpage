@@ -45,11 +45,22 @@ const StepperForm1 = () => {
     navigate("/");
   }, [navigate]);
  
-  const onNextButtonClick = useCallback(() => {
+  const onNextButtonClick = useCallback((e) => {
+    e.preventDefault();
+    // console.log({q1, q2, q3, q4, q5})
+
+    const stepper1Data = {
+      "Where should we email your program recommendations? This question is required.*": q1,
+      "What fields interest you most?": q2,
+      "When would you be ready to start a program?": q3,
+      "What would you like to gain from a program?": q4,
+      "Where should we email your program recommendations?": q5,      
+    }
+    
     // Check if all questions have values
     if (q1 !== undefined && q2 !== undefined && q3 !== undefined && q4 !== undefined && q5 !== undefined && q5?.trim() !== '') {
       navigate("/stepper-2", {
-        state: { q1, q2, q3, q4, q5 }
+        state: stepper1Data
       });
     } else {
       // Show error message or handle the case when all questions are not answered      
@@ -57,7 +68,7 @@ const StepperForm1 = () => {
     }
   }, [navigate, q1, q2, q3, q4, q5]);
 
-  console.log({q1, q2, q3, q4, q5})
+  
   
 
   return (
@@ -103,6 +114,8 @@ const StepperForm1 = () => {
           </div>
         </div>
         </div>
+
+
         <section className="form-grp-1">          
 
           {/* <Program Recommendation /> */}
@@ -124,7 +137,7 @@ const StepperForm1 = () => {
                     id="lang-1"
                     name="q1"
                     value="A. Grade 5-7"             
-                    onChange={e=> setQ1(e.target.value)}                        
+                    onChange={(e) => setQ1(e.target.value)}                                            
                   />
                   <Label htmlFor="lang-1" className="label-1" >A. Grade 5-7</Label>
                 </div>
@@ -429,7 +442,7 @@ const StepperForm1 = () => {
             <div className="spacer-1-parent5">
               <div className="spacer-112" />
               <div className="opt-311">
-                <input className="email2" onChange={e=> setQ5(e.target.value)} placeholder="Email" type="text" />                
+                <input className="email2" onChange={e=> setQ5(e.target.value)} value={q5} placeholder="Email" type="text" />                
               </div>
             </div>
           </div>

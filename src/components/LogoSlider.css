@@ -89,6 +89,14 @@
     }    
   }
 
+@media screen and (max-width: 450px){
+  .marquee-group, .marquee-group2 {
+    justify-content: flex-start;
+    width: 200%;
+    
+  }
+}
+
   @keyframes scrollX {
     from {
       left: translateX(0);

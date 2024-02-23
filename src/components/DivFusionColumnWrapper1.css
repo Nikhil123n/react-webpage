@@ -89,9 +89,9 @@
 @media (max-width: 768px) {
   .divfusion-layout-column {
     /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));  */
-    grid-template-columns: minmax(221px, 1fr);
     flex-direction: column;
-    margin-top: 10rem !important;
+    grid-template-columns: minmax(221px, 1fr);    
+    margin-top: 15rem !important;
     padding: 0 !important;
     
   }

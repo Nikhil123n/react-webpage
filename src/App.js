@@ -28,6 +28,7 @@ import BlogMedia from "./pages/blogMedia";
 import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
 import FAQ from "./pages/faq";
+import BlogMediaCard from "./pages/BlogMediaCard";
 
 
 
@@ -150,6 +151,8 @@ function App() {
       <Route path="/contact-us" element={<ContactUs />} />
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/faq" element={<FAQ />} />
+
+      <Route path="/blog-media/carlas-journey-empowering-youth-advocating-for-change-and-mastering-the-art-of-debate/" element={<BlogMediaCard />} />
       
     </Routes>    
   );

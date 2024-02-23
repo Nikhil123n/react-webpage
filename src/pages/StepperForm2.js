@@ -24,10 +24,10 @@ const StepperForm2 = () => {
   
   
   const onNextButtonClick = useCallback(() => {
-    if (q6 !== undefined && q6?.trim() !== '') {
+    if (q6 !== undefined && q6?.trim() !== '') {      
       const updatedFormData = {
         ...programRegFormData,
-        q6: q6
+        "What is the name of your school?": q6
       };
       navigate("/stepper-3", {
         state: updatedFormData
@@ -35,9 +35,9 @@ const StepperForm2 = () => {
     } else {      
       alert("Please answer all questions before proceeding.");
     }
-  }, [navigate, q6]);
-  // console.log(programRegFormData.length)
+  }, [navigate, q6, programRegFormData]);
 
+  
   return (
     <div className="stepper-form-p-1">
       <header className="search-user">
@@ -100,7 +100,7 @@ const StepperForm2 = () => {
             <div className="spacer-1-parent5">
               <div className="spacer-112" />
               <div className="opt-311">
-                <input className="email2" onChange={e=> setQ6(e.target.value)} placeholder="School Name" type="text" />                
+                <input className="email2" onChange={e=> setQ6(e.target.value)} value={q6} placeholder="School Name" type="text" />                
               </div>
             </div>
           </div>

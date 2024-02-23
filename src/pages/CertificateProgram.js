@@ -18,6 +18,7 @@ import "./CertificateProgram.css";
 
 const CertificateProgram = () => {
     const StudentLoveProgram = 'none';
+    const TakingRoomOutofClassroom = "Students will get access to the sessions where they will be coached by an Ivy-League mentor on the art, science, and fun of speaking their mind about relevant and international themes, to peers and mentors on an international stage."
     const style = {backgroundColor: 'rgba(0, 0, 0, 0)' }
     const beAChangemakers = {alignSelf: 'baseline'}
     const background = {
@@ -30,36 +31,99 @@ const CertificateProgram = () => {
 
     const whyLWL = [
       {
-          icon: "",
+          icon: "what-gain-1-1.png",
           head: "Build a strong portfolio",
-          content: "Gain a unique opportunity to enhance your skills and build a strong portfolio through various projects and initiatives.",
+          content: "Gain a unique opportunity to enhance your skills and build a strong portfolio through various projects and initiatives.",          
       },
       {
-          icon: "",
+          icon: "what-gain-1-2.png",
           head: "Break Limits",
           content: "Break down the unfair ‘limits’ of\nman-made barriers",
       },
       {
-          icon: "",
+          icon: "what-gain-1-3.png",
           head: "Powerful Networks",
           content: "Help students build\npowerful networks with\nglobal entities and enrich\nbonds with like-minded peers\nfrom around the world",
       },
       {
-          icon: "",
+          icon: "what-gain-1-4.png",
           head: "Young Mind",
           content: "Expose the young mind to a\nricher palette of possibilities",
       },
       {
-          icon: "",
+          icon: "what-gain-1-5.png",
           head: "Citizen Leaders",
           content: "Initiate a journey aimed to\nbuild holistic ‘Citizen Leaders’\nof tomorrow who are both globally\nprepared and locally sensitized",
       },
       {
-          icon: "",
+          icon: "what-gain-1-6.png",
           head: "Opportunity",
           content: "Bring the next generation\ncloser to opportunities that\ntheir parents and seniors lacked"
       },
-  ]
+    ]
+
+    const awardsRecog = [
+        {
+            icon: "what-gain-1-1.png",
+            head: "Certificate",
+            content: "Certificate of Participation provided to all participants.",          
+        },
+        {
+            icon: "awards-recognition-1-2.png",
+            head: "Webinars/Masterclass",
+            content: "Access to all LWL webinar/masterclass.",
+        },
+        {
+            icon: "what-gain-1-1.png",
+            head: "LwL Social Media Feature",
+            content: "Get a chance to be featured on Learn with Leaders’ Social Media platforms.",
+        },
+        {
+            icon: "awards-recognition-1-4.png",
+            head: "Portfolio Enhancement",
+            content: "Enhance your portfolio with certificates and projects.",
+        },        
+      ]
+    
+    const mentorsList = [
+        {
+            src:"tomokimatsuno.png",
+            mentor_name: "Tomoki Matsuno",
+            university: "Student, Harvard University",
+            previous_session: 'Government & East Asian Studies'
+        },
+        {
+            src:"Albie-Giandomenico.jpg",
+            mentor_name: "Albie Giandomenico",
+            university: "Student, Harvard University",
+            previous_session: 'Economics and Astrophysics'
+        },
+        {
+            src:"Sherry-Liu.png",
+            mentor_name: "Sherry Liu",
+            university: "Student, Harvard University",
+            previous_session: 'Applied Math in Economics and Computer Science'
+        },
+        {
+            src:"Francisco-Fernandez.jpg",
+            mentor_name: "Francisco Fernandez",
+            university: "Student, Harvard University",
+            previous_session: 'Philosophy and Education Studies'
+        },
+        {
+            src:"Ina-Bhoopalam.png",
+            mentor_name: "Ina Bhoopalam",
+            university: "Student, Harvard University",
+            previous_session: 'Economics'
+        },
+        {
+            src:"GraceLi.jpg",
+            mentor_name: "Grace Li  ",
+            university: "Student, Harvard University",
+            previous_session: 'CS, Neuroscience & Economics'
+        }
+
+    ]
 
     const toogleBarStylesCP = {
           color: '#878d92', 
@@ -104,7 +168,7 @@ const CertificateProgram = () => {
                       <li class="breadcrumb-item"></li>                      
                       <li class=" active" style={{fontSize: '18px', color:'#878D92', marginTop:'15px', color : '#F1B537' }} >  Our Offerings  </li>
                       <li class="breadcrumb-item"></li>                      
-                      <li class=" active" style={{fontSize: '18px', color:'#878D92', marginTop:'15px', color : '#F1B537' }} >  Certificate Programs  </li>
+                      <a href="/certificate"> <li class=" active" style={{fontSize: '18px', color:'#878D92', marginTop:'15px', color : '#F1B537' }} > Certificate Programs  </li></a>
                       <li class="breadcrumb-item"></li>                      
                       <li class=" active" style={{fontSize: '18px', color:'#878D92', marginTop:'15px' }} >  The Future Changemakers Program by Harvard Student Agencies  </li>
                   </ol>
@@ -117,10 +181,10 @@ const CertificateProgram = () => {
                   />
           </div>
 
-          <Container className="about-us-container" > 
+          <Container className="certificate-container" > 
                 {/* Row 1  */}
-                <Row style={{display: 'flex', justifyContent: 'space-between', padding: "25px 60px"}}>
-                    <Col>
+                <Row style={{display: 'flex', justifyContent: 'space-between', padding: "0px 60px 25px"}}>
+                    <Col style={{ alignSelf: "flex-end"}}>
                         <Row style={{ color: '#878D92', fontSize: '16px', padding: '0 0 10px 13px'}}>In collaborations with</Row>
                         <Row>
                           <img src="certificate-program-collabortion-logo.jpeg" 
@@ -194,7 +258,7 @@ const CertificateProgram = () => {
           </Container>
 
           <Container>
-          <div className="timeline">            
+            <div className="timeline">            
 
             <div className="event">
                 <div className="tab-grp-1" style={{gap: '0'}}>
@@ -223,16 +287,16 @@ const CertificateProgram = () => {
                    </button>
                 </div>
              </div>
-          </div>          
-          
+             </div>                    
           </Container>
 
           <section className="arrow-svg" id="about">
                 <div className="event-img-overlay-parent">
                     <DivcolLg 
                         removeGoldenHeader={{display: 'none' }} 
+                        timelineRemove={{display: 'none' }}
                         heading="Taking The Room Out Of The Classroom"
-                        // paragraph={TakingRoomOutofClassroom}
+                        paragraph={TakingRoomOutofClassroom}
                         imgPath="certificate-program-individual-page-common-img.jpg"
                     />
                 </div>
@@ -253,7 +317,7 @@ const CertificateProgram = () => {
                     {whyLWL.map((item, idx) => (
                         <Col key={idx} className="col-12 col-md-6 col-lg-4">
                         <Card className="about-us-card" style={{marginLeft: '1.5%', marginRight: '1.5%'}}>
-                            {/* <Card.Img variant="top" src="" /> */}
+                            <Card.Img style={{width: '57px', marginLeft: '10px'}}  variant="top" src={item.icon} />
                             <Card.Body>
                                 <Card.Title className="about-us-card-title" > {item.head} </Card.Title>
                                 <Card.Text className="about-us-card-text">
@@ -271,7 +335,7 @@ const CertificateProgram = () => {
                 </Row>
             </Container>
 
-            <Container className="mt-5" style={{marginBottom: '7rem'}} id='mentors'>
+            <Container className="mt-5" id='mentors'>
               <section className="hero-container">
                   <Row className="mb-4">
                     <Col>
@@ -301,8 +365,7 @@ const CertificateProgram = () => {
                       </div>                
                     </Col>
                 </Row> 
-                  
-                <div className="carousel-img-catelog-grp-1" 
+                <div className="carousel-img-catelog-grp-1 past-mentors-container" 
                     style={{
                             width: '100%',
                             left: '0',
@@ -310,7 +373,32 @@ const CertificateProgram = () => {
                             padding: '0px',
                             marginTop: '100px', // add again when max-width: 800px media screen                            
                           }}>
-                    <div className="divowl-stage-outer col-12 col-md-6 col-lg-4">
+                    <div className="divowl-stage-outer col-12 col-md-6 col-lg-4 three-card-display">
+                        {mentorsList.map((item, idx) => (
+                            <DivowlItem
+                                link900x5502Aboutjpg={item.src}
+                                heading5InnovationLeaders={item.mentor_name}
+                                startDateOctober21st={item.university}
+                                developSocialInnovationAn={item.previous_session}    
+                                rightArrowsvg="/rightarrowsvg@2x.png"  
+                                propPadding="var(--padding-14xl) var(--padding-4xs) var(--padding-smi) var(--padding-3xs)"                      
+                                divowlStyles={{
+                                    gap:'8px',
+                              }}
+                            />
+                        ))}
+                    </div>
+                </div>
+                  
+                {/* <div className="carousel-img-catelog-grp-1 past-mentors-container" 
+                    style={{
+                            width: '100%',
+                            left: '0',
+                            right: '0',
+                            padding: '0px',
+                            marginTop: '100px', // add again when max-width: 800px media screen                            
+                          }}>
+                    <div className="divowl-stage-outer col-12 col-md-6 col-lg-4 three-card-display">
                         <DivowlItem
                             link900x5502Aboutjpg="/link--900x5502aboutjpg@2x.png"
                             heading5InnovationLeaders={`Innovation & Leadership World Workshop`}
@@ -347,7 +435,7 @@ const CertificateProgram = () => {
                             propPadding="var(--padding-14xl) var(--padding-4xs) var(--padding-smi) var(--padding-3xs)"
                         />
                     </div>
-                </div>
+                </div> */}
               </section>
           </Container>      
 
@@ -364,11 +452,11 @@ const CertificateProgram = () => {
                     </div>
                 </Row>   
                 <Row  className="g-3">
-                    {whyLWL.map((item, idx) => (
+                    {awardsRecog.map((item, idx) => (
                         <Col key={idx} className="col-12 col-md-6 col-lg-3">
                         <Card className="about-us-card" style={{marginLeft: '1.5%', marginRight: '1.5%'}}>
-                            {/* <Card.Img variant="top" src="" /> */}
-                            <Card.Body>
+                            <Card.Img style={{width: '57px'}}  variant="top" src={item.icon} /> 
+                            <Card.Body style={{paddingLeft: '0px'}} >
                                 <Card.Title className="about-us-card-title" > {item.head} </Card.Title>
                                 <Card.Text className="about-us-card-text">
                                     {item.content.split('\n').map((line, index) => (
@@ -386,8 +474,8 @@ const CertificateProgram = () => {
             
           </Container>                
 
-          <Container className="" id="schedule">
-                <Row className="mb-4">
+          <Container className="mt-5" id="schedule">
+                <Row className="mb-5">
                     <div>
                         <h2>
                             Schedule
@@ -454,7 +542,7 @@ const CertificateProgram = () => {
 
                 </Row>
                 <Row className={toggleScheduleState === 2 ? "schedule-row2-data active-content" : "schedule-row2-data"} >
-                    <Col xs="auto" className="p-0">
+                    <Col lg="12" className="p-0">
                         <Row className="lb1-row1">
                             <p className="lb1"> Date </p>
                             <p className="lb1 lb1-white"> October 27, 2024 -Saturday </p>

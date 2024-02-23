@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    cursor: pointer; 
+    color: white;
+}
 .button.schedule-btn {    
     padding: 7px 4px;
     background-color: transparent;
@@ -13,9 +18,10 @@ button.schedule-btn:hover {
 button.schedule-btn:active,
 button.schedule-btn:focus  {
     background-color: #F1B537;
+    color: black;
 }
 .schedule-row2-data {
-    padding: 15px;
+    padding: 20px 15px;
     border: 1px solid #A1A1A6;
     border-color: #393939!important;
     border-width: 2px!important;
@@ -34,7 +40,7 @@ button.schedule-btn:focus  {
 }
 .lb1-white {
     color: #fff;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .lb1-row1,
 .lb1-row2 {
@@ -49,6 +55,7 @@ button.schedule-btn:focus  {
 }
 .schedule-col2-lb2 {
     line-height: 0.7;
+    margin-right: 20px;
 }
 
 .lb2-btn {
@@ -68,5 +75,56 @@ button.schedule-btn:focus  {
   }
   
 .schedule-row2-data {
-display: none;
+    display: none;
+}
+.card-body > .about-us-card-title.card-title.h5 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+div#mentors {
+    margin-bottom: 7rem;
+}
+.certificate-container {
+    background-color: #202020;   
+    align-items: left;
+    border: 5px;
+    /* max-width: 1352px;   */
+    /* padding: 30px; */
+    /* padding-left: 75px !important; 
+    padding-right: 75px !important; */
+    color: #878d92;
+    /* margin-bottom: 25px; */
+    font-size : 16px;   
+    width: max-content;    
+}
+.certificate-container.container {
+    margin-top: -10%; 
+  }
+  .certificate-container.container h2 {
+    color: #fff;
+    text-align: left;
+    font-size: 34px;
+    margin-bottom: 25px;
+  }
+  .certificate-container.container p {
+    margin-bottom: 0px;
+    letter-spacing: 0.92px;
+    width: max-content;
+  }
+
+@media screen and (min-width: 1350px) {
+    .three-card-display .divowl-item {
+        width: 33.33%;
+    }
+}
+@media screen and (max-width: 800px) {
+    div#mentors {    
+          margin-bottom: 0%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .three-card-display .divowl-item {
+        width: 100%;
+    }
 }

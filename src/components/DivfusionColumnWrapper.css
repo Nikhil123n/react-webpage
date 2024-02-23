@@ -6,6 +6,11 @@
   overflow: hidden;
   flex-shrink: 0;
 }
+.divfusion-image-element-icon {
+  margin-left: 100%;
+  transform: scale(1.5);
+  height: auto;
+}
 .programs2,
 .quick-links-parent {
   position: relative;
@@ -29,7 +34,7 @@
 .quick-links {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .media-contact-us-about-us-link {
   flex-direction: column;

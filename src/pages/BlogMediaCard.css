@@ -1,0 +1,70 @@
+.fusion-layout-column {
+    position: var(--awb-container-position);
+    float: left;
+    margin-top: var(--awb-margin-top);
+    margin-bottom: var(--awb-margin-bottom);
+    z-index: var(--awb-z-index);
+    top: var(--awb-absolute-top);
+    right: var(--awb-absolute-right);
+    bottom: var(--awb-absolute-bottom);
+    left: var(--awb-absolute-left);
+    filter: var(--awb-filter);
+    transition: var(--awb-transition);
+    /* width: var(--awb-col-width); */
+    order: var(--awb-col-order);
+    flex-grow: var(--awb-col-flex-grow);
+    flex-shrink: var(--awb-col-flex-shrink);
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+img.blog-media-card-cover-img {
+    vertical-align: top;
+    box-shadow: none!important;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.fusion-imageframe {
+    display: inline-block;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    max-width: var(--awb-max-width);
+    line-height: 1;
+    filter: var(--awb-filter);
+    transition: var(--awb-filter-transition);
+}
+
+p.blog-media-col2-para {
+    font-size: 34px;
+    line-height: 1.3;
+    font-weight: 600;
+    font-style: bold;
+    letter-spacing: 0px;
+
+}
+
+img.carla-journeys {
+    display: inline;
+    float: left;
+    margin-right: 15px;
+    /* max-width: 100%; */
+    height: auto;
+    width: 338px;
+}
+
+p.blog-media-content-para {
+    margin: 0 0 20px;
+    font-weight: 400;
+    margin-bottom: 0px !important;
+    font-size: 16px;
+    letter-spacing: 0.015em;
+    line-height: 1.72;
+    margin-top: 20px;
+    color: #fff;
+    text-align: start;
+}

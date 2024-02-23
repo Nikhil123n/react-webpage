@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="footer-frame">
             <div className="reach-us1">Reach us</div>
             <div className="link-teamlearnwithleadersc">
-              team@learnwithleaders.com
+              <a href="mailto:team@learnwithleaders.com" target="_blank"> team@learnwithleaders.com </a>
             </div>
             <div className="singapore">Singapore</div>
             <div className="india">India</div>
@@ -35,21 +35,21 @@ const Footer = () => {
             <div className="quick-links1">Quick Links</div>
             <div className="quick-links-menu">
               <div className="gallery1"> 
-                <a href={'/gallery'} style={{ textDecoration: 'none', cursor: 'pointer', color: 'white' }}>
+                <a href={'/gallery'} >
                   Gallery
                 </a>                
               </div>
               <div className="blog-media">
-                <a href={'/blog-media'} style={{ textDecoration: 'none', cursor: 'pointer', color: 'white' }}>
+                <a href={'/blog-media'} >
                   {`Blog & Media`}              
                 </a>
               </div>
               <div className="contact-us">
-              <a href={'/contact-us'} style={{ textDecoration: 'none', cursor: 'pointer', color: 'white' }}>
+              <a href={'/contact-us'} >
                 Contact us </a>
               </div>
               <div className="about-us">
-                <a href={'/about-us'} style={{ textDecoration: 'none', cursor: 'pointer', color: 'white' }}>  
+                <a href={'/about-us'} >  
                 About us</a>
               </div>
             </div>

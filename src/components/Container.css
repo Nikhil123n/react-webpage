@@ -165,7 +165,7 @@
     width: 100%;
   }
   .carousel-img-catelog-grp-1 {
-    top: auto; /* Reset the top property */
+    /* top: auto; Reset the top property */
     bottom: 0;
     left: 0;
     right: 0;

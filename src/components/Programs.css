@@ -141,7 +141,8 @@
   .certificates {
     font-size: var(--font-size-11xl);
     line-height: 40px;
-    justify-content: flex-start;
+    justify-content: center;
+    padding: 20px;
   }
   .programs {
     gap: 2px;

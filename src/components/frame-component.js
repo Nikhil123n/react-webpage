@@ -5,6 +5,9 @@ const FrameComponent = ({
   studentMobileNumber,
   india,
   chevronDown,
+  onChange,
+  value,
+
 }) => {
   return (
     <div className="text-desc-parent">
@@ -23,7 +26,8 @@ const FrameComponent = ({
             <img className="india-icon" alt="" src={india} />
             <img className="chevron-down-icon1" alt="" src={chevronDown} />
           </div>          
-          <input className="mobile-no" placeholder="Mobile no" type="number" min="1000000000" max="999999999999"/>
+          <input className="mobile-no" placeholder="Mobile no" type="number" min="1000000000" max="999999999999" onChange={onChange} 
+            value={value} />
         </div>
       </div>
     </div>

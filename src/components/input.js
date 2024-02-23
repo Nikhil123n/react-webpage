@@ -9,6 +9,10 @@ const Input = ({
   prop1,
   schoolName,
   schoolName1,
+  onChange1,
+  value1,
+  onChange2,
+  value2,
 }) => {
   return (
     <div className="input-5-6">
@@ -24,7 +28,7 @@ const Input = ({
         <div className="spacer-1-group">
           <div className="spacer-11" />
           <div className="opt-31">
-            <input className={classname} placeholder={selectYourCountry} type="text" />            
+            <input className={classname} placeholder={selectYourCountry} type="text" onChange={onChange1} value={value1}/>            
           </div>
         </div>
       </div>
@@ -41,7 +45,7 @@ const Input = ({
           <div className="spacer-12" />
           <div className="opt-32">
             {/* <div className="school-name1">{schoolName1}</div> */}
-            <input className="school-name1" placeholder={schoolName1} type="text" />
+            <input className="school-name1" placeholder={schoolName1} type="text" onChange={onChange2} value={value2}/>
           </div>
         </div>
       </div>

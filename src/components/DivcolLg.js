@@ -3,7 +3,7 @@ import React from "react";
 
 import "./DivcolLg.css";
 
-const DivcolLg = ({arrowStyles, heading, paragraph, imgPath, removeGoldenHeader}) => {
+const DivcolLg = ({arrowStyles, heading, paragraph, imgPath, removeGoldenHeader, timelineRemove}) => {
   const imgDefault = "/whatsappimage20230714at011517scaledjpg-1@2x.png"
 
   return (
@@ -16,6 +16,7 @@ const DivcolLg = ({arrowStyles, heading, paragraph, imgPath, removeGoldenHeader}
       <div className="into-arrow-svg">
         <DivcolLg1 propFlex="unset" propAlignSelf="stretch" heading={heading} 
                   arrowStyles={arrowStyles}
+                  timelineRemove={timelineRemove}
                   paragraph={paragraph}
           />
         <img style={arrowStyles} className="left-arrowsvg-icon1" alt="" src="/leftarrowsvg-2.svg" />

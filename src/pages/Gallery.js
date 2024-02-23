@@ -16,26 +16,32 @@ const Gallery = () => {
         {
             "eventName": 'Virtual Events',
             "url": "",
+            "imgPath": "Gallery/virtual_events_cover.jpg",
         },
         {
             "eventName": 'In-School Programs',
             "url": "",
+            "imgPath": "Gallery/in-school-programs-cover.jpg",
         },
         {
             "eventName": 'Impact Stories',
             "url": "",
+            "imgPath": "Gallery/impact_stories_cover.jpg",
         },
         {
             "eventName": 'Testimonials',
             "url": "",
+            "imgPath": "Gallery/testimonials.jpeg",
         },
         {
             "eventName": 'Community Events',
             "url": "",
+            "imgPath": "Gallery/community_events_cover.jpeg",
         },
         {
             "eventName": 'Rewards and Recognitions',
             "url": "",
+            "imgPath": "Gallery/rewards-recognition-cover.jpeg",
         },
     ]
 
@@ -73,7 +79,7 @@ const Gallery = () => {
                                 <Col key={idx} className="col-12 col-md-6 col-lg-4 card-col-gallery">
                                     <a key={idx} href={item.url}  style={{ textDecoration: 'none', cursor: 'pointer' }} >
                                         <Card className="card-title-gallery bg-transparent">
-                                            <Card.Img variant="top" src="/akshadatrainsstudentsandplantstreesaspartofthesustainablespacesprograminschoolsatdubaiscaledjpg@2x.png" />
+                                            <Card.Img variant="top" src={item.imgPath} />
                                             <Card.Body>
                                             <Card.Title > {item.eventName} </Card.Title>                                    
                                                 <img src="/rightarrowsvg-3.svg" alt="" ></img>
