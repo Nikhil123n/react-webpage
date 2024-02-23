@@ -55,7 +55,7 @@ const Certificate = () => {
 
       <Container>
           <Row>
-            <Col style={{padding: '5px', marginLeft: '30px'}}>
+            {/* <Col style={{padding: '5px', marginLeft: '30px'}}>
               <InputGroup className="mb-3 certificate-input-group-btn" variant="outline-secondary" >
                 <InputGroup.Text id="basic-addon1">
                     <FontAwesomeIcon icon={faSearch} className="angle-right-icon" swapOpacity size="lg" />            
@@ -73,7 +73,8 @@ const Certificate = () => {
                   <Dropdown.Item href="#/action-2">Category</Dropdown.Item>
                   <Dropdown.Item href="#/action-3">Type</Dropdown.Item>
                 </DropdownButton>            
-            </Col>          
+            </Col> */}
+
             <Col>
                 <Row style={{display: 'none'}}>
                   <Col>
