@@ -115,6 +115,7 @@ const Certificate = () => {
                 
             </Col>
           </Row>
+          
           <GridElements 
             data={certificateFigureData}
             />

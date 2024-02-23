@@ -1,5 +1,6 @@
-import { useMemo } from "react";
+import { useMemo, useCallback } from "react";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import "./DivowlItem.css";
 
@@ -15,15 +16,28 @@ const DivowlItem = ({
   propAlignSelf,
   propGap,
   className,
+  card,
 }) => {
+
+  
   const divcitemcontentStyle = useMemo(() => {
     return {
       padding: propPadding,
     };
   }, [propPadding]);
 
+  const navigate = useNavigate();
+  const onCardClick = useCallback(() => {
+    navigate("/certificate-program",{
+      state: card ? card : "The Leadership Competition by the Harvard MUN Team"
+    });
+  }, [navigate]);
+
+
+
+
   return (
-    <div className="divowl-item" style={className}>
+    <div className="divowl-item" onClick={onCardClick} style={className}>
       <img
         className="link-900x550-2-aboutjpg"
         alt=""

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import { Row, Col, ButtonGroup } from "react-bootstrap";
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
@@ -15,12 +15,15 @@ import DivfusionColumnWrapper from "../components/DivfusionColumnWrapper";
 import { Button } from "@coreui/coreui";
 import "./CertificateProgram.css";
 
+import { useNavigate, useLocation } from "react-router-dom";
 
-const CertificateProgram = () => {
+
+
+const CertificateProgram = ({card, prgName}) => {
     const StudentLoveProgram = 'none';
     const TakingRoomOutofClassroom = "Students will get access to the sessions where they will be coached by an Ivy-League mentor on the art, science, and fun of speaking their mind about relevant and international themes, to peers and mentors on an international stage."
     const style = {backgroundColor: 'rgba(0, 0, 0, 0)' }
-    const beAChangemakers = {alignSelf: 'baseline'}
+    const beAChangemakers = {alignSelf: 'baseline'}    
     const background = {
         backgroundColor: 'rgba(0, 0, 0, 0)',
         borderStyle: 'inset',
@@ -150,6 +153,29 @@ const CertificateProgram = () => {
             setToggleScheduleState(index);          
         }
       };
+      
+    const navigate = useNavigate();
+    const location = useLocation();
+    const programCardData = location.state;
+    // console.log(programCardData);    
+
+    const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const monthNamesF = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"];
+
+    const dateh = new Date(parseInt(programCardData.date));
+    const earlyApplicationDate = new Date(parseInt(programCardData.earlyApplicationDate));
+    const deadline = new Date(parseInt(programCardData.deadline));
+    // console.log(date, date.getFullYear())
+    
+    const onLinkExploreClick = useCallback(() => {
+        navigate("/program-reg",{
+        state: programCardData.programName
+        });
+    }, [navigate]);
+
+    
 
     return (
         <div className="home">
@@ -168,9 +194,9 @@ const CertificateProgram = () => {
                       <li class="breadcrumb-item"></li>                      
                       <li class=" active" style={{fontSize: '18px', color:'#878D92', marginTop:'15px', color : '#F1B537' }} >  Our Offerings  </li>
                       <li class="breadcrumb-item"></li>                      
-                      <a href="/certificate"> <li class=" active" style={{fontSize: '18px', color:'#878D92', marginTop:'15px', color : '#F1B537' }} > Certificate Programs  </li></a>
+                      <a href="/certificate"> <li class=" active" style={{fontSize: '18px', color:'#878D92', marginTop:'15px', color : '#F1B537' }} > {programCardData.category}  </li></a>
                       <li class="breadcrumb-item"></li>                      
-                      <li class=" active" style={{fontSize: '18px', color:'#878D92', marginTop:'15px' }} >  The Future Changemakers Program by Harvard Student Agencies  </li>
+                      <li class=" active" style={{fontSize: '18px', color:'#878D92', marginTop:'15px' }} >  {programCardData.programName}  </li>
                   </ol>
               </nav>                    
             </div>
@@ -199,8 +225,8 @@ const CertificateProgram = () => {
                                         borderRadius: "0 0 5px 5px"
                                         }}>
                         <Row style={{color: "#878D92", margin: "0 0 10px" }}>Starts on</Row>
-                        <Row style={{color: "#F1B537", fontSize: '24px', fontWeight: '600', margin: "0 0 10px", lineHeight: '20px'}}>12 Oct</Row>
-                        <Row style={{color: "#fff", margin: "0 0 10px"}}>2024</Row>                        
+                        <Row style={{color: "#F1B537", fontSize: '24px', fontWeight: '600', margin: "0 0 10px", lineHeight: '20px'}}>{dateh.getDate()} {monthNames[dateh.getMonth()]}</Row>
+                        <Row style={{color: "#fff", margin: "0 0 10px"}}>{dateh.getFullYear()}</Row>                        
                     </Col>
                 </Row>
 
@@ -208,17 +234,17 @@ const CertificateProgram = () => {
                 <Row style={{display: 'flex', justifyContent: 'space-between', padding: "25px 60px"}}>
                     <Col>
                         <Row style={{ color: '#fff', fontWeight: '600', lineHeight: '1.3'}}>
-                          <h2 style={{marginBottom: '0px', padding: '0 0 10px 0px'}}>The Future Changemakers Program by Harvard Student Agencies</h2>
+                          <h2 style={{marginBottom: '0px', padding: '0 0 10px 0px'}}>{programCardData.programName}</h2>
                         </Row>
                         <Row style= {{color: "#878D92", fontWeight: '400', fontSize: '20px', important: 'true'}}> 
-                          <i style={{paddingLeft: '0px'}}>Empowering the next generation of innovators and leaders for a better tomorrow.</i>
+                          <i style={{paddingLeft: '0px'}}>{programCardData.description}</i>
                         </Row>
                           
                     </Col>
                     <Col xs="auto" style={{alignSelf: 'center' }}>
                         
                         <Row style={{color: "#F1B537", fontSize: '24px', fontWeight: '600', margin: "0 0 10px", lineHeight: '20px'}}>
-                                <button className="button" >
+                                <button className="button" onClick={onLinkExploreClick} >
                                     <div className="lets-talk">Apply Now</div>
                                     <FontAwesomeIcon icon={faAngleRight} className="angle-right-icon" swapOpacity />            
                                 </button>
@@ -230,25 +256,25 @@ const CertificateProgram = () => {
                 <Row style={{display: 'flex', justifyContent: 'space-between', padding: "25px 60px"}}>
                     <Col style={{ padding: '0 25px 20px 0'}}>
                         <Row style={{ color: '#878D92', fontSize: '15px', paddingBottom: '5px'}}> <p>Eligibility</p> </Row>
-                        <Row style={{ color: '#fff', fontSize: '17px' }} > <p>Grades 8th-12th</p> </Row>                          
+                        <Row style={{ color: '#fff', fontSize: '17px' }} > <p> {programCardData.eligibility} </p> </Row>                          
                     </Col>
                     <Col style={{ padding: '0 25px 20px 0'}}>
                         <Row style={{ color: '#878D92', fontSize: '15px', paddingBottom: '5px'}}> <p>Duration</p> </Row>
-                        <Row style={{ color: '#fff', fontSize: '17px' }} > <p>4 Weekends</p> </Row>                          
+                        <Row style={{ color: '#fff', fontSize: '17px' }} > <p> {programCardData.duration} </p> </Row>                          
                     </Col>
                     <Col style={{ padding: '0 25px 20px 0'}}>
                         <Row style={{ color: '#878D92', fontSize: '15px', paddingBottom: '5px'}}> <p>Early Application Date</p> </Row>
-                        <Row style={{ color: '#fff', fontSize: '17px', paddingBottom: '5px'}} > <p>31 August, 2024</p> </Row>                          
+                        <Row style={{ color: '#fff', fontSize: '17px', paddingBottom: '5px'}} > <p>{earlyApplicationDate.getDate()} {monthNamesF[earlyApplicationDate.getMonth()]}, {earlyApplicationDate.getFullYear()}</p> </Row>                          
                         <Row style={{ color: '#F1B537', fontSize: '12px' }} > <p>[Regular Date: 15 Sep, 2024]</p> </Row>                          
                     </Col>
                     <Col style={{ padding: '0 25px 20px 0'}}>
                         <Row style={{ color: '#878D92', fontSize: '15px', paddingBottom: '5px'}}> <p>Program Fee for Early Applicants</p> </Row>
-                        <Row style={{ color: '#fff', fontSize: '17px', paddingBottom: '5px' }} > <p>USD 350</p> </Row>                          
-                        <Row style={{ color: '#F1B537', fontSize: '12px' }} > <p>[Regular Fee: USD 450]</p> </Row>                          
+                        <Row style={{ color: '#fff', fontSize: '17px', paddingBottom: '5px' }} > <p>{programCardData.programFee}</p> </Row>                          
+                        <Row style={{ color: '#F1B537', fontSize: '12px' }} > <p>[Regular Fee: {programCardData.regularFee}]</p> </Row>                          
                     </Col>
                     <Col style={{ padding: '0 25px 20px 0'}}>
                         <Row style={{ color: '#878D92', fontSize: '15px', paddingBottom: '5px'}}> <p>Application Deadline</p> </Row>
-                        <Row style={{ color: '#fff', fontSize: '17px' }} > <p>15 September, 2024</p> </Row>                          
+                        <Row style={{ color: '#fff', fontSize: '17px' }} > <p>{deadline.getDate()} {monthNamesF[deadline.getMonth()]}, {deadline.getFullYear()}</p> </Row>                          
                     </Col>
                     <Col style={{ padding: '0 25px 20px 0'}}>
                         <Row style={{ color: '#878D92', fontSize: '15px', paddingBottom: '5px'}}> <p>Program Delivery</p> </Row>
@@ -295,9 +321,9 @@ const CertificateProgram = () => {
                     <DivcolLg 
                         removeGoldenHeader={{display: 'none' }} 
                         timelineRemove={{display: 'none' }}
-                        heading="Taking The Room Out Of The Classroom"
-                        paragraph={TakingRoomOutofClassroom}
-                        imgPath="certificate-program-individual-page-common-img.jpg"
+                        heading={programCardData.programName}
+                        paragraph={programCardData.about}
+                        imgPath={programCardData.image}
                     />
                 </div>
           </section>
@@ -486,7 +512,7 @@ const CertificateProgram = () => {
                     </div>
                 </Row> 
                 <Row  className="g-3">
-                    <ButtonGroup style={{gap: '15px', overflow: 'hidden', overflowX: 'scroll', scrollbarWidth: 'none'}}>
+                    {/* <ButtonGroup style={{gap: '15px', overflow: 'hidden', overflowX: 'scroll', scrollbarWidth: 'none'}}>
                         <button className="button schedule-btn" onClick={() => toggleSchedule(1)} >
                             <div className={toggleScheduleState === 1 ? "lets-talk active-tabs": "lets-talk"} >Week 1 | Day 1</div>                            
                         </button>
@@ -512,9 +538,17 @@ const CertificateProgram = () => {
                             <div className={toggleScheduleState === 8 ? "lets-talk active-tabs": "lets-talk"} >Week 4 | Day 2</div>                            
                         </button>
                         
+                    </ButtonGroup> */}
+
+                    <ButtonGroup style={{gap: '15px', overflow: 'hidden', overflowX: 'scroll', scrollbarWidth: 'none'}}>
+                        {programCardData.schedule.map((item, index) => (
+                            <button key={index} className="button schedule-btn" onClick={() => toggleSchedule(index + 1)}>
+                            <div className={toggleScheduleState === index + 1 ? "lets-talk active-tabs" : "lets-talk"}>{item.tabTitle}</div>
+                            </button>
+                        ))}
                     </ButtonGroup>
                 </Row>
-                <Row className={toggleScheduleState === 1 ? "schedule-row2-data active-content" : "schedule-row2-data"} >
+                {/* <Row className={toggleScheduleState === 1 ? "schedule-row2-data active-content" : "schedule-row2-data"} >
                     <Col xs="auto" className="p-0">
                         <Row className="lb1-row1">
                             <p className="lb1"> Date </p>
@@ -567,7 +601,37 @@ const CertificateProgram = () => {
                         </Row>                                                
                     </Col>
 
-                </Row>
+                </Row> */}
+                
+                {programCardData.schedule.map((item, index) => (
+                    <Row key={index} className={toggleScheduleState === index + 1 ? "schedule-row2-data active-content" : "schedule-row2-data"}>
+                        <Col xs="auto" className="p-0">
+                        <Row className="lb1-row1">
+                            <p className="lb1"> Date </p>
+                            <p className="lb1 lb1-white"> {new Date(Number(item.date)).toLocaleDateString('en-US', { month: 'long', day: '2-digit', year: 'numeric' })} - {new Date(Number(item.date)).toLocaleDateString('en-US', { weekday: 'long' })} </p>
+                        </Row>
+                        <Row className="lb1-row2" >
+                            <p className="lb1"> Time </p>
+                            <p className="lb1 lb1-white"> {item.time} </p>
+                        </Row>
+                        </Col>
+                        <Col className="schedule-col2-lb2">
+                        <b className="schedule-lb2"> Date: {new Date(Number(item.date)).toLocaleDateString('en-US', { month: 'long', day: '2-digit', year: 'numeric' })} </b> <br></br>
+                        <b className="schedule-lb2"> Session {index + 1} </b> <br></br>
+                        <b className="schedule-lb2"> {item.description.split('\n').map((line, index) => (
+                                                        <p key={index} className="lb1 ">{line}</p>
+                                                        ))} </b>
+                        </Col>
+                        <Col xs="auto" style={{ alignSelf: 'center' }}>
+                        <Row style={{ color: "#F1B537", fontSize: '24px', fontWeight: '600', margin: "0 0 10px", lineHeight: '20px' }}>
+                            <button className="button lb2-btn" onClick={onLinkExploreClick}  >
+                                <div className="lets-talk" >Apply Now</div>
+                            </button>
+                        </Row>
+                        </Col>
+                    </Row>
+                    ))}
+
 
 
           </Container>

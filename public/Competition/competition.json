@@ -1,7 +1,6 @@
 [
     {
-      "category": "Competition programs",
-      "image": "/Competition/feature.jpg",
+      "image": "/feature.jpg",
       "programName": "The HUCEG Sustainability Leaders Challenge",
       "description": "Kick start your sustainability journey with mentors from Harvard HUCEG.",
       "hashtag": "#CompetitionsSustainability",
@@ -65,8 +64,7 @@
       ]
     },
     {
-      "category": "Competition programs",
-      "image": "/Competition/future-lawyer.jpeg",
+      "image": "/future-lawyer.jpeg",
       "programName": "The Leadership Competition by the Harvard MUN Team",
       "description": "Learn leadership skills from Harvard student mentors, compete in challenges & develop project proposals to benefit your community.",
       "hashtag": "#CompetitionsLeadership",
@@ -112,8 +110,7 @@
       ]
     },
     {
-      "category": "Competition programs",
-      "image": "/Competition/wolve.jpg",
+      "image": "/wolve.jpg",
       "programName": "The Wolves of Wall Street Competition",
       "description": "Harvard Student Agencies presents - The World’s first Global Stock Market Competition for the Youth.",
       "hashtag": "#Competitions",

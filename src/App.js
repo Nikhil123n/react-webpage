@@ -144,7 +144,7 @@ function App() {
       <Route path="/conference" element={<Conference />} />
       <Route path="/internship" element={<Internship />} />
       <Route path="/masterclass" element={<Masterclass />} />
-      <Route path="/certificates-program" element={<CertificateProgram />} />
+      <Route path="/certificate-program" element={<CertificateProgram />} />
 
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/blog-media" element={<BlogMedia />} />

@@ -1,39 +1,332 @@
 [
     {
-      "image": "/aiml1jpg@2x.png",
+      "category": "Certificate programs",
+      "image": "/Certificate/world-debate.jpeg",
+      "programName": "World Debate Stars with the Harvard MUN Team (ICMUN)",
+      "programURL": "world-debate-stars-with-the-harvard-MUN-team-(ICMUN)",
+      "description": "A Unique and Intensive 2-Weekend Program on developing fundamental skills in argumentation and persuasion in personal and academic life.",
+      "hashtag": "#CertifcateLeadership",
+      "date": 1708773981000,
+      "eligibility": "Grades 6th-12th",
+      "duration": "2 Weekends",
+      "earlyApplicationDate": 1707996381000,
+      "programFee": "USD 300",
+      "regularFee": "USD 400",
+      "deadline": 1708601181000,
+      "about": "World Debate Stars with the Harvard MUN Team is a course spread over two weekends and is led by qualified Student Mentors who have gained valuable experience debating through their involvement competing on the collegiate MUN circuit.",
+      "schedule": [
+        {
+          "tabTitle": "Week 1| Day 1",
+          "date": "1708773981000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Theme: The Fundamentals of Argumentation\nStudents will attend a webinar on creating convincing arguments, focusing on rhetorical strategies and selection of evidence for arguments.\nTopic 1: Rhetorical Strategies in Debate\nTopic 2: The Keystone of an Argument: Evidence"
+        },
+        {
+          "tabTitle": "Week 1| Day 2",
+          "date": "1708860381000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Students will attend a webinar on counterarguments, focusing on anticipating what others might say and effective methods of rebuttal.\nTopic 1: Planning for Your Opponent’s Argument\nTopic 2: Refute and Rebut: The Core of a Counterargument"
+        },
+        {
+          "tabTitle": "Week 2| Day 1",
+          "date": "1709378781000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Theme: Thinking on Your Feet\nStudents will attend a webinar on necessary debate skills, focusing on public speaking in debate and ways to capture attention in an argument.\nTopic 1: Being a Successful Orator in Debate\nTopic 2: All Eyes on Me: Standing Out in an Argument"
+        },
+        {
+          "tabTitle": "Week 2| Day 2",
+          "date": "1709465181000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "1 - Students will attend a session on coming up with arguments on the spot, focusing on general frameworks for building an argument and strategies for avoiding getting flustered in a debate.\n2 - Mock Debate"
+        }
+      ]
+    },
+    {
+      "category": "Certificate programs",
+      "image": "/Certificate/future-lawyer.jpeg",
+      "programName": "Future Lawyers Level 2 Program",
+      "programURL": "future-lawyers-level-2-program",
+      "description": "Dive deeper into the legal system & take a closer look into the specifics of law.",
+      "hashtag": "#CertifcateLaw",
+      "date": "1708773981000",
+      "eligibility": "Grades 8th-12th",
+      "duration": "2 Weekends",
+      "earlyApplicationDate": "1707564381000",
+      "programFee": "USD 300",
+      "regularFee": "USD 400",
+      "deadline": "1708428381000",
+      "about": " This course is an extension of Future Lawyers Level I and allows students to gain a further understanding of the legal system. Level II dives deeper into specific fields of law, such as constitutional, cyber, corporate, and international law, introduces students to the schools of legal philosophy, and takes a closer look at law school and jobs available in the legal system.",
+      "schedule": [
+        {
+          "tabTitle": "Week 1| Day 1",
+          "date": "1708773981000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "9:00-9:20: Introductions + Icebreakers\n9:20-9:50: Lecture: Constitutional Law\n9:50 - 10:15: Worksheet: Amendments and the Law\n10:15-10:20: Break\n10:20-10:50: Lecture: Cyber-Law\n10:50-11:15: Cyber Law Worksheet\n11:15-11:20: Break\n11:20-11:55: Case Study Research Project Introduction\n11:55-12:00: Feedback Form and Homework Reminder"
+        },
+        {
+          "tabTitle": "Week 1| Day 2",
+          "date": "1708860381000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "09:00-09:15: Icebreakers, Schedule Review\n09:15-09:55: Lecture: Corporate Law\n09:55 - 10:15: Corporate Law Kahoot\n10:15-10:20: Break\n10:20-11:00: Lecture: Legal Theory\n11:00-11:25: Worksheet: The Minds Behind Legal Philosophy\n11:25-11:30: Break\n11:30-11:55: Case Study Research Project Check-In and Work Session\n11:55-12:00: Feedback Form and Homework Reminder"
+        },
+        {
+          "tabTitle": "Week 2| Day 1",
+          "date": "1709378781000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "09:00-09:15: Icebreakers, Schedule Review\n09:15-09:55: Lecture: Law School 101\n09:55 - 10:15: LSAT Writing Section Activity\n10:15-10:20: Break\n10:20-11:00: Lecture: Jobs in the Legal System\n11:00-11:25: Worksheet: Jobs In Your Community\n11:25-11:30: Break\n11:30-11:55: Case Study Research Project Check-In\n11:55-12:00: Feedback Form and Homework Reminder"
+        },
+        {
+          "tabTitle": "Week 2| Day 2",
+          "date": "1709465181000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "09:00-09:15: Icebreakers, Schedule Review\n09:15-09:55: Lecture: International Law\n09:55 - 10:20: Worksheet: Law Across The Globe\n10:20-10:25: Break\n10:25-11:25: Final Project Presentations\n11:25-11:30: Break\n11:30-11:55: Harvard Q&A\n11:55-12:00: Final Feedback Form"
+        }
+      ]
+    },
+    {
+      "category": "Certificate programs",
+      "image": "/Certificate/ai-ml.jpg",
       "programName": "AI and ML Bootcamp",
-      "description": "Cultivate your acumen in Python, Artificial Intelligence, and Machine Learning"
-      
+      "description": "Cultivate your acumen in Python, Artificial Intelligence, and Machine Learning.",
+      "hashtag": "#CertifcateLeadership",
+      "date": "1710588381000",
+      "eligibility": "Grades 6th-12th",
+      "duration": "2 Weeks",
+      "earlyApplicationDate": "1708860381000",
+      "programFee": "USD 300",
+      "regularFee": "USD 400",
+      "deadline": "1709637981000",
+      "about": "The Ai and ML Bootcamp is 2-weeks of power-packed skills in Python, Artificial Intelligence, and Machine Learning under the guidance of qualified student mentors. This program allows high school students to learn in-depth about structuring the algorithms and utilizing codes to formulate their own Fake News Detector. Prior experience in Python coding is not required.",
+      "schedule": [
+        {
+          "tabTitle": "Week 1| Day 1",
+          "date": "1710588381000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Review of Python Fundamentals\nUnderstanding Data Structures, Function Syntax, and OOP\nGoal: Students gain a fundamental grasp of Python programming and will be able to solve simple problems."
+        },
+        {
+          "tabTitle": "Week 1| Day 2",
+          "date": "1710674781000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Intermediate Python Knowledge\nLibraries and Advanced Mechanics: Algorithms, Binary Trees, and Advanced Structures.\nGoal: Students will be able to handle non-trivial Python programs utilizing various common libraries like NumPy and Pandas."
+        },
+        {
+          "tabTitle": "Week 2| Day 1",
+          "date": "1711193181000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Python with ML and AI\nExample applications utilizing Python code for ML and AI; Students learn through a project implementing these technologies using Python.\nGoal: Students understand how Python fits into common ML and AI projects, preparing them for their own projects."
+        },
+        {
+          "tabTitle": "Week 2| Day 2",
+          "date": "1711279581000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Python Fake News AI Detection Algorithm Project\nGoal: Students will be able to code and complete their own fake news detector using ML and Python principles taught during the course."
+        }
+      ]
     },
     {
-      "image": "/whatsappimage20230714at125555amjpeg@2x.png",
-      "programName": "Future Lawyers’ Program by Harvard",
-      "description": "Use the power of law to bring about a positive change in society"
-      
+      "category": "Certificate programs",
+      "image": "/Certificate/future-doctor.jpg",
+      "programName": "Future Doctors’ Level 1 Program",
+      "description": "Use the power of medicine to positively impact human lives.",
+      "hashtag": "#CertifcateMedicine",
+      "date": "1712402781000",
+      "eligibility": "Grades 8th-12th",
+      "duration": "2 Weekends",
+      "earlyApplicationDate": "1709205981000",
+      "programFee": "USD 300",
+      "regularFee": "USD 400",
+      "deadline": "1710501981000",
+      "about": "Future Doctors' Program seeks to introduce students to the fundamentals of pre-medical studies. The program covers various topics, including content modules on genetic inheritance, hormones, immunology, and organic chemistry. It also explores case studies on various diseases, poses medical ethics questions, and offers an opportunity to dissect scientific papers. The program aims to prepare students for a career in medicine by providing an overview of the MCAT process, as well as the chance to hear first-hand about the process from qualified student mentors.",
+      "schedule": [
+        {
+          "tabTitle": "Week 1| Day 1",
+          "date": "1712402781000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "1. Introductions & Icebreakers\n2. Program Overview & Final Project Introduction\n3. Module: Genetics\n4. Genetics Interactive Activity\n5. Group Work Time: Disease Preferences"
+        },
+        {
+          "tabTitle": "Week 1| Day 2",
+          "date": "1712489181000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "1. Module: Immunology\n2. CRISPR Case Study\n3. Final Project Group Work\n4. How to be Pre-Med + Q&A"
+        },
+        {
+          "tabTitle": "Week 2| Day 1",
+          "date": "1713007581000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "1. Introduction to Organic Chemistry\n2. ORGO Module 1: Hydrocarbons & Alkanes\n3. ORGO Module 2: Alkyl Side Groups & Naming\n4. ORGO Module 3: Other Side Groups\n5. Final Practice & Wrap Up"
+        },
+        {
+          "tabTitle": "Week 2| Day 2",
+          "date": "1713093981000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "1. Presentations\n2. Harvard Q&A"
+        }
+      ]
     },
     {
-      "image": "/pexelspixabay1393921536x1024jpg@2x.png",
-      "programName": "Harvard Model Congress Young Leaders",
-      "description": "A life-changing 2-Week Virtual Program for future leaders"
-      
+      "category": "Certificate programs",
+      "image": "/Certificate/harvad-model.jpg",
+      "programName": "Harvard Model Congress Young Leadership Program",
+      "description": "A life-changing 2-Week Virtual Program for High School Students to Create Impactful Change with Project-Based, Experiential Learning.",
+      "hashtag": "#CertificateCritical ThinkingLeadership",
+      "date": "1713007581000",
+      "eligibility": "Grades 8th-12th",
+      "duration": "2 Weekends",
+      "earlyApplicationDate": "1710501981000",
+      "programFee": "USD 300",
+      "regularFee": "USD 400",
+      "deadline": "1711884381000",
+      "about": "Harvard Model Congress (HMC) stands as the world’s largest congressional simulation conference, offering high school students an immersive and dynamic experience. With participation open to students from the United States and abroad, HMC presents a unique opportunity to engage in a realistic model congress simulation. The entire event is organized and run by our devoted team of Harvard undergraduates, ensuring a high-quality and impactful experience for all participants.",
+      "schedule": [
+        {
+          "tabTitle": "Week 1| Day 1",
+          "date": "1713007581000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Day 1: Problem Solving (Case)\n9 AM - 10 AM EST : Problem Solving Framework\n10 AM - 11 AM EST: Tackling Cases\n11 AM - 12 PM EST: Cases and presentations"
+        },
+        {
+          "tabTitle": "Week 1| Day 2",
+          "date": "1713093981000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Day 2: Negotiation and Conflict Resolution in a Divided World\n9 AM - 9:45 AM EST: “Winning as much as you can” activity\n9:45 AM - 10:45 AM EST: The 5 Critical Elements of rational negotiation\n10:45 AM - 12 PM EST: Rational negotiation in the real world activity"
+        },
+        {
+          "tabTitle": "Week 2| Day 1",
+          "date": "1713612381000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Day 3: Acing Public Speaking\n9 AM - 10 AM EST: Workshop: Public Speaking Techniques\n10 AM - 11 AM EST: Rhetoric Analysis\n11 AM -12 PM EST: Workshop 'Art of Persuasion'"
+        },
+        {
+          "tabTitle": "Week 2| Day 2",
+          "date": "1713698781000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Day 4: • Debate Workshop & Presentations\n9 AM - 10 AM EST: Debate Workshop\n10 AM - 11 AM EST: Debate Practicum\n11 AM - 12 PM EST: Final Presentations and Reflections"
+        }
+      ]
     },
     {
-      "image": "/ent21jpg@2x.png",
-      "programName": "Future Entrepreneurs Program by Harvard",
-      "description": "Who Said Start-Ups Are Only For Grown-Ups? Explore Entrepreneurship with us!"
-      
+      "category": "Certificate programs",
+      "image": "/Certificate/future-lawyer.jpeg",
+      "programName": "Future Lawyers’ Program by Harvard Student Agencies",
+      "description": "Use the power of  law to bring about a positive change.",
+      "hashtag": "#CertificateLaw",
+      "date": "1713612381000",
+      "eligibility": "Grades 8th-12th",
+      "duration": "2 Weekends",
+      "earlyApplicationDate": "1712316381000",
+      "programFee": "USD 300",
+      "regularFee": "USD 400",
+      "deadline": "1713180381000",
+      "about": "The Future' Lawyers Program aims to orient students to the field of law. The program covers the due process of law, the many careers in the world of law, the difficult-to-navigate requirements of the application to law school, and much more.",
+      "schedule": [
+        {
+          "tabTitle": "Week 1| Day 1",
+          "date": "1713612381000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "1. Introductions & Icebreakers\n2. Week Overview & Final Project Introduction\n3. The US Court System Lecture\n4. Activity: Your State Court\n5. Federal vs. State Court Divides (Lecture)\n6. Brainstorm for Final Project"
+        },
+        {
+          "tabTitle": "Week 1| Day 2",
+          "date": "1713698781000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "1. How to Read Cases? (Lecture)\n2. Activity: Case-Reading\n3. How to Write a Position Paper?\n4. Activity: Interactive Thesis Writing\n5. Office Hour Style Work Time: Writing a Position Paper for Final Project"
+        },
+        {
+          "tabTitle": "Week 2| Day 1",
+          "date": "1714217181000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "1. How to be Pre-Law, Practice LSAT Questions, & Law Field Activity\n2. Small Claims State Law (Lecture)\n3. Final Edits/Peer Review\n4. Slide Deck Building for Final Presentations"
+        },
+        {
+          "tabTitle": "Week 2| Day 2",
+          "date": "1714303581000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "1. Student Presentations\n2. Activity: Analytical Reasoning\n3. Harvard Q&A"
+        }
+      ]
     },
     {
-      "image": "/whatsappimage20230714at125208am1jpeg@2x.png",
-      "programName": "World Debate Stars with the Harvard Debate Council",
-      "description": "A Unique and Intensive 2-Weekend Program for Future Debaters"
-      
+      "category": "Certificate programs",
+      "image": "/Certificate/future-doctor.jpg",
+      "programName": "Future Doctors’ Level 2 Program",
+      "description": "Get an immersive, hands-on experience of the world of medicine.",
+      "hashtag": "#CertificateMedicine",
+      "date": "1713612381000",
+      "eligibility": "Grades 8th-12th",
+      "duration": "2 Weekends",
+      "earlyApplicationDate": "1712316381000",
+      "programFee": "USD 300",
+      "regularFee": "USD 400",
+      "deadline": "1713180381000",
+      "about": "The Advanced Doctors Program relies on prior knowledge from The Future Doctors (Level I) program to give students the tools to fill the shoes of an emergency room doctor or a triage nurse in patient care. Students will learn about human physiology, the pathologies that affect it, and the tools needed to diagnose and treat those pathologies.",
+      "schedule": [
+        {
+          "tabTitle": "Week 1| Day 1",
+          "date": "1713612381000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "1. Introduction & Icebreakers\n2. Heart and Coronary Artery Disease Lecture\n3. Lung Lecture\n4. Activity in Small Groups\n5. Muscles & ALS Lecture\n6. Radiological Scans Examination & Discussion"
+        },
+        {
+          "tabTitle": "Week 1| Day 2",
+          "date": "1713698781000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "1. Renal Failure & ESRD Lecture\n2. Digestive System & Reports\n3. Skin & Basal Cell Carcinoma Lecture\n4. Blood Testing Activity"
+        },
+        {
+          "tabTitle": "Week 2| Day 1",
+          "date": "1714217181000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "1. Brain Lecture\n2. Endocrine System\n3. Associated Diseases & SOAP Note Format\n4. Final Project Preparation"
+        },
+        {
+          "tabTitle": "Week 2| Day 2",
+          "date": "1714303581000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "1. Case Study Walkthrough\n2. Present Final Projects\n3. Harvard Q&A"
+        }
+      ]
     },
     {
-      "image": "/whatsappimage20230714at10028am1536x1025jpeg@2x.png",
-      "programName": "Future MUN Leaders by the Harvard International Relations Council",
-      "description": "Becoming a Best Delegate: A Step by Step Guide"
-      
-    }
-    
+      "category": "Certificate programs",
+      "image": "/Certificate/world-debate.jpeg",
+      "programName": "World Debate Stars with the Harvard MUN Team (ICMUN)",
+      "description": "A Unique and Intensive 2-Weekend Program on developing fundamental skills in argumentation and persuasion in personal and academic life.",
+      "hashtag": "#CertificateLeadership",
+      "date": "1714217181000",
+      "eligibility": "Grades 6th-12th",
+      "duration": "2 Weekends",
+      "earlyApplicationDate": "1707996381000",
+      "programFee": "USD 300",
+      "regularFee": "USD 400",
+      "deadline": "1709205981000",
+      "about": "World Debate Stars with the Harvard MUN Team is a course spread over two weekends and is led by qualified Student Mentors who have gained valuable experience debating through their involvement competing on the collegiate MUN circuit.",
+      "schedule": [
+        {
+          "tabTitle": "Week 1| Day 1",
+          "date": "1714217181000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Theme: The Fundamentals of Argumentation\nStudents will attend a webinar on creating convincing arguments, focusing on rhetorical strategies and selection of evidence for arguments.\nTopic 1: Rhetorical Strategies in Debate\nTopic 2: The Keystone of an Argument: Evidence"
+        },
+        {
+          "tabTitle": "Week 1| Day 2",
+          "date": "1714303581000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Students will attend a webinar on counterarguments, focusing on anticipating what others might say and effective methods of rebuttal.\nTopic 1: Planning for Your Opponent’s Argument\nTopic 2: Refute and Rebut: The Core of a Counterargument"
+        },
+        {
+          "tabTitle": "Week 2| Day 1",
+          "date": "1714821981000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Theme: Thinking on Your Feet\nStudents will attend a webinar on necessary debate skills, focusing on public speaking in debate and ways to capture attention in an argument.\nTopic 1: Being a Successful Orator in Debate\nTopic 2: All Eyes on Me: Standing Out in an Argument"
+        },
+        {
+          "tabTitle": "Week 2| Day 2",
+          "date": "1714908381000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "1 - Students will attend a session on coming up with arguments on the spot, focusing on general frameworks for building an argument and strategies for avoiding getting flustered in a debate.\n2 - Mock Debate"
+        }
+      ]
+    }                              
 ]

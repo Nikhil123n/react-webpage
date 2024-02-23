@@ -5,7 +5,7 @@ import "./gridElements.css";
 import DivowlItem from "./DivowlItem";
 const value = 4;
 
-const GridElements = ({data, gridTemplateValue}) => {
+const GridElements = ({data, gridTemplateValue, prgName}) => {
   console.log(data, gridTemplateValue)
 
   const value = gridTemplateValue !== undefined ? gridTemplateValue : 4;
@@ -26,7 +26,7 @@ const GridElements = ({data, gridTemplateValue}) => {
               />
             ))} */}
 
-            {data.map((item, index) => (
+            {data.map((item, index) => (              
               <DivowlItem
                 link900x5502Aboutjpg={item.image}
                 heading5InnovationLeaders={item.programName}
@@ -34,6 +34,8 @@ const GridElements = ({data, gridTemplateValue}) => {
                 developSocialInnovationAn={item.description}
                 // entrepreneurialSpirit="entrepreneurial spirit"
                 rightArrowsvg="/rightarrowsvg@2x.png"
+                card = {item}
+
                 className={{
                   width: 'auto',
                   overflow: 'hidden',
