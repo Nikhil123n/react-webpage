@@ -260,6 +260,9 @@
   .what-is-learn-with-leaders-parent {
     align-items: center;
   }
+  .quick-links-group {
+    padding-right: 0px;
+  }
 }
 
 .symbols-frame a{

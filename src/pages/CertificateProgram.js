@@ -618,28 +618,28 @@ const CertificateProgram = ({card, prgName}) => {
                 {programCardData.schedule.map((item, index) => (
                     <Row key={index} className={toggleScheduleState === index + 1 ? "schedule-row2-data active-content" : "schedule-row2-data"}>
                         <Col xs="auto" className="p-0">
-                        <Row className="lb1-row1">
-                            <p className="lb1"> Date </p>
-                            <p className="lb1 lb1-white"> {new Date(Number(item.date)).toLocaleDateString('en-US', { month: 'long', day: '2-digit', year: 'numeric' })} - {new Date(Number(item.date)).toLocaleDateString('en-US', { weekday: 'long' })} </p>
-                        </Row>
-                        <Row className="lb1-row2" >
-                            <p className="lb1"> Time </p>
-                            <p className="lb1 lb1-white"> {item.time} </p>
-                        </Row>
+                            <Row className="lb1-row1">
+                                <p className="lb1"> Date </p>
+                                <p className="lb1 lb1-white"> {new Date(Number(item.date)).toLocaleDateString('en-US', { month: 'long', day: '2-digit', year: 'numeric' })} - {new Date(Number(item.date)).toLocaleDateString('en-US', { weekday: 'long' })} </p>
+                            </Row>
+                            <Row className="lb1-row2" >
+                                <p className="lb1"> Time </p>
+                                <p className="lb1 lb1-white"> {item.time} </p>
+                            </Row>
                         </Col>
-                        <Col className="schedule-col2-lb2">
-                        <b className="schedule-lb2"> Date: {new Date(Number(item.date)).toLocaleDateString('en-US', { month: 'long', day: '2-digit', year: 'numeric' })} </b> <br></br>
-                        <b className="schedule-lb2"> Session {index + 1} </b> <br></br>
-                        <b className="schedule-lb2"> {item.description.split('\n').map((line, index) => (
-                                                        <p key={index} className="lb1 ">{line}</p>
-                                                        ))} </b>
+                        <Col xs="auto" md="8" lg="6" className="schedule-col2-lb2">
+                            <p><b className="schedule-lb2"> Date: {new Date(Number(item.date)).toLocaleDateString('en-US', { month: 'long', day: '2-digit', year: 'numeric' })} </b></p> <br></br>
+                            
+                            <p><b className="schedule-lb2"> {item.description.split('\n').map((line, index) => (
+                                                            <p key={index} className="lb2 ">{line}</p>
+                                                            ))} </b></p>
                         </Col>
                         <Col xs="auto" style={{ alignSelf: 'center' }}>
-                        <Row style={{ color: "#F1B537", fontSize: '24px', fontWeight: '600', margin: "0 0 10px", lineHeight: '20px' }}>
-                            <button className="button lb2-btn" onClick={onLinkExploreClick}  >
-                                <div className="lets-talk" >Apply Now</div>
-                            </button>
-                        </Row>
+                            <Row style={{ color: "#F1B537", fontSize: '24px', fontWeight: '600', margin: "0 0 10px", lineHeight: '20px' }}>
+                                <button className="button lb2-btn" onClick={onLinkExploreClick}  >
+                                    <div className="lets-talk" >Apply Now</div>
+                                </button>
+                            </Row>
                         </Col>
                     </Row>
                     ))}

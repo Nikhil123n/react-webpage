@@ -18,6 +18,9 @@
   justify-content: flex-start;
   padding: 0 var(--padding-12xl) 0 0;
   align-self: start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .start-date-october {
   position: relative;
@@ -42,6 +45,10 @@
   letter-spacing: 0.24px;
   line-height: 20px;
   text-transform: uppercase;
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .right-arrowsvg-icon {
   height: 15px;
@@ -76,7 +83,7 @@
   padding: var(--padding-14xl) var(--padding-3xs) var(--padding-smi);
   gap: 8px;
   z-index: 1;
-  margin-top: -115px;
+  margin-top: -100px;
 }
 .divowl-item {
   width: 322.2px;

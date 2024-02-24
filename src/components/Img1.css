@@ -36,6 +36,9 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .students-conceptualized-novel {
   align-self: stretch;

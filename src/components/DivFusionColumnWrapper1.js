@@ -48,8 +48,8 @@ const DivFusionColumnWrapper1 = () => {
           />
           <Figure1
             whatsAppImage20230714At12="/whatsappimage20230714at125555amjpeg@2x.png"
-            futureLawyersProgramByHar="Future Lawyers’ Program by Harv…"
-            useThePowerOfLawToBringAb="Use the power of  law to bring about a p…"
+            futureLawyersProgramByHar="Future Lawyers’ Program by Harv…Future Lawyers’ "
+            useThePowerOfLawToBringAb="Use the power of  law to bring about a p…  "
             rightArrowsvg="/rightarrowsvg-3.svg"
             card={certificateFigureData[5]}
           />
@@ -59,8 +59,8 @@ const DivFusionColumnWrapper1 = () => {
             useThePowerOfLawToBringAb="A life-changing 2-Week Virtual Program f…"
             rightArrowsvg="/rightarrowsvg-3.svg"
             propPadding="var(--padding-19xl) var(--padding-3xs) var(--padding-19xl) var(--padding-4xs)"
-            propAlignSelf="unset"
-            propFlex="unset"
+            // propAlignSelf="unset"
+            // propFlex="unset"
             card={certificateFigureData[4]}
           />
           <Figure1
@@ -69,7 +69,7 @@ const DivFusionColumnWrapper1 = () => {
             useThePowerOfLawToBringAb="Who Said Start-Ups Are Only For Grown-…"
             rightArrowsvg="/rightarrowsvg-3.svg"
             propPadding="var(--padding-19xl) var(--padding-3xs) var(--padding-19xl) var(--padding-4xs)"
-            propAlignSelf="unset"
+            // propAlignSelf="unset"
             card={certificateFigureData[0]}   // not its own - default one - update its data 
           />
           <Figure1
@@ -78,8 +78,8 @@ const DivFusionColumnWrapper1 = () => {
             useThePowerOfLawToBringAb="A Unique and Intensive 2-Weekend Progr…"
             rightArrowsvg="/rightarrowsvg-3.svg"
             propPadding="var(--padding-19xl) var(--padding-3xs) var(--padding-19xl) var(--padding-4xs)"
-            propAlignSelf="unset"
-            propFlex="unset"
+            // propAlignSelf="unset"
+            // propFlex="unset"
             card={certificateFigureData[7]}
           />
           <Figure

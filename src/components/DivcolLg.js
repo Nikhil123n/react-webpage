@@ -24,7 +24,7 @@ const DivcolLg = ({arrowStyles, heading, paragraph, imgPath, removeGoldenHeader,
         src={imgPath ? imgPath : imgDefault}
       />
       <div className="into-arrow-svg">
-        <DivcolLg1 propFlex="unset" propAlignSelf="stretch" heading={heading} 
+        <DivcolLg1 propAlignSelf="stretch" heading={heading} 
                   arrowStyles={arrowStyles}
                   timelineRemove={timelineRemove}
                   paragraph={paragraph}

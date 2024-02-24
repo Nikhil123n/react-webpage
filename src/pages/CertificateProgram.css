@@ -55,10 +55,16 @@ button.schedule-btn:focus  {
     font-size: 18px;    
 }
 .schedule-col2-lb2 {
-    line-height: 0.7;
+    line-height: 0;
     margin-right: 20px;
+    font-weight: 300;
 }
-
+.lb2 {
+    margin-bottom: 5%;
+}
+.schedule-lb2 {
+    margin-top: 5%;
+}
 .lb2-btn {
     padding: 10px 15px;
 }

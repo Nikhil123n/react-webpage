@@ -21,6 +21,10 @@
   align-items: center;
   flex-shrink: 0;
   z-index: 1;
+  align-self: flex-start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .becoming-a-best {
   position: relative;
@@ -32,7 +36,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: 0;
   box-sizing: border-box;
 }
