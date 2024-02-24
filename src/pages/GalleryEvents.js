@@ -21,10 +21,14 @@ const GalleryEvents = () => {
     const eventData = location.state;
     const eventName = "In School Programs".toLowerCase().replace(/ /g, "_");
 
-    console.log("eventData")
-    console.log(eventData, eventName)
+    // console.log("eventData")
+    // console.log(eventData, eventName)
     
     const school_programs = InSchoolProgramsData[eventData.toLowerCase().replace(/ /g, "_")];
+    
+    const onGalleryClick = useCallback(() => {
+        navigate("/gallery");
+    }, [navigate]);
 
 
     return (
@@ -42,7 +46,7 @@ const GalleryEvents = () => {
                                 </a>
                             </li>      
                             <li class="breadcrumb-item"></li>                      
-                            <li class=" active" style={{fontSize: '18px', color:'#878D92', marginTop:'15px', color : '#F1B537' }} >  Gallery  </li>
+                            <li class=" active" style={{fontSize: '18px', color:'#878D92', marginTop:'15px', color : '#F1B537' }} onClick={onGalleryClick}>  Gallery  </li>
                             <li class="breadcrumb-item"></li>                      
                             <li class=" active" style={{fontSize: '18px', color:'#878D92', marginTop:'15px' }} >  {eventData} </li>
                         </ol>

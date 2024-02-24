@@ -50,6 +50,7 @@ const DivFusionColumnWrapper1 = () => {
             whatsAppImage20230714At12="/whatsappimage20230714at125555amjpeg@2x.png"
             futureLawyersProgramByHar="Future Lawyers’ Program by Harv…"
             useThePowerOfLawToBringAb="Use the power of  law to bring about a p…"
+            rightArrowsvg="/rightarrowsvg-3.svg"
             card={certificateFigureData[5]}
           />
           <Figure1

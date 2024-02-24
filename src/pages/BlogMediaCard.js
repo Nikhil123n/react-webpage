@@ -1,4 +1,6 @@
 import React from "react";
+import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
@@ -11,6 +13,11 @@ import "./BlogMediaCard.css";
 const BlogMediaCard = () => {    
     const blogHeading = "Carla’s Journey: Empowering Youth, Advocating for Change, and Mastering the Art of Debate";
     const blogMediaCover= '/blog-media-card-cover-default.jpg'
+
+    const navigate = useNavigate();
+    const onLinkClick = useCallback(() => {
+        navigate("/blog-media");
+    }, [navigate]);
 
     return (
     
@@ -28,7 +35,7 @@ const BlogMediaCard = () => {
                                 </a>
                             </li>      
                             <li class="breadcrumb-item"></li>                      
-                            <li class=" active" style={{fontSize: '18px', color:'#F1B537', marginTop:'15px' }} >  Blog & Media  </li>
+                            <li class=" active" style={{fontSize: '18px', color:'#F1B537', marginTop:'15px' }} onClick={onLinkClick}>  Blog & Media  </li>
                             <li class="breadcrumb-item"></li>                      
                             <li class=" active" style={{fontSize: '18px', color:'#878D92', marginTop:'15px' }} >  {blogHeading}  </li>
                         </ol>

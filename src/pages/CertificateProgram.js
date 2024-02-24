@@ -175,6 +175,17 @@ const CertificateProgram = ({card, prgName}) => {
         });
     }, [navigate]);
 
+
+    let prevProgramPage = programCardData.category.split(" ")[0].toLowerCase();
+    prevProgramPage = "/" + prevProgramPage;
+    // console.log(prevProgramPage)
+    const onPreviousLinkClick = useCallback(() => {
+        navigate(prevProgramPage);
+    }, [navigate, prevProgramPage]);
+
+    
+
+
     
 
     return (
@@ -194,7 +205,7 @@ const CertificateProgram = ({card, prgName}) => {
                       <li class="breadcrumb-item"></li>                      
                       <li class=" active" style={{fontSize: '18px', color:'#878D92', marginTop:'15px', color : '#F1B537' }} >  Our Offerings  </li>
                       <li class="breadcrumb-item"></li>                      
-                      <a href="/certificate"> <li class=" active" style={{fontSize: '18px', color:'#878D92', marginTop:'15px', color : '#F1B537' }} > {programCardData.category}  </li></a>
+                      <a> <li class=" active" style={{fontSize: '18px', color:'#878D92', marginTop:'15px', color : '#F1B537' }} onClick={onPreviousLinkClick} > {programCardData.category}  </li></a>
                       <li class="breadcrumb-item"></li>                      
                       <li class=" active" style={{fontSize: '18px', color:'#878D92', marginTop:'15px' }} >  {programCardData.programName}  </li>
                   </ol>
@@ -656,14 +667,7 @@ const CertificateProgram = ({card, prgName}) => {
             <Row lg='6' className="mt-4" style={{justifyContent: 'space-evenly'}}> 
               <Col>
                   <Row>
-                    <p style={{
-                      color: '#f1b537',
-                      margin: '0 0 0 20px',
-                      fontSize: '50px',
-                      fontWeight: '600',
-                      lineHeight: '61px',
-                      
-                    }}><b><b><b>1000+</b></b></b></p>
+                    <p className= "half-font-size-para1"><b><b><b>1000+</b></b></b></p>
                   </Row>
                   <Row>
                   <span style={{
@@ -677,14 +681,7 @@ const CertificateProgram = ({card, prgName}) => {
               </Col>
               <Col>
                   <Row>
-                    <p style={{
-                      color: '#f1b537',
-                      margin: '0 20px 0 0',
-                      fontSize: '50px',
-                      fontWeight: '600',
-                      lineHeight: '61px',
-                      
-                    }}><b><b><b>25+</b></b></b></p>
+                    <p className="half-font-size-para1"><b><b><b>25+</b></b></b></p>
                   </Row>
                   <Row>
                     <span style={{

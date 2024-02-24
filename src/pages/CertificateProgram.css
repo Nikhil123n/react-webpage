@@ -112,7 +112,13 @@ div#mentors {
     color: #fff;
   }
 
-
+  p.half-font-size-para1 {
+    color: #f1b537;
+    margin: 0 0 0 20px;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 61px;
+  }
 
 
 @media screen and (min-width: 1350px) {
@@ -132,7 +138,10 @@ div#mentors {
     }
     h1.h1-testimnoials, 
     h1.h1-testimnoials  {
-        font-size: 40px;
+        font-size: 30px;
+    }
+    p.half-font-size-para1 {
+        font-size: 27px;
     }
 }
 
