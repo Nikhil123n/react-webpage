@@ -1,13 +1,19 @@
 import Img1 from "./Img1";
 import Img from "./Img";
 import React, { useState } from "react";
-import eventData from "./student-events.json";
 import "./Timeline.css";
 
 const Timeline = () => {
+
+  const InSchoolProgramsData = require('../json/inSchoolPrograms.json');
+  
+
   const [toggleState, setToggleState] = useState(1);
 
-  const programs = eventData.school_programs;
+  const school_programs = InSchoolProgramsData.in_school_programs;
+  const impact_stories = InSchoolProgramsData.impact_stories;
+  const testimonials = InSchoolProgramsData.testimonials;
+  const community_events = InSchoolProgramsData.community_events;
   // console.log(eventData, programs);
 
   // const toggleTab = (index) =>  {
@@ -83,38 +89,48 @@ const Timeline = () => {
         </div> */}
           
         <div className={toggleState === 1 ? "div-fusion-image-element active-content" : "div-fusion-image-element"}  >    
-        {programs.map((event, index) => (          
-            <Img1
-              propBackgroundImage= {event.img_url}              
-              heading={event.location + ' | ' + event.venue}                                            
-            />            
-        ))}  
+          {school_programs.map((event, index) => (          
+              <Img1
+                propBackgroundImage= {event.img_url}              
+                heading={event.location + ' | ' + event.venue}    
+                galleryUrl = '/gallery/in-school-programs'                                        
+                galleryEventName = 'In School Programs'
+              />            
+          ))}  
         </div>    
         
 
         <div className={toggleState === 2 ? "div-fusion-image-element active-content" : "div-fusion-image-element"}  >    
-          <Img1
-            catelogImg1="Gallery/Ahmedabad International School-India-HMCSF.jpeg"
-            heading="Indonesia| Binus School Simprug"
-            propBackgroundImage= ""             
-            studentsConceptualizedNov="Students conceptualized novel business ideas addressing real-world issues"
-          />
+          {impact_stories.map((event, index) => (          
+              <Img1
+                propBackgroundImage= {event.img_url}              
+                heading={event.location + ' | ' + event.venue}                                            
+                galleryUrl = '/gallery/impact-stories'      
+                galleryEventName = "Impact Stories"                                  
+              />            
+          ))}  
         </div>
 
         <div className={toggleState === 3 ? "div-fusion-image-element active-content" : "div-fusion-image-element"}  >    
-          <Img1
-            catelogImg1="/catelog-img-1@2x.png"
-            heading="Indonesia| Binus School Simprug"
-            studentsConceptualizedNov="Students conceptualized novel business ideas addressing real-world issues"
-          />
+          {testimonials.map((event, index) => (          
+              <Img1
+                propBackgroundImage= {event.img_url}              
+                heading={event.location + ' | ' + event.venue} 
+                galleryUrl = '/gallery/testimonials'         
+                galleryEventName = "Testimonials"                                  
+              />            
+          ))}  
         </div>
 
         <div className={toggleState === 4 ? "div-fusion-image-element active-content" : "div-fusion-image-element"}  >    
-          <Img1
-            catelogImg1="/catelog-img-1@2x.png"
-            heading="Indonesia| Binus School Simprug"
-            studentsConceptualizedNov="Students conceptualized novel business ideas addressing real-world issues"
-          />
+          {community_events.map((event, index) => (          
+              <Img1
+                propBackgroundImage= {event.img_url}              
+                heading={event.location + ' | ' + event.venue}                                            
+                galleryUrl = '/gallery/community-events'
+                galleryEventName = "Community Events"
+              />            
+          ))}  
         </div>
 
 

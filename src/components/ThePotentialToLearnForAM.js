@@ -16,24 +16,24 @@ const ThePotentialToLearnForAM = () => {
         </div>
         <div className="participants">
           <DivfusionColumnWrapper
-            divfusionImageElement="/divfusionimageelement.svg"
+            divfusionImageElement="programs-golden-logo.svg"
             quickLinksParent="40+"
             programs="Programs"
           />
           <DivfusionColumnWrapper
-            divfusionImageElement="/divfusionimageelement-1.svg"
+            divfusionImageElement="/fa_globe.svg"
             quickLinksParent="80+"
             programs="Countries"
             propOverflow="unset"            
           />
           <DivfusionColumnWrapper
-            divfusionImageElement="/divfusionimageelement-2.svg"
+            divfusionImageElement="/ph_users-three.svg"
             quickLinksParent="15k+"
             programs="Participants"
             propOverflow="unset"            
           />
           <DivfusionColumnWrapper
-            divfusionImageElement="/divfusionimageelement-3.svg"
+            divfusionImageElement="/ep_school.svg"
             quickLinksParent="1k+"
             programs="Schools"
             propOverflow="unset"            

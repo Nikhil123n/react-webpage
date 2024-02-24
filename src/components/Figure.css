@@ -78,4 +78,5 @@
   font-size: var(--font-size-base);
   color: var(--color-white);
   font-family: var(--font-inter);
+  cursor: pointer;
 }

@@ -30,7 +30,11 @@ import AboutUs from "./pages/AboutUs";
 import FAQ from "./pages/faq";
 import BlogMediaCard from "./pages/BlogMediaCard";
 
-
+import OfflinePrograms from "./pages/OfflinePrograms";
+import GalleryEvents from "./pages/GalleryEvents";
+import ImpactStories from "./pages/ImpactStories";
+import Testimonials from "./pages/Testimonials";
+import CommunityEvents from "./pages/CommunityEvents";
 
 
 function App() {
@@ -111,6 +115,10 @@ function App() {
         title = "FAQ's";
         metaDescription = "";
         break;
+      case "/offline-programs":
+        title = "Offline Programs";
+        metaDescription = "";
+        break;
     
     }
 
@@ -151,6 +159,14 @@ function App() {
       <Route path="/contact-us" element={<ContactUs />} />
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/faq" element={<FAQ />} />
+
+      <Route path="/offline-programs" element={<OfflinePrograms />} />
+
+      <Route path="/gallery/gallery-events" element={<GalleryEvents />} />
+      <Route path="/Gallery/impact-stories" element={<ImpactStories />} />
+      <Route path="/Gallery/testimonials" element={<Testimonials />} />
+      <Route path="/Gallery/community-events" element={<CommunityEvents />} />
+      
 
       <Route path="/blog-media/carlas-journey-empowering-youth-advocating-for-change-and-mastering-the-art-of-debate/" element={<BlogMediaCard />} />
       

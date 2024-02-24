@@ -7,9 +7,9 @@
   flex-shrink: 0;
 }
 .divfusion-image-element-icon {
-  margin-left: 100%;
+  margin-right: 20%;
   transform: scale(1.5);
-  height: auto;
+  /* height: auto; */
 }
 .programs2,
 .quick-links-parent {

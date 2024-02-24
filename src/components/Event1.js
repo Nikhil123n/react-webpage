@@ -1,5 +1,6 @@
-import { useMemo } from "react";
+import { useMemo, useCallback } from "react";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import "./Event1.css";
 
@@ -24,6 +25,7 @@ const Event1 = ({
   propAlignSelf1,
   propWidth3,
   propAlignSelf2,
+  card,
 }) => {
   const event2Style = useMemo(() => {
     return {
@@ -78,8 +80,15 @@ const Event1 = ({
     };
   }, [propAlignSelf2]);
 
+  const navigate = useNavigate();
+  const onCardClick = useCallback(() => {
+    navigate("/certificate-program",{
+      state: card ? card : "The Leadership Competition by the Harvard MUN Team"
+    });
+  }, [navigate]);
+
   return (
-    <div className="event-2" style={event2Style}>
+    <div className="event-2" style={event2Style} onClick={onCardClick}>
       <img className="event-img-1" alt="" src={eventImg1} />
       <div className="img-overlay-12" />
       <div className="programs-frame" style={programsFrameStyle}>

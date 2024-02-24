@@ -70,16 +70,17 @@ const ContactUs = () => {
                 <Row className="contactus-row">
                     <Col>
                         <Button variant="outline-secondary" className="contactus-button">                            
-                            <FontAwesomeIcon icon={faEnvelope} className="fa-regular" swapOpacity size="lg" />            
                             <span className="span-contactus">
+                            <FontAwesomeIcon icon={faEnvelope} className="fa-regular" swapOpacity size="lg" />            
+                            
                             TEAM@LEARNWITHLEADERS.COM
                             </span>
                         </Button>{''}
                     </Col>
                     <Col style={{textAlign: 'center'}}>
                         <Button variant="outline-secondary" className="contactus-button">                            
-                            <FontAwesomeIcon icon={faWhatsapp} className="fa-regular" swapOpacity size="lg" />            
                             <span className="span-contactus">
+                            <FontAwesomeIcon icon={faWhatsapp} className="fa-regular" swapOpacity size="lg" />                                        
                             +44 7868813293
                             </span>
                         </Button>{''}

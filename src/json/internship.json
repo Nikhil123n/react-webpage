@@ -1,14 +1,180 @@
 [
     {
+      "category": "Internship programs",
       "image": "/aiml1jpg@2x.png",
-      "programName": "AI and ML Bootcamp",
-      "description": "Cultivate your acumen in Python, Artificial Intelligence, and Machine Learning"
-      
+      "programName": "HDFC Capital Advisors: Corporate Internship Project",
+      "description": "In collaboration with Harvard Entrepreneurship Collective and Learn with Leaders. Embark on an 8-week Experiential Learning Project Tackling a Fortune 500 real-world business problem, guided by a Harvard undergraduate mentor to craft live solutions that address the impact of Green Finance for residential",
+      "hashtag": "#Competitions",
+      "date": "1713612381000",
+      "eligibility": "Grades 8th-12th",
+      "duration": "12 Weeks",
+      "earlyApplicationDate": "1708860381000",
+      "programFee": "USD 80",
+      "regularFee": "USD 100",
+      "deadline": "1709637981000",
+      "about": "The Wolves of the Wall Street Challenge is a 12-week investment competition challenging students to develop an intelligent portfolio strategy, trade strategically, and rise to the top of the investor leader board. Participants can choose to enter the competition individually or in a team. Participants choosing to enter in a team will be assigned to global teams of 3-4 members each by the organization. ",
+      "schedule": [
+        {
+          "tabTitle": "Week 1",
+          "date": "1713612381000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Competition kickoff\n1. Welcome\n2. Investing 101"
+        },
+        {
+          "tabTitle": "Week 2",
+          "date": "1714217181000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Investing Intentionally\n1. Value v. Growth\n2. InvestingDiversification\n3. Bond valuation"
+        },
+        {
+          "tabTitle": "Week 3",
+          "date": "1714821981000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Mentorship Session\n1. Workshop by Wall Street Experts\n2. Interactive mentoring session with HSA mentors (Office Hours)"
+        },
+        {
+          "tabTitle": "Week 4",
+          "date": "1715426781000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Active Analysis 3\n1. Technical stock analysis\n2. Trend analysis\n3. Market analysis"
+        },
+        {
+            "tabTitle": "Week 5",
+            "date": "1716031581000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Diving into Derivatives\n1. Risks and rewards of derivatives\n2. Options trading\n3. Short selling"
+          },
+          {
+            "tabTitle": "Week 6",
+            "date": "1716636381000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Presenting Professionally\n1. Analyzing and presenting your portfolio\n2. Tips for the portfolio presentation"
+          },
+          {
+            "tabTitle": "Week 7",
+            "date": "1717241181000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Mentorship Session\n1. Interactive mentoring session with HSA Mentors (Office Hours)"
+          },
+          {
+            "tabTitle": "Week 8",
+            "date": "1717845981000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Mentorship Session\n1. Interactive mentoring session with HSA Mentors (Office Hours)"
+          },
+          {
+            "tabTitle": "Week 9",
+            "date": "1718450781000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Personal Finance\n1. Advice for personal wealth management\n2. Budgeting\n3. Concluding thoughts on program before judging begins"
+          },
+          {
+            "tabTitle": "Week 10",
+            "date": "1719055581000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Mentorship Session\n1. Interactive mentoring & feedback session with HSA Mentors."
+          },
+          {
+            "tabTitle": "Week 11",
+            "date": "1719660381000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Semi - Final"
+          },
+          {
+            "tabTitle": "Week 12",
+            "date": "1720265181000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Challenge concluded\n1. Top 10 participants present their portfolio to judges for the final round\n2. Winners announced"
+          }
+      ]      
     },
     {
+      "category": "Internship programs",
       "image": "/whatsappimage20230714at125555amjpeg@2x.png",
       "programName": "Future Lawyers’ Program by Harvard",
-      "description": "Use the power of law to bring about a positive change in society"
-      
+      "description": "Use the power of law to bring about a positive change in society",
+      "hashtag": "#Competitions",
+      "date": "1713612381000",
+      "eligibility": "Grades 8th-12th",
+      "duration": "12 Weeks",
+      "earlyApplicationDate": "1708860381000",
+      "programFee": "USD 80",
+      "regularFee": "USD 100",
+      "deadline": "1709637981000",
+      "about": "The Wolves of the Wall Street Challenge is a 12-week investment competition challenging students to develop an intelligent portfolio strategy, trade strategically, and rise to the top of the investor leader board. Participants can choose to enter the competition individually or in a team. Participants choosing to enter in a team will be assigned to global teams of 3-4 members each by the organization. ",
+      "schedule": [
+        {
+          "tabTitle": "Week 1",
+          "date": "1713612381000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Competition kickoff\n1. Welcome\n2. Investing 101"
+        },
+        {
+          "tabTitle": "Week 2",
+          "date": "1714217181000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Investing Intentionally\n1. Value v. Growth\n2. InvestingDiversification\n3. Bond valuation"
+        },
+        {
+          "tabTitle": "Week 3",
+          "date": "1714821981000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Mentorship Session\n1. Workshop by Wall Street Experts\n2. Interactive mentoring session with HSA mentors (Office Hours)"
+        },
+        {
+          "tabTitle": "Week 4",
+          "date": "1715426781000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Active Analysis 3\n1. Technical stock analysis\n2. Trend analysis\n3. Market analysis"
+        },
+        {
+            "tabTitle": "Week 5",
+            "date": "1716031581000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Diving into Derivatives\n1. Risks and rewards of derivatives\n2. Options trading\n3. Short selling"
+          },
+          {
+            "tabTitle": "Week 6",
+            "date": "1716636381000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Presenting Professionally\n1. Analyzing and presenting your portfolio\n2. Tips for the portfolio presentation"
+          },
+          {
+            "tabTitle": "Week 7",
+            "date": "1717241181000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Mentorship Session\n1. Interactive mentoring session with HSA Mentors (Office Hours)"
+          },
+          {
+            "tabTitle": "Week 8",
+            "date": "1717845981000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Mentorship Session\n1. Interactive mentoring session with HSA Mentors (Office Hours)"
+          },
+          {
+            "tabTitle": "Week 9",
+            "date": "1718450781000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Personal Finance\n1. Advice for personal wealth management\n2. Budgeting\n3. Concluding thoughts on program before judging begins"
+          },
+          {
+            "tabTitle": "Week 10",
+            "date": "1719055581000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Mentorship Session\n1. Interactive mentoring & feedback session with HSA Mentors."
+          },
+          {
+            "tabTitle": "Week 11",
+            "date": "1719660381000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Semi - Final"
+          },
+          {
+            "tabTitle": "Week 12",
+            "date": "1720265181000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Challenge concluded\n1. Top 10 participants present their portfolio to judges for the final round\n2. Winners announced"
+          }
+      ]
     }
 ]

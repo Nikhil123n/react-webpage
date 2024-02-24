@@ -23,7 +23,8 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0 var(--padding-5xs) 0 0;
+  /* padding: 0 var(--padding-5xs) 0 0; */
+  align-self: flex-start;
 }
 .use-the-power {
   position: relative;
@@ -81,4 +82,5 @@
   font-size: var(--font-size-base);
   color: var(--color-white);
   font-family: var(--font-inter);
+  cursor: pointer;
 }

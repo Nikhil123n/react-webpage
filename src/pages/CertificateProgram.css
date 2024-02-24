@@ -3,13 +3,7 @@ a {
     cursor: pointer; 
     color: white;
 }
-.button.schedule-btn {    
-    padding: 7px 4px;
-    background-color: transparent;
-    color: #F1B537;
-    border: 1px solid;
-    border-color: #F1B537;
-}
+
 
 button.schedule-btn:hover {    
     background-color: #F1B537;
@@ -19,6 +13,13 @@ button.schedule-btn:active,
 button.schedule-btn:focus  {
     background-color: #F1B537;
     color: black;
+}
+.button.schedule-btn {    
+    padding: 7px 4px;
+    background-color: transparent;
+    color: #F1B537;
+    border: 1px solid;
+    border-color: #F1B537;
 }
 .schedule-row2-data {
     padding: 20px 15px;
@@ -62,14 +63,6 @@ button.schedule-btn:focus  {
     padding: 10px 15px;
 }
 
-.lets-talk.active-tabs::before {
-    color: #F1B537;
-    background-color: transparent;
-}
-.lets-talk.active-tabs {
-    color: black;
-}
-
 .schedule-row2-data.active-content {
     display: flex;
   }
@@ -96,7 +89,7 @@ div#mentors {
     color: #878d92;
     /* margin-bottom: 25px; */
     font-size : 16px;   
-    width: max-content;    
+    width: auto;    
 }
 .certificate-container.container {
     margin-top: -10%; 
@@ -112,6 +105,15 @@ div#mentors {
     letter-spacing: 0.92px;
     width: max-content;
   }
+  h1.h1-testimnoials {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #fff;
+  }
+
+
+
 
 @media screen and (min-width: 1350px) {
     .three-card-display .divowl-item {
@@ -123,6 +125,17 @@ div#mentors {
           margin-bottom: 0%;
     }
 }
+@media screen and (max-width: 550px) {
+    .certificate-container.container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    h1.h1-testimnoials, 
+    h1.h1-testimnoials  {
+        font-size: 40px;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .three-card-display .divowl-item {
         width: 100%;

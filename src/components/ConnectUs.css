@@ -139,13 +139,14 @@
     align-items: center;
     justify-content: space-between;
     gap: var(--gap-xl);
+    text-align: center;
   }
   .frame-parent,
   .frame-wrapper {
     width: 889px;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 0 var(--padding-16xl) 0 0;
+    /* padding: 0 var(--padding-16xl) 0 0; */
     box-sizing: border-box;
     text-align: right;
     font-size: var(--font-size-3xl);
@@ -179,6 +180,9 @@
     .frame-parent {
       gap: var(--gap-37xl);
     }
+    .frame-group {
+      justify-content: center;
+    }
   }
   @media screen and (max-width: 450px) {
     .students-and-alumni {
@@ -198,5 +202,6 @@
     }
     .join-form-frame {
       flex-wrap: wrap;
+      justify-content: center;
     }
   }

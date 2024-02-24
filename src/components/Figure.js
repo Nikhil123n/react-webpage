@@ -1,5 +1,6 @@
-import { useMemo } from "react";
+import { useMemo, useCallback } from "react";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import "./Figure.css";
 
@@ -11,6 +12,7 @@ const Figure = ({
   propPadding,
   propAlignSelf,
   propFlex,
+  card,
 }) => {
   const figure1Style = useMemo(() => {
     return {
@@ -30,13 +32,22 @@ const Figure = ({
     };
   }, [propFlex]);
 
+  const navigate = useNavigate();
+  const onCardClick = useCallback(() => {
+    navigate("/certificate-program",{
+      state: card ? card : "The Leadership Competition by the Harvard MUN Team"
+    });
+  }, [navigate]);
+
+
   return (
-    <div className="figure1" style={figure1Style}>
+    <div className="figure1" style={figure1Style} onClick={onCardClick}>
       <img
         className="whatsapp-image-2023-07-14-at-1-icon1"
         alt=""
         src={whatsAppImage20230714At10}
       />
+      <div class="img-overlay-1"></div>
       <div className="future-mun-leaders">{futureMUNLeadersByTheHarv}</div>
       <div className="small1" style={small1Style}>
         <div

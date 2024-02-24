@@ -254,6 +254,12 @@
   .disclaimer-all-the {
     font-size: 17px;
   }
+  .quick-links-menu {
+    align-items: center;
+  }
+  .what-is-learn-with-leaders-parent {
+    align-items: center;
+  }
 }
 
 .symbols-frame a{

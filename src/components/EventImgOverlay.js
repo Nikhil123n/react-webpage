@@ -1,13 +1,24 @@
-import DivcolLg1 from "./DivcolLg1";
 import React from "react";
+import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
+import DivcolLg1 from "./DivcolLg1";
+
 
 import "./EventImgOverlay.css";
+const internshipFigureData = require('../json/internship.json');
+console.log(internshipFigureData)
 
 const EventImgOverlay = ({arrowStyles, programName, heading, paragraph, imgPath}) => {
   // console.log(arrowStyles)
   const imgDefault = "/whatsappimage20230714at011517scaledjpg@2x.png";
   const programNameGolden = "corporate internship";
-  console.log(programName)
+  const programNameGoldenURL = "/internship"
+  
+  const navigate = useNavigate();
+  const onLinkExploreClick = useCallback(() => {
+    navigate( programNameGoldenURL ? programNameGoldenURL : '');
+  }, [navigate]);
+
 
   return (
     <div className="event-img-overlay">
@@ -34,7 +45,7 @@ const EventImgOverlay = ({arrowStyles, programName, heading, paragraph, imgPath}
             alt=""
             src={imgPath ? imgPath : imgDefault}
           />
-          <div className="link-fellowships" > 
+          <div className="link-fellowships" onClick={onLinkExploreClick} > 
               {programName ? '' : programNameGolden 
             }</div>
         </div>
@@ -43,6 +54,8 @@ const EventImgOverlay = ({arrowStyles, programName, heading, paragraph, imgPath}
               arrowStyles = {arrowStyles}
               heading={heading}
               paragraph={paragraph}
+              card={internshipFigureData[0]}
+
             />
         </div>
       </div>

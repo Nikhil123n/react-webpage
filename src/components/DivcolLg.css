@@ -52,6 +52,7 @@
   flex-shrink: 0;
   z-index: 3;
   margin-left: -520px;
+  cursor: pointer;
 }
 .divcol-lg-12 {
   align-self: stretch;

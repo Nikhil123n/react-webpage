@@ -34,32 +34,32 @@ const AboutUs = () => {
       };
     const whyLWL = [
         {
-            icon: "",
+            icon: "about-us-icon-1.png",
             head: "Face to Face",
             content: "Bring high schoolers\nface-to-face with\nlife-altering phenomena\npersonalities, and experiences",
         },
         {
-            icon: "",
+            icon: "about-us-icon-2.png",
             head: "Break Limits",
             content: "Break down the unfair ‘limits’ of\nman-made barriers",
         },
         {
-            icon: "",
+            icon: "about-us-icon-3.png",
             head: "Powerful Networks",
             content: "Help students build\npowerful networks with\nglobal entities and enrich\nbonds with like-minded peers\nfrom around the world",
         },
         {
-            icon: "",
+            icon: "what-gain-1-1.png",
             head: "Young Mind",
             content: "Expose the young mind to a\nricher palette of possibilities",
         },
         {
-            icon: "",
+            icon: "what-gain-1-2.png",
             head: "Citizen Leaders",
             content: "Initiate a journey aimed to\nbuild holistic ‘Citizen Leaders’\nof tomorrow who are both globally\nprepared and locally sensitized",
         },
         {
-            icon: "",
+            icon: "about-us-icon-6.png",
             head: "Opportunity",
             content: "Bring the next generation\ncloser to opportunities that\ntheir parents and seniors lacked"
         },
@@ -87,7 +87,7 @@ const AboutUs = () => {
                 </div>
             </section>
 
-            <div className="" style={{width: "100%", height: '600px', overflow: 'hidden', backgroundSize: 'cover'}}>
+            <div className="hero-about-us-img" >
                 <img src="about-us-cover-image.jpeg" width="100%" height='600' frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="img-fluid" alt="..."  
                     />
             </div>
@@ -140,7 +140,7 @@ const AboutUs = () => {
                             {whyLWL.map((item, idx) => (
                                 <Col key={idx} className="col-12 col-md-6 col-lg-4">
                                 <Card className="about-us-card">
-                                    {/* <Card.Img variant="top" src="" /> */}
+                                    <Card.Img style={{width: '57px', marginLeft: '10px'}}  variant="top" src={item.icon} />
                                     <Card.Body>
                                         <Card.Title className="about-us-card-title" > {item.head} </Card.Title>
                                         <Card.Text className="about-us-card-text">
@@ -192,9 +192,9 @@ const AboutUs = () => {
                 </div>
             </section>
 
-            <div style={{marginBottom: '50px'}}>
-                <ConnectUs divNone={StudentLoveProgram}    />
-            </div>
+            
+            <ConnectUs divNone={StudentLoveProgram}    />
+            <div class="mt-3 mb-5"></div>
             <Footer />
         </div>
     );

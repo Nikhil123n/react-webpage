@@ -4,6 +4,8 @@ import Figure1 from "./Figure1";
 import React from "react";
 
 import "./FutureDoctors.css";
+const competitionFigureData = require('../json/competition.json');
+console.log([ competitionFigureData[2] ])
 
 const FutureDoctors = () => {
   return (
@@ -30,6 +32,7 @@ const FutureDoctors = () => {
             propPadding="var(--padding-18xl) var(--padding-3xs)"
             propAlignSelf="stretch"
             propFlex="1"
+            card={competitionFigureData[1]}
           />
           <Figure
             whatsAppImage20230714At10="/906241-830545776975015-583285608404393633-o1536x965jpg@2x.png"
@@ -39,6 +42,7 @@ const FutureDoctors = () => {
             propPadding="var(--padding-18xl) var(--padding-3xs)"
             propAlignSelf="stretch"
             propFlex="1"
+            card={competitionFigureData[2]}
           />
           <Figure1
             whatsAppImage20230714At12="/feature400x60011jpg@2x.png"
@@ -48,6 +52,8 @@ const FutureDoctors = () => {
             propPadding="var(--padding-18xl) var(--padding-3xs)"
             propAlignSelf="stretch"
             propFlex="1"
+            card={competitionFigureData[0]}
+
           />
         </div>
       </div>

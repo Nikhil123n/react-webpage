@@ -1,14 +1,203 @@
 [
-    {
-      "image": "/aiml1jpg@2x.png",
-      "programName": "AI and ML Bootcamp",
-      "description": "Cultivate your acumen in Python, Artificial Intelligence, and Machine Learning"
-      
-    },
-    {
-      "image": "/whatsappimage20230714at125555amjpeg@2x.png",
-      "programName": "Future Lawyers’ Program by Harvard",
-      "description": "Use the power of law to bring about a positive change in society"
-      
-    }
+  {
+    "category": "Conference programs",
+    "image": "/Conference/feature.jpg",
+    "programName": "The HUCEG Sustainability Leaders Challenge",
+    "description": "Kick start your sustainability journey with mentors from Harvard HUCEG.",
+    "hashtag": "#CompetitionsSustainability",
+    "date": "1710588381000",
+    "eligibility": "Grades 8th-12th",
+    "duration": "4 Weeks",
+    "earlyApplicationDate": "1707996381000",
+    "programFee": "USD 80",
+    "regularFee": "USD 120",
+    "deadline": "1708860381000",
+    "about": "There is a keen awareness and concern amongst the teenagers for the need to move towards more sustainable practices for our planet. A report by a leading strategy consulting firm highlighted the desire amongst today’s teenagers to be change agents from an early age.",
+    "schedule": [
+      {
+        "tabTitle": "Week 1",
+        "date": "1710588381000",
+        "time": "9:00 am - 12:00 pm-EST",
+        "description": "16th & 17th March 2024\nSustainability Webinars\nDuring the two days, listen and interact with experts and HUCEG mentors as they cover topics like:\n-The Energy Internet\n-LEED certification\n-Clean energy transition in developing world -SDGs & global cooperation\n-Climate activism and lobbying as a high school student\n-Climate mitigation and climate adaptation\n-Sustainable agriculture"
+      },
+      {
+        "tabTitle": "Week 2",
+        "date": "1711193181000",
+        "time": "9:00 am - 12:00 pm-EST",
+        "description": "23rd & 24th March 2024\nSustainability Webinars\nDuring the two days, listen and interact with experts and HUCEG mentors as they cover topics like:\n-The Energy Internet\n-LEED certification\n-Clean energy transition in developing world -SDGs & global cooperation\n-Climate activism and lobbying as a high school student\n-Climate mitigation and climate adaptation\n-Sustainable agriculture"
+      },
+      {
+        "tabTitle": "Week 2",
+        "date": "1711365981000",
+        "time": "9:00 am - 12:00 pm-EST",
+        "description": "25th - 29th March 2024\nSubmission of Solutions for Challenge\n During this week, participants will be required to submit their business idea/solution (as individuals or in teams of up to 4 participants)."
+      },
+      {
+        "tabTitle": "Week 3",
+        "date": "1711970781000",
+        "time": "9:00 am - 12:00 pm-EST",
+        "description": "Based on submissions, semi-finalists declared.\nUp to 25 teams will be selected for the semi-finals."
+      },
+      {
+          "tabTitle": "Week 3",
+          "date": "1712143581000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Mentoring by HUCEG team.\nAll semi-finalist teams get one mentorship to refine their semi-final pitch."
+        },
+        {
+          "tabTitle": "Week 3",
+          "date": "1712489181000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Semi-Finals pitches to a panel of judges."
+        },
+        {
+          "tabTitle": "Week 4",
+          "date": "1712748381000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "10th - 12th April 2024\nFinalists can choose to get another round of mentoring."
+        },
+        {
+          "tabTitle": "Week 4",
+          "date": "1713180381000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Global Final"
+        }
+    ]
+  },
+  {
+    "category": "Conference programs",
+    "image": "/Conference/future-lawyer.jpeg",
+    "programName": "The Leadership Competition by the Harvard MUN Team",
+    "description": "Learn leadership skills from Harvard student mentors, compete in challenges & develop project proposals to benefit your community.",
+    "hashtag": "#CompetitionsLeadership",
+    "date": "1713871581000",
+    "eligibility": "Grades 8th-12th",
+    "duration": "3 Weeks",
+    "earlyApplicationDate": "1707996381000",
+    "programFee": "USD 80",
+    "regularFee": "USD 120",
+    "deadline": "1708860381000",
+    "about": "The Leadership Competition by the Harvard MUN Team is an online competition over the course of three weekends. Students will have the opportunity to learn about leadership skills from a team of Harvard student mentors, and then apply those skills over the course of two competition rounds. The select students will develop a project proposal, explaining how they can use their leadership skills to benefit their community.",
+    "schedule": [
+      {
+        "tabTitle": "Week 1| Day 1",
+        "date": "1711193181000",
+        "time": "9:00 am - 12:00 pm-EST",
+        "description": "Webinars\nStudents will attend two webinars on leadership, focusing on the inter-personal skills required to be a successful leader.\nWebinar 1: Leadership Basics: What makes a good leader?\nWebinar 2: Leadership Skills: Communication, Team-Building"
+      },
+      {
+        "tabTitle": "Week 1| Day 2",
+        "date": "1711279581000",
+        "time": "9:00 am - 12:00 pm-EST",
+        "description": "Webinars\nStudents will attend two webinars on leadership, focusing on decision-making skills necessary for effective leadership. Students will also learn about impact challenges and leadership competitions to prepare them for the second half of the program.\nWebinar 1: Leadership skills: Communication, strategy, creativity\nWebinar 2: Competition Preparation\nAt the end of the webinars, the groups for the Impact Challenge will be assigned and the format of the Challenge will be explained. A rubric will be provided to students at this time, although the actual prompt will be released the following Saturday."
+      },
+      {
+        "tabTitle": "Week 2| Day 1",
+        "date": "1711797981000",
+        "time": "8:00 am - 12:00 pm-EST",
+        "description": "Impact Challenge\nTimings: 8 AM-12 PM ET\nThe Impact Challenge prompt will pose a fictional problem to the students based on real world issues and ask them to create an innovative solution in groups.\n8 AM: Prompt will be released at 8AM ET, alongside group assignments.\n9AM-12 PM ET (Office hours): Each group is expected to submit a maximum three page write-up identifying how they have responded to the problems identified in the prompt.\nFinalists Announced Saturday Evening EST"
+      },
+      {
+        "tabTitle": "Week 2| Day 2",
+        "date": "1711884381000",
+        "time": "9:00 am - 10:00 am-EST",
+        "description": "Leadership Proposal Start\nFinalists will meet for a short session with mentors to ask any questions of the Harvard MUN Team. The Leadership Proposal will require finalist students to develop a project proposal that responds to a real world issue facing their community, identifying the issue as well as their potential solution."
+      },
+      {
+          "tabTitle": "Week 3| Day 1",
+          "date": "1712402781000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Leadership Proposal\nFinalists will have Monday through Friday to develop a proposal integrating the skills taught in the webinars and tested in the impact challenge. Throughout the final week, office hours with Harvard student mentors will be available for students looking for feedback or help with their leadership proposal.\nLeadership Proposal Presentations\nFinalists will present their proposals before a panel of judges, all of whom are on the Harvard MUN Team.\nWinners will be announced Saturday evening."
+        }
+    ]
+  },
+  {
+    "category": "Conference programs",
+    "image": "/Conference/wolve.jpg",
+    "programName": "The Wolves of Wall Street Competition",
+    "description": "Harvard Student Agencies presents - The World’s first Global Stock Market Competition for the Youth.",
+    "hashtag": "#Competitions",
+    "date": "1713612381000",
+    "eligibility": "Grades 8th-12th",
+    "duration": "12 Weeks",
+    "earlyApplicationDate": "1708860381000",
+    "programFee": "USD 80",
+    "regularFee": "USD 100",
+    "deadline": "1709637981000",
+    "about": "The Wolves of the Wall Street Challenge is a 12-week investment competition challenging students to develop an intelligent portfolio strategy, trade strategically, and rise to the top of the investor leader board. Participants can choose to enter the competition individually or in a team. Participants choosing to enter in a team will be assigned to global teams of 3-4 members each by the organization. ",
+    "schedule": [
+      {
+        "tabTitle": "Week 1",
+        "date": "1713612381000",
+        "time": "9:00 am - 10:00 am-EST",
+        "description": "Competition kickoff\n1. Welcome\n2. Investing 101"
+      },
+      {
+        "tabTitle": "Week 2",
+        "date": "1714217181000",
+        "time": "9:00 am - 10:00 am-EST",
+        "description": "Investing Intentionally\n1. Value v. Growth\n2. InvestingDiversification\n3. Bond valuation"
+      },
+      {
+        "tabTitle": "Week 3",
+        "date": "1714821981000",
+        "time": "9:00 am - 10:00 am-EST",
+        "description": "Mentorship Session\n1. Workshop by Wall Street Experts\n2. Interactive mentoring session with HSA mentors (Office Hours)"
+      },
+      {
+        "tabTitle": "Week 4",
+        "date": "1715426781000",
+        "time": "9:00 am - 10:00 am-EST",
+        "description": "Active Analysis 3\n1. Technical stock analysis\n2. Trend analysis\n3. Market analysis"
+      },
+      {
+          "tabTitle": "Week 5",
+          "date": "1716031581000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Diving into Derivatives\n1. Risks and rewards of derivatives\n2. Options trading\n3. Short selling"
+        },
+        {
+          "tabTitle": "Week 6",
+          "date": "1716636381000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Presenting Professionally\n1. Analyzing and presenting your portfolio\n2. Tips for the portfolio presentation"
+        },
+        {
+          "tabTitle": "Week 7",
+          "date": "1717241181000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Mentorship Session\n1. Interactive mentoring session with HSA Mentors (Office Hours)"
+        },
+        {
+          "tabTitle": "Week 8",
+          "date": "1717845981000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Mentorship Session\n1. Interactive mentoring session with HSA Mentors (Office Hours)"
+        },
+        {
+          "tabTitle": "Week 9",
+          "date": "1718450781000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Personal Finance\n1. Advice for personal wealth management\n2. Budgeting\n3. Concluding thoughts on program before judging begins"
+        },
+        {
+          "tabTitle": "Week 10",
+          "date": "1719055581000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Mentorship Session\n1. Interactive mentoring & feedback session with HSA Mentors."
+        },
+        {
+          "tabTitle": "Week 11",
+          "date": "1719660381000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Semi - Final"
+        },
+        {
+          "tabTitle": "Week 12",
+          "date": "1720265181000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Challenge concluded\n1. Top 10 participants present their portfolio to judges for the final round\n2. Winners announced"
+        }
+    ]
+  }
 ]

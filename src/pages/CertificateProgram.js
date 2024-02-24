@@ -202,7 +202,7 @@ const CertificateProgram = ({card, prgName}) => {
             </div>
           </section>    
 
-          <div className="" style={{width: "100%", height: '600px', overflow: 'hidden', backgroundSize: 'cover', marginTop: '-46px'}}>
+          <div className="hero-about-us-img" style={{ marginTop: '-46px'}}>
               <img src="about-us-cover-image.jpeg" width="100%" height='600' frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="img-fluid" alt="..."  
                   />
           </div>
@@ -241,7 +241,7 @@ const CertificateProgram = ({card, prgName}) => {
                         </Row>
                           
                     </Col>
-                    <Col xs="auto" style={{alignSelf: 'center' }}>
+                    <Col xs="auto" style={{alignSelf: 'center', padding: 'calc(var(--bs-gutter-x) * .5) 0'}}>
                         
                         <Row style={{color: "#F1B537", fontSize: '24px', fontWeight: '600', margin: "0 0 10px", lineHeight: '20px'}}>
                                 <button className="button" onClick={onLinkExploreClick} >
@@ -289,27 +289,27 @@ const CertificateProgram = ({card, prgName}) => {
             <div className="event">
                 <div className="tab-grp-1" style={{gap: '0'}}>
                   <button className="timeline-btn-border c-1 mt-4 certificate-program-btn" onClick={() => {toggleTab(1); scrollToDiv('about');} }>
-                        <div className={toggleState === 1 ? "about active-tabs" : "about"}  style={toogleBarStylesCP}>About</div>
+                        <div className={toggleState === 1 ? "about active-tab" : "about"}  style={toogleBarStylesCP}>About</div>
                    </button>
 
                    <button className="timeline-btn-border c-1 mt-4 certificate-program-btn" onClick={() => {toggleTab(2); scrollToDiv('what-you-ll-gain');} }>
-                        <div className={toggleState === 2 ? "what-will-gain active-tabs" : "what-will-gain"} style={toogleBarStylesCP} >What You'll Gain</div>
+                        <div className={toggleState === 2 ? "what-will-gain active-tab" : "what-will-gain"} style={toogleBarStylesCP} >What You'll Gain</div>
                    </button>
                    
                    <button className="timeline-btn-border c-1 mt-4 certificate-program-btn" onClick={() => {toggleTab(3); scrollToDiv('mentors');} }>
-                        <div className={toggleState === 3 ? "mentors active-tabs" : "mentors"}  style={toogleBarStylesCP} >Mentors</div>
+                        <div className={toggleState === 3 ? "mentors active-tab" : "mentors"}  style={toogleBarStylesCP} >Mentors</div>
                    </button>
                    
                    <button className="timeline-btn-border c-1 mt-4 certificate-program-btn" onClick={() => {toggleTab(4); scrollToDiv('awards');} }>
-                        <div className={toggleState === 4 ? "awards-recognition active-tabs" : "awards-recognition"}  style={toogleBarStylesCP} >Awards & Recognition</div>
+                        <div className={toggleState === 4 ? "awards-recognition active-tab" : "awards-recognition"}  style={toogleBarStylesCP} >Awards & Recognition</div>
                    </button>
                    
                    <button className="timeline-btn-border c-1 mt-4 certificate-program-btn" onClick={() => {toggleTab(5); scrollToDiv('schedule');} }>
-                        <div className={toggleState === 5 ? "schedule active-tabs" : "schedule"}  style={toogleBarStylesCP} >Schedule</div>
+                        <div className={toggleState === 5 ? "schedule active-tab" : "schedule"}  style={toogleBarStylesCP} >Schedule</div>
                    </button>
                    
                    <button className="timeline-btn-border c-1 mt-4 certificate-program-btn" onClick={() => {toggleTab(6); scrollToDiv('testimonials');} }>
-                        <div className={toggleState === 6 ? "testimonials active-tabs" : "testimonials"} style={toogleBarStylesCP} >Testimonials</div>
+                        <div className={toggleState === 6 ? "testimonials active-tab" : "testimonials"} style={toogleBarStylesCP} >Testimonials</div>
                    </button>
                 </div>
              </div>
@@ -373,8 +373,8 @@ const CertificateProgram = ({card, prgName}) => {
                                 Our expert mentors from previous sessions
                             </h5>
                         </div>
-                    </Col>
-                    <Col xs="auto"> 
+                    </Col>                    
+                    <Col xs="5" sm="4" md="3" lg="2"> 
                       <div className="img-overlay-frame1">
                         <div className="left-arrowsvg-parent">
                           <img
@@ -391,6 +391,7 @@ const CertificateProgram = ({card, prgName}) => {
                       </div>                
                     </Col>
                 </Row> 
+                <Row className=""><div></div></Row>
                 <div className="carousel-img-catelog-grp-1 past-mentors-container" 
                     style={{
                             width: '100%',
@@ -543,7 +544,7 @@ const CertificateProgram = ({card, prgName}) => {
                     <ButtonGroup style={{gap: '15px', overflow: 'hidden', overflowX: 'scroll', scrollbarWidth: 'none'}}>
                         {programCardData.schedule.map((item, index) => (
                             <button key={index} className="button schedule-btn" onClick={() => toggleSchedule(index + 1)}>
-                            <div className={toggleScheduleState === index + 1 ? "lets-talk active-tabs" : "lets-talk"}>{item.tabTitle}</div>
+                                <div className={toggleScheduleState === index + 1 ? "lets-talk active-tab" : "lets-talk"}><span>{item.tabTitle}</span></div>
                             </button>
                         ))}
                     </ButtonGroup>
@@ -636,15 +637,10 @@ const CertificateProgram = ({card, prgName}) => {
 
           </Container>
 
-          <Container className="mt-5 mb-3" id="testimonials" style={{textAlign: 'center'}}>
+          <Container className="mt-5 mb-5 testimonials" id="testimonials" style={{textAlign: 'center'}}>
             <Row>
               <Col>
-                <h1 style={{
-                  fontSize: '60px',
-                  fontWeight: '600',
-                  lineHeight: '1.6',
-                  color: '#fff',
-                }}><b><b>Students and alumni love our programs</b></b></h1>
+                <h1 className="h1-testimnoials"><b><b>Students and alumni love our programs</b></b></h1>
               </Col>
             </Row>
             <Row>
@@ -717,7 +713,7 @@ const CertificateProgram = ({card, prgName}) => {
                             </h5>
                         </div>
                     </Col>
-                    <Col xs="auto"> 
+                    <Col xs="5" sm="4" md="3" lg="2"> 
                       <div className="img-overlay-frame1">
                         <div className="left-arrowsvg-parent">
                           <img
@@ -734,8 +730,10 @@ const CertificateProgram = ({card, prgName}) => {
                       </div>                
                     </Col>
                 </Row> 
+                <Row className=""><div></div></Row>
+                <Row className=""><div></div></Row>
                   
-                <div className="carousel-img-catelog-grp-1" 
+                <Row className="carousel-img-catelog-grp-1" 
                     style={{
                             width: '100%',
                             left: '0',
@@ -780,7 +778,7 @@ const CertificateProgram = ({card, prgName}) => {
                         propPadding="var(--padding-14xl) var(--padding-4xs) var(--padding-smi) var(--padding-3xs)"
                     />
                     </div>
-                </div>
+                </Row>
               </section>
           </Container>        
             

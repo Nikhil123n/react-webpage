@@ -1,5 +1,6 @@
 .hdfc-capital-advisors {
   margin: 0;
+  cursor: pointer;
 }
 .link-heading-container {
   margin: 0;
@@ -96,7 +97,7 @@
   font-size: var(--font-size-9xl);
   color: var(--color-white);
   font-family: var(--font-inter);
-  padding: 35px;
+  padding: 35px;  
 }
 @media screen and (max-width: 800px) {
   .event-date-grp1 {

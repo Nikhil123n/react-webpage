@@ -43,7 +43,7 @@
 }
 @media screen and (max-width: 1150px) {
   .divfusion-layout-column1 {
-    justify-content: center;
+    /* justify-content: center; */
     grid-template-columns: repeat(2, minmax(221px, 383px));
   }
   .s-4 {
@@ -55,7 +55,7 @@
 @media screen and (max-width: 800px) {
   .divfusion-layout-column1 {
     grid-template-columns: minmax(221px, 1fr);
-    margin-top: 10rem !important;
+    margin-top: 15rem !important;
     padding: 0 !important;
   }
   .s-4 {

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import React from "react";
 import "./DivcolLg1.css";
 
-const DivcolLg1 = ({ propFlex, propAlignSelf, heading, arrowStyles, paragraph, timelineRemove }) => {  
+const DivcolLg1 = ({ propFlex, propAlignSelf, heading, arrowStyles, paragraph, timelineRemove, card }) => {  
 
   const eventName = "HDFC Capital Advisors: Corporate Internship Project";
   const content = "In collaboration with Harvard Entrepreneurship Collective and Learn with Leaders. Embark on an 8-week Experiential Learning Project Tackling a Fortune 500 real-world business problem, guided by a Harvard undergraduate mentor to craft live solutions that address the impact of Green Finance for residential"
@@ -15,6 +15,13 @@ const DivcolLg1 = ({ propFlex, propAlignSelf, heading, arrowStyles, paragraph, t
       state: "HDFC Capital Advisors: Corporate Internship Project"
     });
   }, [navigate]);
+
+  const onCardClick = useCallback(() => {
+    navigate("/certificate-program",{
+      state: card ? card : "The Leadership Competition by the Harvard MUN Team"
+    });
+  }, [navigate]);
+  
   
   const divcolLg5Style = useMemo(() => {
     return {
@@ -28,7 +35,7 @@ const DivcolLg1 = ({ propFlex, propAlignSelf, heading, arrowStyles, paragraph, t
       <div className="heading-wrapper">
         <div className="heading">
           <h3 className="link-heading-container">
-            <p className="hdfc-capital-advisors">
+            <p className="hdfc-capital-advisors" onClick={onCardClick}>
               {heading ? heading : eventName}
               </p>
           </h3>
