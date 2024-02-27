@@ -1,6 +1,8 @@
 import Event1 from "./Event1";
 import EventInfoGrpAll from "./EventInfoGrpAll";
-import React from "react";
+import React, {useState, useRef} from "react";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 import "./EventInfoAll.css";
 const StudentAchievementsData = require('../json/studentAchievements.json');
@@ -9,7 +11,7 @@ const EventInfoAll = () => {
 
   const defaultCard = 
     {
-      "category": "Masterclass programs",
+      "category": "Student Achievements",
       "image": "/Certificate/world-debate.jpeg",
       "programName": "World Debate Stars with the Harvard MUN Team (ICMUN)",
       "programURL": "world-debate-stars-with-the-harvard-MUN-team-(ICMUN)",
@@ -50,6 +52,48 @@ const EventInfoAll = () => {
         }
       ]
     }
+    
+    // const [currentIndex, setCurrentIndex] = useState(0);
+    // console.log(StudentAchievementsData.length)
+
+    // const handleNextSlide = () => {
+    //   setCurrentIndex((prevIndex) => (prevIndex === StudentAchievementsData.length - 4 ? 0 : prevIndex + 1));
+    // };
+    
+    // const handlePrevSlide = () => {
+    //   setCurrentIndex((prevIndex) => (prevIndex === 0 ? StudentAchievementsData.length - 4 : prevIndex - 1));
+    // };
+
+    const responsive = {
+      superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 1024 },
+        items: 4
+      },
+      desktop: {
+        breakpoint: { max: 1024, min: 800 },
+        items: 3
+      },
+      tablet: {
+        breakpoint: { max: 800, min: 500 },
+        items: 2
+      },
+      mobile: {
+        breakpoint: { max: 500, min: 0 },
+        items: 1
+      }
+    };
+    const carouselRef = useRef(null);
+
+    const handleNextSlide = () => {
+      carouselRef.current.next();
+    };
+  
+    const handlePrevSlide = () => {
+      carouselRef.current.previous();
+    };
+  
+
 
   return (
     <section className="event-info-all">
@@ -59,23 +103,34 @@ const EventInfoAll = () => {
 
       <div className="leftarrowsvg">
         <div className="leftarrowsvgrightarrowsvg">
+          <button style={{backgroundColor: "transparent", border: '0'}}  onClick={handlePrevSlide}>
           <img
             className="left-arrowsvg-icon3"
             alt=""
             src="/leftarrowsvg-2.svg"
           />
+          </button>
+          <button style={{backgroundColor: "transparent", border: '0'}} onClick={handleNextSlide}>
           <img
             className="right-arrowsvg-icon10"
             alt=""
             src="/rightarrowsvg-16.svg"
           />
+          </button>
         </div>
       </div>
       
 
       <div className="entrepreneurship-program-frame">        
         
-        <div className="heading-text2">
+        <Carousel 
+            ref={carouselRef}
+            infinite={true}
+            responsive={responsive} 
+            arrows={false}
+            partialVisible={true}
+            
+            containerClass="heading-text2" >
             {StudentAchievementsData.map((event, index) => (
               <Event1
                 key={index}
@@ -87,10 +142,11 @@ const EventInfoAll = () => {
                 dURATION="DURATION"
                 weeks={event.weeks}
                 card = {Object.keys(event).length > 4 ? event : defaultCard }
+                // transitionStyle= {{ transform: `translateX(-${currentIndex * 100}%)` }}
               />
             ))} 
           
-        </div>
+        </Carousel>
       </div>
       <div className="submit-btn-container">
         <button className="submit-btn2">

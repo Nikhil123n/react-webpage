@@ -1,6 +1,8 @@
 import Event1 from "./Event1";
 import EventInfoGrpAll from "./EventInfoGrpAll";
-import React, { useState } from "react";
+import React, {useState, useRef} from "react";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 import "./EventInfoGrid.css";
 const UpcomingProgramsData = require('../json/UpcomingOfflinePrograms.json');
@@ -59,6 +61,35 @@ const EventInfoGrid = () => {
         }
       ]
     }
+
+  const responsive = {
+      superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 1024 },
+        items: 4
+      },
+      desktop: {
+        breakpoint: { max: 1024, min: 800 },
+        items: 3
+      },
+      tablet: {
+        breakpoint: { max: 800, min: 500 },
+        items: 2
+      },
+      mobile: {
+        breakpoint: { max: 500, min: 0 },
+        items: 1
+      }
+    };
+    const carouselRef = useRef(null);
+
+    const handleNextSlide = () => {
+      carouselRef.current.next();
+    };
+  
+    const handlePrevSlide = () => {
+      carouselRef.current.previous();
+    };
   
   
   return (
@@ -79,16 +110,20 @@ const EventInfoGrid = () => {
                 
         <div className="img-overlay-frame1">
           <div className="left-arrowsvg-parent">
+          <button style={{backgroundColor: "transparent", border: '0'}}  onClick={handlePrevSlide}>
             <img
               className="left-arrowsvg-icon2"
               alt=""
               src="/leftarrowsvg-2.svg"
             />
+          </button>
+          <button style={{backgroundColor: "transparent", border: '0'}} onClick={handleNextSlide}>
             <img
               className="right-arrowsvg-icon8"
               alt=""
               src="/rightarrowsvg-16.svg"
             />
+          </button>
           </div>
         </div>
 
@@ -132,7 +167,15 @@ const EventInfoGrid = () => {
           />          
         </div> */}
 
-        <div className={toggleState === 1 ? "heading-text active-content" : "heading-text"} >
+        <Carousel 
+            ref={carouselRef}
+            infinite={true}
+            responsive={responsive} 
+            arrows={false}
+            partialVisible={true}
+            
+            className={toggleState === 1 ? "heading-text active-content" : "heading-text"} >
+        {/* <div className={toggleState === 1 ? "heading-text active-content" : "heading-text"} > */}
             {UpcomingProgramsData.map((event, index) => (
               <Event1
                 key={index}
@@ -146,9 +189,15 @@ const EventInfoGrid = () => {
                 card = {Object.keys(event).length > 4 ? event : defaultCard }
               />
             ))}
-        </div>
+        </Carousel>
 
-        <div className={toggleState === 2 ? "heading-text active-content" : "heading-text"}  >
+        <Carousel 
+            ref={carouselRef}
+            infinite={true}
+            responsive={responsive} 
+            arrows={false}
+            partialVisible={true} 
+            className={toggleState === 2 ? "heading-text active-content" : "heading-text"}  >
             {PastProgramsData.map((event, index) => (
               <Event1
                 key={index}
@@ -162,7 +211,7 @@ const EventInfoGrid = () => {
                 card = {Object.keys(event).length > 4 ? event : defaultCard }
               />
             ))}
-        </div>
+        </Carousel>
 
       </div>
       <div className="event-img-overlay1">

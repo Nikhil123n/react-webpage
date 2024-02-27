@@ -156,6 +156,14 @@
   color: var(--color-white);
   font-family: var(--font-inter);
   cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+ul.react-multi-carousel-track {
+  text-align: -webkit-center;
+}
+li.react-multi-carousel-item {
+  padding-left: 10px;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 450px) {
   .event-2 {

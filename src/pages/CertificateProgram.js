@@ -710,7 +710,7 @@ const CertificateProgram = ({card, prgName}) => {
                             </h5>
                         </div>
                     </Col>
-                    <Col xs="5" sm="4" md="3" lg="2"> 
+                    {/* <Col xs="5" sm="4" md="3" lg="2"> 
                       <div className="img-overlay-frame1">
                         <div className="left-arrowsvg-parent">
                           <img
@@ -725,7 +725,7 @@ const CertificateProgram = ({card, prgName}) => {
                           />
                         </div>
                       </div>                
-                    </Col>
+                    </Col> */}
                 </Row> 
                 <Row className=""><div></div></Row>
                 <Row className=""><div></div></Row>

@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import FrameComponent from "../components/frame-component";
 import Input from "../components/input";
@@ -10,6 +10,7 @@ const GetStartedFormDefaultV = () => {
   const location = useLocation();
   const eventData = location.state;
 
+  const [programName, setProgramName] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [number, setNumber] = useState('');
@@ -35,6 +36,12 @@ const GetStartedFormDefaultV = () => {
     setPost({...post, [event.target.name]: event.target.value})
   }
 
+  useEffect(() => {
+    if (eventData) {
+      setProgramName(eventData);
+    }
+  }, [eventData]);
+
   // function handleSubmit(event) {
   //   event.preventDefault();
   //   axios.post('https://jsonplaceholder.typicode.com/posts', {post})
@@ -47,6 +54,7 @@ const GetStartedFormDefaultV = () => {
       // console.log(name, email, number, city, country, school, currentClass, parentName, 
       //   parentNumber, parentEmail, principalName, example);
       const data = {
+        ProgramName: programName,
         Name: name,
         Email: email,
         Number: number,
@@ -61,7 +69,7 @@ const GetStartedFormDefaultV = () => {
         Example: example
       }
       axios.post("https://sheet.best/api/sheets/7ca60c88-090f-4434-981a-a18defba6ff4", data).then((response) => {
-        console.log(response);
+        console.log(response);        
         setName('');
         setEmail('');
         setNumber('');
