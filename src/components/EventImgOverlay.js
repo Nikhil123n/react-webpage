@@ -8,7 +8,7 @@ import "./EventImgOverlay.css";
 const internshipFigureData = require('../json/internship.json');
 console.log(internshipFigureData)
 
-const EventImgOverlay = ({arrowStyles, programName, heading, paragraph, imgPath}) => {
+const EventImgOverlay = ({arrowStyles, programName, heading, paragraph, imgPath, deadline, startDate}) => {
   // console.log(arrowStyles)
   const imgDefault = "/whatsappimage20230714at011517scaledjpg@2x.png";
   const programNameGolden = "corporate internship";
@@ -54,6 +54,8 @@ const EventImgOverlay = ({arrowStyles, programName, heading, paragraph, imgPath}
               arrowStyles = {arrowStyles}
               heading={heading}
               paragraph={paragraph}
+              deadline={deadline}
+              startDate={startDate}
               card={internshipFigureData[0]}
 
             />

@@ -5,9 +5,36 @@ import React from "react";
 
 import "./FutureDoctors.css";
 const competitionFigureData = require('../json/competition.json');
+import DivowlItem from "./DivowlItem";
 console.log([ competitionFigureData[2] ])
 
 const FutureDoctors = () => {
+  const FutureDoctorsData = [
+    {
+      image: "/whatsappimage20230714at125555amjpeg-1@2x.png",
+      heading: "The Leadership Competition by th…",
+      description: "Learn leadership skills from Harvard stud…",      
+      startDate: "Start Date: 16th March 2024",
+      rightArrowsvg: "/rightarrowsvg-9.svg",
+      figureData: competitionFigureData[1],
+    },
+    {
+      image: "/906241-830545776975015-583285608404393633-o1536x965jpg@2x.png",
+      heading: "The Wolves of Wall Street Compet…",
+      description: "Harvard Student Agencies presents – Th…",      
+      startDate: "Start Date: 20th April 2024",
+      rightArrowsvg: "/rightarrowsvg-9.svg",
+      figureData: competitionFigureData[2],
+    },
+    {
+      image: "/feature400x60011jpg@2x.png",
+      heading: "The HUCEG Sustainability Leader…",
+      description: "Kick start your sustainability journey with…",      
+      startDate: "Start Date: 16th March 2024",
+      rightArrowsvg: "/rightarrowsvg-9.svg",
+      figureData: competitionFigureData[0],
+    }
+  ]
   return (
     <section className="future-doctors">
       <div className="s-4">
@@ -24,7 +51,7 @@ const FutureDoctors = () => {
           // propMinWidth1="562px"
         />
         <div className="divfusion-layout-column1">
-          <Figure
+          {/* <Figure
             whatsAppImage20230714At10="/whatsappimage20230714at125555amjpeg-1@2x.png"
             futureMUNLeadersByTheHarv="The Leadership Competition by th…"
             becomingABestDelegateASte="Learn leadership skills from Harvard stud…"
@@ -54,7 +81,39 @@ const FutureDoctors = () => {
             propFlex="1"
             card={competitionFigureData[0]}
 
-          />
+          /> */}
+
+          
+          {FutureDoctorsData.map((item, index) => (        
+            <DivowlItem
+                  link900x5502Aboutjpg={item.image}
+                  heading5InnovationLeaders={item.heading}
+                  startDateOctober21st={item.startDate}
+                  developSocialInnovationAn={item.description}
+                  // entrepreneurialSpirit="entrepreneurial spirit"
+                  rightArrowsvg={item.rightArrowsvg}
+                  
+                  // card = {Object.keys(item).length > 4 ? item : defaultCard }
+                  card={item.figureData}
+
+                  className={{
+                    width: 'auto',
+                    overflow: 'hidden',
+                    height: '380px',
+                    borderRadius: 'var(--br-3xs)',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    boxSizing: 'border-box',
+                    position: 'relative',
+                    gap: 'var(--gap-xs)',
+                    textAlign: 'left',
+                    fontSize: 'var(--font-size-base)',
+                    color: 'var(--color-white)',
+                    fontFamily: 'var(--font-inter)'
+                  }}
+              />
+            ))}
         </div>
       </div>
     </section>

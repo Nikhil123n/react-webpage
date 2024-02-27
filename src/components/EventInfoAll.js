@@ -80,7 +80,7 @@ const EventInfoAll = () => {
               <Event1
                 key={index}
                 eventImg1={event.image}
-                fellowships={event.country}
+                fellowships={event.subcategory}
                 heading={event.programName}
                 sTARTSON="STARTS ON"
                 december2023={event.date}

@@ -12,7 +12,7 @@
   height: 100%;
   position: absolute;
   margin: 0 !important;
-  top: 0;
+  /* top: 0; */
   right: 0;
   bottom: 0;
   left: 0;
@@ -22,6 +22,10 @@
     rgba(0, 0, 0, 0.81) 60.5%,
     transparent
   );
+  height: 100%;
+  max-height: 30%;
+  overflow: hidden;
+
   z-index: 1;
 }
 .heading1 {

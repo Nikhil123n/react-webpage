@@ -88,7 +88,7 @@ const Event1 = ({
   }, [navigate]);
 
   return (
-    <div className="event-2" style={event2Style} onClick={onCardClick}>
+    <div className="event-2" style={{...event2Style, backgroundImage: `url("${eventImg1}")` }} onClick={onCardClick}>
       <img className="event-img-1" alt="" src={eventImg1} />
       <div className="img-overlay-12" />
       <div className="programs-frame" style={programsFrameStyle}>

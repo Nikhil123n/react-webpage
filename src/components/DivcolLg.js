@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import "./DivcolLg.css";
 const fellowshipFigureData = require('../json/fellowship.json');
 
-const DivcolLg = ({arrowStyles, heading, paragraph, imgPath, removeGoldenHeader, timelineRemove}) => {
+const DivcolLg = ({arrowStyles, heading, paragraph, imgPath, removeGoldenHeader, timelineRemove, deadline, startDate}) => {
   const imgDefault = "/whatsappimage20230714at011517scaledjpg-1@2x.png"
   const fellowProgramName = "Fewllowship";
   const fellowProgramNameURL = '/fellowship';
@@ -24,10 +24,13 @@ const DivcolLg = ({arrowStyles, heading, paragraph, imgPath, removeGoldenHeader,
         src={imgPath ? imgPath : imgDefault}
       />
       <div className="into-arrow-svg">
-        <DivcolLg1 propAlignSelf="stretch" heading={heading} 
+        <DivcolLg1 propAlignSelf="stretch" 
+                  heading={heading} 
                   arrowStyles={arrowStyles}
                   timelineRemove={timelineRemove}
                   paragraph={paragraph}
+                  deadline={deadline}
+                  startDate={startDate}
                   card={fellowshipFigureData[0]}
           />
         <img style={arrowStyles} className="left-arrowsvg-icon1" alt="" src="/leftarrowsvg-2.svg" />

@@ -120,7 +120,8 @@
 }
 /* For making the grey box of fellowship and corporate internship box overflow hidden and scrollebal */
 .divcol-lg-5 {
-  height: 368px!important;
+  max-height: 370px!important;
+  min-height: 368px!important;
   overflow-y: auto!important;
   overflow-x: hidden!important;
   padding-bottom: 0;

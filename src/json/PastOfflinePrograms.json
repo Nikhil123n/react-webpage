@@ -1,16 +1,16 @@
 [
     {
       "category": "Offline programs",
-      "image": "/event-img-1@2x.png",
-      "country": "India",
-      "programName": "The Young Global Leadership Program - Hosted by JBCN",
+      "image": "/whatsappimage20230714at125208am1jpeg@2x.png",
+      "country": "Indonesia",
+      "programName": "The Young Leadership Program – Hosted by SIS Kelapa Galding",      
       "description": "A Unique and Intensive 3-Day Program on Leadership and Creating Future Changemakers.",
-      "hashtag": "#Competitions",
-      "date": "19 August, 2023",
+      "hashtag": "#OfflinePrograms",
+      "date": "17 July, 2023",
       "eligibility": "Grades 8th-12th",
-      "startsOn": "STARTS ON",    
+      "startsOn": "STARTS ON",      
       "duration": "DURATION",
-      "weeks": "5 DAYS",
+      "weeks": "3 Days",
       "earlyApplicationDate": "1708860381000",
       "programFee": "USD 80",
       "regularFee": "USD 100",
@@ -93,16 +93,108 @@
     },
     {
       "category": "Offline programs",
-      "image": "/event-img-1@2x.png",
+      "image": "/WhatsApp-Image-2023-07-14-at-1.17.02-AM.jpeg",
       "country": "Indonesia",
-      "programName": "The Young Global Leadership Program - Hosted by SIS Kelapa Galding",
-      "description": "A Unique and Intensive 3-Day Program on Leadership and Creating Future Changemakers.",
+      "programName": "The Sustainability Change-Makers Summit – Hosted by Sekolah Pelita Harapan Lippo Village",      
+      "description": "Kick-Start your Leadership Journey in Sustainability with Harvard Student Mentors.",
       "hashtag": "#Competitions",
-      "date": "17 July, 2024",
+      "date": "24 July, 2023",
       "eligibility": "Grades 8th-12th",
       "startsOn": "STARTS ON",      
       "duration": "DURATION",
-      "weeks": "3 Days",
+      "weeks": "4 Days",
+      "earlyApplicationDate": "1708860381000",
+      "programFee": "USD 80",
+      "regularFee": "USD 100",
+      "deadline": "1709637981000",
+      "about": "The Wolves of the Wall Street Challenge is a 12-week investment competition challenging students to develop an intelligent portfolio strategy, trade strategically, and rise to the top of the investor leader board. Participants can choose to enter the competition individually or in a team. Participants choosing to enter in a team will be assigned to global teams of 3-4 members each by the organization. ",
+      "schedule": [
+        {
+          "tabTitle": "Week 1",
+          "date": "1713612381000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Competition kickoff\n1. Welcome\n2. Investing 101"
+        },
+        {
+          "tabTitle": "Week 2",
+          "date": "1714217181000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Investing Intentionally\n1. Value v. Growth\n2. InvestingDiversification\n3. Bond valuation"
+        },
+        {
+          "tabTitle": "Week 3",
+          "date": "1714821981000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Mentorship Session\n1. Workshop by Wall Street Experts\n2. Interactive mentoring session with HSA mentors (Office Hours)"
+        },
+        {
+          "tabTitle": "Week 4",
+          "date": "1715426781000",
+          "time": "9:00 am - 10:00 am-EST",
+          "description": "Active Analysis 3\n1. Technical stock analysis\n2. Trend analysis\n3. Market analysis"
+        },
+        {
+            "tabTitle": "Week 5",
+            "date": "1716031581000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Diving into Derivatives\n1. Risks and rewards of derivatives\n2. Options trading\n3. Short selling"
+          },
+          {
+            "tabTitle": "Week 6",
+            "date": "1716636381000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Presenting Professionally\n1. Analyzing and presenting your portfolio\n2. Tips for the portfolio presentation"
+          },
+          {
+            "tabTitle": "Week 7",
+            "date": "1717241181000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Mentorship Session\n1. Interactive mentoring session with HSA Mentors (Office Hours)"
+          },
+          {
+            "tabTitle": "Week 8",
+            "date": "1717845981000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Mentorship Session\n1. Interactive mentoring session with HSA Mentors (Office Hours)"
+          },
+          {
+            "tabTitle": "Week 9",
+            "date": "1718450781000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Personal Finance\n1. Advice for personal wealth management\n2. Budgeting\n3. Concluding thoughts on program before judging begins"
+          },
+          {
+            "tabTitle": "Week 10",
+            "date": "1719055581000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Mentorship Session\n1. Interactive mentoring & feedback session with HSA Mentors."
+          },
+          {
+            "tabTitle": "Week 11",
+            "date": "1719660381000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Semi - Final"
+          },
+          {
+            "tabTitle": "Week 12",
+            "date": "1720265181000",
+            "time": "9:00 am - 10:00 am-EST",
+            "description": "Challenge concluded\n1. Top 10 participants present their portfolio to judges for the final round\n2. Winners announced"
+          }
+      ]      
+    },
+    {
+      "category": "Offline programs",
+      "image": "/pexelspixabay1393921536x1024jpg@2x.png",
+      "country": "India",
+      "programName": "The Young Global Leadership Program – Hosted by JBCN International School, Borivali",
+      "description": "A Unique and Intensive 5-Day Program on Leadership and Creating Future Changemakers.",
+      "hashtag": "#Competitions",
+      "date": "19 August, 2023",
+      "eligibility": "Grades 8th-12th",
+      "startsOn": "STARTS ON",      
+      "duration": "DURATION",
+      "weeks": "5 Days",
       "earlyApplicationDate": "1708860381000",
       "programFee": "USD 80",
       "regularFee": "USD 100",
@@ -185,108 +277,16 @@
     },
     {
       "category": "Offline programs",
-      "image": "/event-img-1@2x.png",
+      "image": "/whatsappimage20230714at125555amjpeg@2x.png",
       "country": "Malaysia",
-      "programName": "The Young Global Leadership Program - Hosted by Straits...",      
+      "programName": "The Young Leadership Program – Hosted by Straits International School, Penang",
       "description": "A Unique and Intensive 3-Day Program on Leadership and Creating Future Changemakers.",
       "hashtag": "#Competitions",
-      "date": "16 August, 2024",
+      "date": "16 August, 2023",
       "eligibility": "Grades 8th-12th",
       "startsOn": "STARTS ON",      
       "duration": "DURATION",
       "weeks": "3 Days",
-      "earlyApplicationDate": "1708860381000",
-      "programFee": "USD 80",
-      "regularFee": "USD 100",
-      "deadline": "1709637981000",
-      "about": "The Wolves of the Wall Street Challenge is a 12-week investment competition challenging students to develop an intelligent portfolio strategy, trade strategically, and rise to the top of the investor leader board. Participants can choose to enter the competition individually or in a team. Participants choosing to enter in a team will be assigned to global teams of 3-4 members each by the organization. ",
-      "schedule": [
-        {
-          "tabTitle": "Week 1",
-          "date": "1713612381000",
-          "time": "9:00 am - 10:00 am-EST",
-          "description": "Competition kickoff\n1. Welcome\n2. Investing 101"
-        },
-        {
-          "tabTitle": "Week 2",
-          "date": "1714217181000",
-          "time": "9:00 am - 10:00 am-EST",
-          "description": "Investing Intentionally\n1. Value v. Growth\n2. InvestingDiversification\n3. Bond valuation"
-        },
-        {
-          "tabTitle": "Week 3",
-          "date": "1714821981000",
-          "time": "9:00 am - 10:00 am-EST",
-          "description": "Mentorship Session\n1. Workshop by Wall Street Experts\n2. Interactive mentoring session with HSA mentors (Office Hours)"
-        },
-        {
-          "tabTitle": "Week 4",
-          "date": "1715426781000",
-          "time": "9:00 am - 10:00 am-EST",
-          "description": "Active Analysis 3\n1. Technical stock analysis\n2. Trend analysis\n3. Market analysis"
-        },
-        {
-            "tabTitle": "Week 5",
-            "date": "1716031581000",
-            "time": "9:00 am - 10:00 am-EST",
-            "description": "Diving into Derivatives\n1. Risks and rewards of derivatives\n2. Options trading\n3. Short selling"
-          },
-          {
-            "tabTitle": "Week 6",
-            "date": "1716636381000",
-            "time": "9:00 am - 10:00 am-EST",
-            "description": "Presenting Professionally\n1. Analyzing and presenting your portfolio\n2. Tips for the portfolio presentation"
-          },
-          {
-            "tabTitle": "Week 7",
-            "date": "1717241181000",
-            "time": "9:00 am - 10:00 am-EST",
-            "description": "Mentorship Session\n1. Interactive mentoring session with HSA Mentors (Office Hours)"
-          },
-          {
-            "tabTitle": "Week 8",
-            "date": "1717845981000",
-            "time": "9:00 am - 10:00 am-EST",
-            "description": "Mentorship Session\n1. Interactive mentoring session with HSA Mentors (Office Hours)"
-          },
-          {
-            "tabTitle": "Week 9",
-            "date": "1718450781000",
-            "time": "9:00 am - 10:00 am-EST",
-            "description": "Personal Finance\n1. Advice for personal wealth management\n2. Budgeting\n3. Concluding thoughts on program before judging begins"
-          },
-          {
-            "tabTitle": "Week 10",
-            "date": "1719055581000",
-            "time": "9:00 am - 10:00 am-EST",
-            "description": "Mentorship Session\n1. Interactive mentoring & feedback session with HSA Mentors."
-          },
-          {
-            "tabTitle": "Week 11",
-            "date": "1719660381000",
-            "time": "9:00 am - 10:00 am-EST",
-            "description": "Semi - Final"
-          },
-          {
-            "tabTitle": "Week 12",
-            "date": "1720265181000",
-            "time": "9:00 am - 10:00 am-EST",
-            "description": "Challenge concluded\n1. Top 10 participants present their portfolio to judges for the final round\n2. Winners announced"
-          }
-      ]      
-    },
-    {
-      "category": "Offline programs",
-      "image": "/event-img-1@2x.png",
-      "country": "India",
-      "programName": "The Young Global Leadership Program - Hosted by Straits...",
-      "description": "A Unique and Intensive 3-Day Program on Leadership and Creating Future Changemakers.",
-      "hashtag": "#Competitions",
-      "date": "16 August, 2024",
-      "eligibility": "Grades 8th-12th",
-      "startsOn": "STARTS ON",      
-      "duration": "DURATION",
-      "weeks": "2 Weekends",
       "earlyApplicationDate": "1708860381000",
       "programFee": "USD 80",
       "regularFee": "USD 100",

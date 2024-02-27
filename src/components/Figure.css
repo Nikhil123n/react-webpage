@@ -84,3 +84,11 @@
   font-family: var(--font-inter);
   cursor: pointer;
 }
+.background-img-overlay-1 {
+  /* align-self: stretch; */
+    align-items: flex-start;
+    gap: var(--gap-base);
+    z-index: 2;
+    background: linear-gradient( 0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.81) 60.5%, transparent );
+    padding: var(--padding-base);
+}

@@ -55,8 +55,19 @@ const Home = () => {
       <FutureDoctors />
       <section className="arrow-svg">
         <div className="event-img-overlay-parent">
-          <EventImgOverlay />
-          <DivcolLg />
+          <EventImgOverlay 
+              heading = "HDFC Capital Advisors: Corporate Internship Project"
+              paragraph = "In collaboration with Harvard Entrepreneurship Collective and Learn with Leaders. Embark on an 8-week Experiential Learning Project Tackling a Fortune 500 real-world business problem, guided by a Harvard undergraduate mentor to craft live solutions that address the impact of Green Finance for residential"
+              deadline = "25 February 2024"
+              startDate = "2 March 2024"
+
+          />
+          <DivcolLg 
+              heading="Take the world forward fellowship"
+              paragraph="Co-create the future with the world's finest thinkers.                                                                                        "
+              deadline = "27 February 2024"
+              startDate = "2 March 2024"
+              />
           <Timeline />
         </div>
       </section>
