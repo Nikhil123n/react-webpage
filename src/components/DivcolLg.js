@@ -1,5 +1,5 @@
 import DivcolLg1 from "./DivcolLg1";
-import { useMemo, useCallback } from "react";
+import { useMemo, useCallback, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import "./DivcolLg.css";
@@ -16,25 +16,54 @@ const DivcolLg = ({arrowStyles, heading, paragraph, imgPath, removeGoldenHeader,
   }, [navigate]);
 
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [slideDirection, setSlideDirection] = useState(null);
+  const [currentData, setCurrentData] = useState(fellowshipFigureData[currentIndex]);
+  const onNextClick = () => {
+    if (currentIndex < fellowshipFigureData.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+      setSlideDirection("slide-left");
+      setTimeout(() => setSlideDirection(null), 500); // Reset slide direction after transition
+      setCurrentData(fellowshipFigureData[currentIndex + 1]);      
+    }
+  };
+  const onPrevClick = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+      setSlideDirection("slide-right");
+      setTimeout(() => setSlideDirection(null), 500); // Reset slide direction after transition
+      setCurrentData(fellowshipFigureData[currentIndex - 1]);
+    }
+  };
+  useEffect(() => {
+    setCurrentData(fellowshipFigureData[currentIndex]);
+  }, [currentIndex]);
+  
+
   return (
     <div className="divcol-lg-12">
       <img
-        className="whatsapp-image-2023-07-14-at-0-icon1"
+        className={`whatsapp-image-2023-07-14-at-0-icon1 ${slideDirection}`}
         alt=""
-        src={imgPath ? imgPath : imgDefault}
+        src={currentData.image}
       />
-      <div className="into-arrow-svg">
+      <div className={`into-arrow-svg ${slideDirection}`} >
         <DivcolLg1 propAlignSelf="stretch" 
-                  heading={heading} 
+                  heading={currentData.programName}
                   arrowStyles={arrowStyles}
                   timelineRemove={timelineRemove}
-                  paragraph={paragraph}
-                  deadline={deadline}
-                  startDate={startDate}
-                  card={fellowshipFigureData[0]}
+                  paragraph={currentData.description}
+                  deadline={currentData.deadline}
+                  startDate={currentData.earlyApplicationDate}
+                  card={currentData}
           />
-        <img style={arrowStyles} className="left-arrowsvg-icon1" alt="" src="/leftarrowsvg-2.svg" />
-        <img style={arrowStyles} className="right-arrowsvg-icon5" alt="" src="/rightarrowsvg-16.svg" />
+
+        <button style={{backgroundColor: "transparent", border: '0'}} className="arrow-button" onClick={() => onPrevClick() } >
+          <img style={arrowStyles} className="left-arrowsvg-icon1" alt="" src="/leftarrowsvg-2.svg" />
+        </button>
+        <button style={{backgroundColor: "transparent", border: '0'}} className="arrow-button" onClick={() => onNextClick() } >
+          <img style={arrowStyles} className="right-arrowsvg-icon5" alt="" src="/rightarrowsvg-16.svg" />
+        </button>
       </div>
       <div className="link-fellowships1" onClick={onLinkExploreClick} style={{...arrowStyles, ...removeGoldenHeader} } >Fellowships</div>
     </div>

@@ -1,5 +1,5 @@
 import DivowlItem from "./DivowlItem";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import { useCallback } from "react";
@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import "./Container.css";
 // import '@coreui/coreui/dist/css/coreui.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const Container = () => {
   const navigate = useNavigate();
@@ -60,10 +61,57 @@ const Container = () => {
     ]
   }
 
+
+  // Code for the translate effect on the cards
+  const [translateX, setTranslateX] = useState(0);
+  const translateIncrement = -322.19; // Adjust this value according to your requirement
+  const translateInterval = 5200; // Interval between translations in milliseconds
+  const maxTranslateTimes = 3; // Number of times to increase translation before resetting
+
+  const translateRef = useRef(null);
+  const translateCountRef = useRef(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if (translateCountRef.current < maxTranslateTimes) {
+        setTranslateX(prevTranslateX => prevTranslateX + translateIncrement);
+        translateCountRef.current++;
+      } else {
+        setTranslateX(0);
+        translateCountRef.current = 0;
+      }
+    }, translateInterval);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  useEffect(() => {
+    translateRef.current.style.transform = `translate3d(${translateX}px, 0, 0)`;
+  }, [translateX]);
+
   return (
     <div className="hero-container">
+
+      <div className="heading-cta">
+        <h1 className="heading-1-container">
+          <span>
+            <p className="ivy-league-education">Ivy League Education</p>
+            <p className="unbounded">Unbounded</p>
+          </span>
+        </h1>
+        <div className="future-doctors-event-info-grou">
+          <div className="learn-with-the">{`Learn with the World’s Best Teachers, Mentors & Students`}</div>
+          <button className="button" onClick={onButtonContainerClick}>
+            <div className="get-started">Get Started</div> 
+            <FontAwesomeIcon icon={faAngleRight} className="angle-right-icon" swapOpacity size="lg" />            
+          </button>
+        </div>
+      </div>
+
       <div className="carousel-img-catelog-grp-1">
-        <div className="divowl-stage-outer">
+        <div className="divowl-stage-outer" ref={translateRef}>
+        {Array.from({ length: 2 }).map((_, index) => (
+          <React.Fragment key={index}>
           <DivowlItem
             link900x5502Aboutjpg="/link--900x5502aboutjpg@2x.png"
             heading5InnovationLeaders={`Innovation & Leadership World Workshop`}
@@ -82,7 +130,7 @@ const Container = () => {
             rightArrowsvg="/rightarrowsvg-1@2x.png"
             propPadding="var(--padding-14xl) var(--padding-4xs) var(--padding-smi) var(--padding-3xs)"
             card = {defaultCard}
-          />
+          />          
           <DivowlItem
             link900x5502Aboutjpg="/link--400x600featureimage1png@2x.png"
             heading5InnovationLeaders="The Leadership Competition"
@@ -92,24 +140,12 @@ const Container = () => {
             rightArrowsvg="/rightarrowsvg-2@2x.png"
             propPadding="var(--padding-14xl) var(--padding-4xs) var(--padding-smi) var(--padding-3xs)"
             card = {defaultCard}
-          />
+          />          
+          </React.Fragment>
+        ))}
         </div>
       </div>
-      <div className="heading-cta">
-        <h1 className="heading-1-container">
-          <span>
-            <p className="ivy-league-education">Ivy League Education</p>
-            <p className="unbounded">Unbounded</p>
-          </span>
-        </h1>
-        <div className="future-doctors-event-info-grou">
-          <div className="learn-with-the">{`Learn with the World’s Best Teachers, Mentors & Students`}</div>
-          <button className="button" onClick={onButtonContainerClick}>
-            <div className="get-started">Get Started</div> 
-            <FontAwesomeIcon icon={faAngleRight} className="angle-right-icon" swapOpacity size="lg" />            
-          </button>
-        </div>
-      </div>
+      
     </div>
   );
 };

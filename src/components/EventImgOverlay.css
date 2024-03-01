@@ -32,6 +32,8 @@
   align-self: stretch;
   justify-content: flex-start;
   padding: 0 var(--padding-xs) 0 0;
+  margin-bottom: -20px;
+  margin-top: -50px;
 }
 .whatsapp-image-2023-07-14-at-0-icon {
   height: 570px;
@@ -99,6 +101,23 @@
   color: var(--color-goldenrod-100);
   font-family: var(--font-bebas-neue);
 }
+
+/* EventImgOverlay.css */
+.whatsapp-image-2023-07-14-at-0-icon,
+.divcol-lg-5-wrapper {
+  /* Your existing styles */
+  /* position: relative; */
+  transition: transform 0.5s ease; /* Define transition property */
+}
+
+.slide-left {
+  transform: translateX(-10%); /* Move container to the left */
+}
+
+.slide-right {
+  transform: translateX(10%); /* Move container to the right */
+}
+
 @media screen and (max-width: 1350px) {
   .divowl-controls {
     flex-wrap: wrap;    

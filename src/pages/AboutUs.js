@@ -7,8 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
 import NavigationLinks from "../components/NavigationLinks";
-import EventImgOverlay from "../components/EventImgOverlay";
-import DivcolLg from "../components/DivcolLg";
+import AboutImgOverlay from "../components/AboutImgOverlay";
+import DivcolLg2 from "../components/DivcolLg2";
 
 
 import Footer from "../components/Footer";
@@ -118,7 +118,7 @@ const AboutUs = () => {
 
             <section className="arrow-svg">
                 <div className="event-img-overlay-parent">
-                    <DivcolLg 
+                    <DivcolLg2 
                         arrowStyles={{display: 'none' }} 
                         heading="Taking The Room Out Of The Classroom"
                         paragraph={TakingRoomOutofClassroom}
@@ -158,7 +158,7 @@ const AboutUs = () => {
                         </Row>
                     </Container>
 
-                    <EventImgOverlay 
+                    <AboutImgOverlay 
                         arrowStyles={{display: 'none' }}
                         programName = "none"
                         heading="Our Vision"
@@ -166,7 +166,7 @@ const AboutUs = () => {
                         imgPath="OurVision.jpg"
                     />
 
-                    <DivcolLg 
+                    <DivcolLg2 
                         arrowStyles={{display: 'none' }} 
                         heading="Our Mission"
                         paragraph={OurMission}

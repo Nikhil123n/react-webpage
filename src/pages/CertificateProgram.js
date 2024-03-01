@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
 import NavigationLinks from "../components/NavigationLinks";
-import DivcolLg from "../components/DivcolLg";
+import DivcolLg2 from "../components/DivcolLg2";
 // import Container from "../components/Container";
 import Footer from "../components/Footer";
 import ConnectUs from "../components/ConnectUs";
@@ -329,7 +329,7 @@ const CertificateProgram = ({card, prgName}) => {
 
           <section className="arrow-svg" id="about">
                 <div className="event-img-overlay-parent">
-                    <DivcolLg 
+                    <DivcolLg2 
                         removeGoldenHeader={{display: 'none' }} 
                         timelineRemove={{display: 'none' }}
                         heading={programCardData.programName}

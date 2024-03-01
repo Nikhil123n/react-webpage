@@ -11,6 +11,10 @@
   flex-shrink: 0;
   object-fit: cover;
 }
+.whatsapp-image-2023-07-14-at-0-icon1,
+.into-arrow-svg {  
+  transition: transform 0.5s ease; /* Define transition property */
+}
 .left-arrowsvg-icon1,
 .right-arrowsvg-icon5 {
   width: 30px;
