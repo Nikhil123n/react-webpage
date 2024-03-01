@@ -190,6 +190,9 @@
     padding: 0;
     overflow: hidden;
   }
+  .learn-with-the {
+    height: 30px;
+  }
 }
 @media screen and (max-width: 600px) {
   .carousel-img-catelog-grp-1.row {
@@ -197,6 +200,9 @@
   }
   .divowl-stage-outer {
     height: 450px;
+  }
+  .learn-with-the {
+    height: 93px;
   }
 }
 @media screen and (max-width: 450px) {
