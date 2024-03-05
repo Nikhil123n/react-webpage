@@ -2,21 +2,32 @@ import { useMemo, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import React from "react";
 import "./DivcolLg1.css";
+const fellowshipFigureData = require('../json/fellowship.json');
 
 const DivcolLg1 = ({ propFlex, propAlignSelf, heading, arrowStyles, paragraph, timelineRemove, deadline, startDate, card }) => {  
   
   // console.log(timelineRemove)  
 
   const navigate = useNavigate();
-  const onLinkExploreClick = useCallback(() => {
+  let newCard;      
+
+  const getCardHeading = () => {
+    newCard = fellowshipFigureData.filter((data) => {return data.programName == heading})    
+    onLinkExploreClick(newCard);
+  }
+  const onLinkExploreClick = useCallback((newCard) => {       
     navigate("/program-reg",{
-      state: heading
+      state: newCard[0].programName
     });
   }, [navigate]);
 
-  const onCardClick = useCallback(() => {
+  const getCardDetails = () => {
+    newCard = fellowshipFigureData.filter((data) => {return data.programName == heading})    
+    onCardClick(newCard);
+  }
+  const onCardClick = useCallback((newCard) => {        
     navigate("/certificate-program",{
-      state: card ? card : "The Leadership Competition by the Harvard MUN Team"
+      state: newCard ? newCard[0] : {}
     });
   }, [navigate]);
   
@@ -28,12 +39,14 @@ const DivcolLg1 = ({ propFlex, propAlignSelf, heading, arrowStyles, paragraph, t
     };
   }, [propFlex, propAlignSelf]);
 
+  // console.log(fellowshipFigureData)
+
   return (
     <div className="divcol-lg-5" style={divcolLg5Style}>
       <div className="heading-wrapper">
         <div className="heading">
           <h3 className="link-heading-container">
-            <p className="hdfc-capital-advisors" onClick={onCardClick}>
+            <p className="hdfc-capital-advisors" onClick={getCardDetails}>
               {heading ? heading : "HDFC Capital Advisors: Corporate Internship Project"}
               </p>
           </h3>
@@ -54,7 +67,7 @@ const DivcolLg1 = ({ propFlex, propAlignSelf, heading, arrowStyles, paragraph, t
           <p className="in-collaboration-with">
             <i> {paragraph ? paragraph : content} </i>
           </p>
-          <a href="" onClick={onLinkExploreClick} style={arrowStyles} >Apply Now</a>
+          <a href="" onClick={getCardHeading} style={arrowStyles} >Apply Now</a>
         </span>
       </div>
     </div>

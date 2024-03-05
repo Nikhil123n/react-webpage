@@ -18,26 +18,39 @@ const DivcolLg = ({arrowStyles, heading, paragraph, imgPath, removeGoldenHeader,
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [slideDirection, setSlideDirection] = useState(null);
-  const [currentData, setCurrentData] = useState(fellowshipFigureData[currentIndex]);
+  let [currentData, setCurrentData] = useState(fellowshipFigureData[currentIndex]);
+  
+  const onPrevClick = () => {
+    // if (currentIndex > 0) {
+    //   const index = currentIndex - 1;
+    //   setCurrentIndex(currentIndex - 1);
+    //   setSlideDirection("slide-right");
+    //   setTimeout(() => setSlideDirection(null), 500); // Reset slide direction after transition
+    //   currentData= fellowshipFigureData[index];
+    // }
+    if (currentIndex > 0 ) {
+      setCurrentIndex((prevIndex) => {
+        const newIndex = prevIndex - 1;
+        setSlideDirection("slide-right");
+        setTimeout(() => setSlideDirection(null), 500); // Reset slide direction after transition
+        setCurrentData(fellowshipFigureData[newIndex]);
+        return newIndex;
+      });      
+    }
+  };
   const onNextClick = () => {
     if (currentIndex < fellowshipFigureData.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-      setSlideDirection("slide-left");
-      setTimeout(() => setSlideDirection(null), 500); // Reset slide direction after transition
-      setCurrentData(fellowshipFigureData[currentIndex + 1]);      
+      setCurrentIndex((prevIndex) => {
+        const newIndex = prevIndex + 1;
+        setSlideDirection("slide-left");
+        setTimeout(() => setSlideDirection(null), 500); // Reset slide direction after transition
+        setCurrentData(fellowshipFigureData[newIndex]);
+        return newIndex;
+      });      
     }
-  };
-  const onPrevClick = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-      setSlideDirection("slide-right");
-      setTimeout(() => setSlideDirection(null), 500); // Reset slide direction after transition
-      setCurrentData(fellowshipFigureData[currentIndex - 1]);
-    }
-  };
-  useEffect(() => {
-    setCurrentData(fellowshipFigureData[currentIndex]);
-  }, [currentIndex]);
+  };  
+
+  console.log(currentIndex, currentData)  
   
 
   return (
