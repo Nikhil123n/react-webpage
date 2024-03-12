@@ -1,69 +1,4 @@
-[
-    {
-      "category": "Competition programs",
-      "image": "/Competition/feature.jpg",
-      "programName": "The HUCEG Sustainability Leaders Challenge",
-      "description": "Kick start your sustainability journey with mentors from Harvard HUCEG.",
-      "hashtag": "#CompetitionsSustainability",
-      "date": "1710588381000",
-      "eligibility": "Grades 8th-12th",
-      "duration": "4 Weeks",
-      "earlyApplicationDate": "1707996381000",
-      "programFee": "USD 80",
-      "regularFee": "USD 120",
-      "deadline": "1708860381000",
-      "about": "There is a keen awareness and concern amongst the teenagers for the need to move towards more sustainable practices for our planet. A report by a leading strategy consulting firm highlighted the desire amongst today’s teenagers to be change agents from an early age.",
-      "schedule": [
-        {
-          "tabTitle": "Week 1",
-          "date": "1710588381000",
-          "time": "9:00 am - 12:00 pm-EST",
-          "description": "16th & 17th March 2024\nSustainability Webinars\nDuring the two days, listen and interact with experts and HUCEG mentors as they cover topics like:\n-The Energy Internet\n-LEED certification\n-Clean energy transition in developing world -SDGs & global cooperation\n-Climate activism and lobbying as a high school student\n-Climate mitigation and climate adaptation\n-Sustainable agriculture"
-        },
-        {
-          "tabTitle": "Week 2",
-          "date": "1711193181000",
-          "time": "9:00 am - 12:00 pm-EST",
-          "description": "23rd & 24th March 2024\nSustainability Webinars\nDuring the two days, listen and interact with experts and HUCEG mentors as they cover topics like:\n-The Energy Internet\n-LEED certification\n-Clean energy transition in developing world -SDGs & global cooperation\n-Climate activism and lobbying as a high school student\n-Climate mitigation and climate adaptation\n-Sustainable agriculture"
-        },
-        {
-          "tabTitle": "Week 2",
-          "date": "1711365981000",
-          "time": "9:00 am - 12:00 pm-EST",
-          "description": "25th - 29th March 2024\nSubmission of Solutions for Challenge\n During this week, participants will be required to submit their business idea/solution (as individuals or in teams of up to 4 participants)."
-        },
-        {
-          "tabTitle": "Week 3",
-          "date": "1711970781000",
-          "time": "9:00 am - 12:00 pm-EST",
-          "description": "Based on submissions, semi-finalists declared.\nUp to 25 teams will be selected for the semi-finals."
-        },
-        {
-            "tabTitle": "Week 3",
-            "date": "1712143581000",
-            "time": "9:00 am - 12:00 pm-EST",
-            "description": "Mentoring by HUCEG team.\nAll semi-finalist teams get one mentorship to refine their semi-final pitch."
-          },
-          {
-            "tabTitle": "Week 3",
-            "date": "1712489181000",
-            "time": "9:00 am - 12:00 pm-EST",
-            "description": "Semi-Finals pitches to a panel of judges."
-          },
-          {
-            "tabTitle": "Week 4",
-            "date": "1712748381000",
-            "time": "9:00 am - 12:00 pm-EST",
-            "description": "10th - 12th April 2024\nFinalists can choose to get another round of mentoring."
-          },
-          {
-            "tabTitle": "Week 4",
-            "date": "1713180381000",
-            "time": "9:00 am - 12:00 pm-EST",
-            "description": "Global Final"
-          }
-      ]
-    },
+[    
     {
       "category": "Competition programs",
       "image": "/Competition/future-lawyer.jpeg",
@@ -197,6 +132,71 @@
             "date": "1720265181000",
             "time": "9:00 am - 10:00 am-EST",
             "description": "Challenge concluded\n1. Top 10 participants present their portfolio to judges for the final round\n2. Winners announced"
+          }
+      ]
+    },
+    {
+      "category": "Competition programs",
+      "image": "/Competition/feature.jpg",
+      "programName": "The HUCEG Sustainability Leaders Challenge",
+      "description": "Kick start your sustainability journey with mentors from Harvard HUCEG.",
+      "hashtag": "#CompetitionsSustainability",
+      "date": "1710588381000",
+      "eligibility": "Grades 8th-12th",
+      "duration": "4 Weeks",
+      "earlyApplicationDate": "1707996381000",
+      "programFee": "USD 80",
+      "regularFee": "USD 120",
+      "deadline": "1708860381000",
+      "about": "There is a keen awareness and concern amongst the teenagers for the need to move towards more sustainable practices for our planet. A report by a leading strategy consulting firm highlighted the desire amongst today’s teenagers to be change agents from an early age.",
+      "schedule": [
+        {
+          "tabTitle": "Week 1",
+          "date": "1710588381000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "16th & 17th March 2024\nSustainability Webinars\nDuring the two days, listen and interact with experts and HUCEG mentors as they cover topics like:\n-The Energy Internet\n-LEED certification\n-Clean energy transition in developing world -SDGs & global cooperation\n-Climate activism and lobbying as a high school student\n-Climate mitigation and climate adaptation\n-Sustainable agriculture"
+        },
+        {
+          "tabTitle": "Week 2",
+          "date": "1711193181000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "23rd & 24th March 2024\nSustainability Webinars\nDuring the two days, listen and interact with experts and HUCEG mentors as they cover topics like:\n-The Energy Internet\n-LEED certification\n-Clean energy transition in developing world -SDGs & global cooperation\n-Climate activism and lobbying as a high school student\n-Climate mitigation and climate adaptation\n-Sustainable agriculture"
+        },
+        {
+          "tabTitle": "Week 2",
+          "date": "1711365981000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "25th - 29th March 2024\nSubmission of Solutions for Challenge\n During this week, participants will be required to submit their business idea/solution (as individuals or in teams of up to 4 participants)."
+        },
+        {
+          "tabTitle": "Week 3",
+          "date": "1711970781000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Based on submissions, semi-finalists declared.\nUp to 25 teams will be selected for the semi-finals."
+        },
+        {
+            "tabTitle": "Week 3",
+            "date": "1712143581000",
+            "time": "9:00 am - 12:00 pm-EST",
+            "description": "Mentoring by HUCEG team.\nAll semi-finalist teams get one mentorship to refine their semi-final pitch."
+          },
+          {
+            "tabTitle": "Week 3",
+            "date": "1712489181000",
+            "time": "9:00 am - 12:00 pm-EST",
+            "description": "Semi-Finals pitches to a panel of judges."
+          },
+          {
+            "tabTitle": "Week 4",
+            "date": "1712748381000",
+            "time": "9:00 am - 12:00 pm-EST",
+            "description": "10th - 12th April 2024\nFinalists can choose to get another round of mentoring."
+          },
+          {
+            "tabTitle": "Week 4",
+            "date": "1713180381000",
+            "time": "9:00 am - 12:00 pm-EST",
+            "description": "Global Final"
           }
       ]
     }

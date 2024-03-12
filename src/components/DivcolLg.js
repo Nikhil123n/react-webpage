@@ -69,6 +69,7 @@ const DivcolLg = ({arrowStyles, heading, paragraph, imgPath, removeGoldenHeader,
                   deadline={currentData.deadline}
                   startDate={currentData.earlyApplicationDate}
                   card={currentData}
+                  jsonData = {require('../json/fellowship.json')}
           />
 
         <button style={{backgroundColor: "transparent", border: '0'}} className="arrow-button" onClick={() => onPrevClick() } >

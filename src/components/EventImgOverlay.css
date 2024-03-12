@@ -51,7 +51,7 @@
   flex: 1;
   position: relative;
   letter-spacing: 16.63px;
-  line-height: 100.8px;
+  line-height: 70.8px;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -97,7 +97,7 @@
   align-items: flex-end;
   /* gap: var(--gap-6xl); */
   text-align: center;
-  font-size: var(--font-size-81xl-8);
+  font-size: 80px;
   color: var(--color-goldenrod-100);
   font-family: var(--font-bebas-neue);
 }

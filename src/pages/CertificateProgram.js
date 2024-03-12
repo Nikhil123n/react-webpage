@@ -156,8 +156,8 @@ const CertificateProgram = ({card, prgName}) => {
       
     const navigate = useNavigate();
     const location = useLocation();
-    const programCardData = location.state;
-    // console.log(programCardData);    
+    const programCardData = location.state.state;
+    const applynowLink = location.state.url;
 
     const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
                     "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -170,11 +170,18 @@ const CertificateProgram = ({card, prgName}) => {
     // console.log(date, date.getFullYear())
     
     const onLinkExploreClick = useCallback(() => {
-        navigate("/program-reg",{
-        state: programCardData.programName
-        });
-    }, [navigate]);
 
+        if (applynowLink) {
+            // If URL exists, navigate to it
+            window.location.href = applynowLink;
+        } else {
+            navigate("/program-reg",{
+            state: programCardData.programName
+            });
+        }
+    }, [applynowLink, navigate, programCardData]);
+
+    console.log("condition", applynowLink ? applynowLink : programCardData.programName)
 
     let prevProgramPage = programCardData.category.split(" ")[0].toLowerCase();
     prevProgramPage = "/" + prevProgramPage;
@@ -335,6 +342,7 @@ const CertificateProgram = ({card, prgName}) => {
                         heading={programCardData.programName}
                         paragraph={programCardData.about}
                         imgPath={programCardData.image}
+                        forApplyNow={applynowLink}
                     />
                 </div>
           </section>

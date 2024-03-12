@@ -44,9 +44,9 @@ const Timeline = () => {
           <button className="timeline-btn-border  c-3"  onClick={() => toggleTab(3) }>
             <div className={toggleState === 3 ? "testimonials active-tabs" : "testimonials"} >Testimonials</div>
           </button>
-          <button className="timeline-btn-border  c-4"  onClick={() => toggleTab(4) }>
+          {/* <button className="timeline-btn-border  c-4"  onClick={() => toggleTab(4) }>
             <div className={toggleState === 4 ? "community-events active-tabs" : "community-events"} >Community Events</div>
-          </button>
+          </button> */}
         </div>
 
 
@@ -122,7 +122,7 @@ const Timeline = () => {
           ))}  
         </div>
 
-        <div className={toggleState === 4 ? "div-fusion-image-element active-content" : "div-fusion-image-element"}  >    
+        {/* <div className={toggleState === 4 ? "div-fusion-image-element active-content" : "div-fusion-image-element"}  >    
           {community_events.map((event, index) => (          
               <Img1
                 propBackgroundImage= {event.img_url}              
@@ -131,7 +131,7 @@ const Timeline = () => {
                 galleryEventName = "Community Events"
               />            
           ))}  
-        </div>
+        </div> */}
 
 
 

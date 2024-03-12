@@ -7,6 +7,7 @@ import "./Event1.css";
 const Event1 = ({
   eventImg1,
   fellowships,
+  arrowStyles,
   heading,
   sTARTSON,
   december2023,
@@ -25,6 +26,8 @@ const Event1 = ({
   propAlignSelf1,
   propWidth3,
   propAlignSelf2,
+  hideEventInfoGrp1,
+  applynowLink,
   card,
   transitionStyle,
 }) => {
@@ -81,12 +84,19 @@ const Event1 = ({
     };
   }, [propAlignSelf2]);
 
+  const monthNamesF = ["January", "February", "March", "April", "May", "June",
+                        "July", "August", "September", "October", "November", "December"];
+  const earlyApplicationDate = new Date(parseInt(december2023));
   const navigate = useNavigate();
   const onCardClick = useCallback(() => {
+  
     navigate("/certificate-program",{
-      state: card ? card : "The Leadership Competition by the Harvard MUN Team"
+      state: {
+        state: card ? card : "The Leadership Competition by the Harvard MUN Team",
+        url: applynowLink ? applynowLink : ""
+      }
     });
-  }, [navigate]);
+  }, [card, navigate]);
 
   return (
     <div className="event-2" style={{...event2Style, ...transitionStyle, backgroundImage: `url("${eventImg1}")` }} onClick={onCardClick}>
@@ -95,7 +105,7 @@ const Event1 = ({
       <div className="programs-frame" style={programsFrameStyle}>
         <button
           className="frame-with-div-fusion-column-w"
-          style={frameWithDivFusionColumnWStyle}
+          style={{...frameWithDivFusionColumnWStyle, ...arrowStyles}}
         >
           <div className="fellowships">{fellowships}</div>
         </button>
@@ -105,12 +115,12 @@ const Event1 = ({
           <div className="heading3" style={headingStyle}>
             {heading}
           </div>
-          <div className="event-info-grp-1">
+          <div className="event-info-grp-1" style={hideEventInfoGrp1}>
             <div className="event-date-grp-2" style={eventDateGrp2Style}>
               <div className="starts-on" style={sTARTSONStyle}>
                 {sTARTSON}
               </div>
-              <div className="december-20232">{december2023}</div>
+              <div className="december-20232"> {earlyApplicationDate.getDate()} {monthNamesF[earlyApplicationDate.getMonth()]}, {earlyApplicationDate.getFullYear()} </div>
             </div>
             <div className="event-date-grp-3" style={eventDateGrp3Style}>
               <div className="duration">{dURATION}</div>

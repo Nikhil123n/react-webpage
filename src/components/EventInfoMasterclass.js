@@ -72,6 +72,8 @@ const EventInfoGrid = () => {
         items: 1
       }
     };
+    
+    const applynowLink = "https://docs.google.com/forms/d/e/1FAIpQLScd19KvAEu727mamnmmxYGlg1r-zgviIADLVBMSk8JkScswjA/viewform?urp=gmail_link";
     const carouselRef = useRef(null);
 
     const handleNextSlide = () => {
@@ -125,6 +127,7 @@ const EventInfoGrid = () => {
                 december2023={event.date}
                 dURATION="DURATION"
                 weeks={event.weeks}
+                applynowLink={applynowLink}
                 card = {Object.keys(event).length > 4 ? event : defaultCard }
               />
             ))}                    

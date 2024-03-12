@@ -180,7 +180,8 @@ const EventInfoGrid = () => {
               <Event1
                 key={index}
                 eventImg1={event.image}
-                fellowships={event.country}
+                // fellowships={event.country}
+                arrowStyles={{display: 'none' }} 
                 heading={event.programName}
                 sTARTSON={event.startsOn}
                 december2023={event.date}
@@ -202,7 +203,8 @@ const EventInfoGrid = () => {
               <Event1
                 key={index}
                 eventImg1={event.image}
-                fellowships={event.country}
+                // fellowships={event.country}
+                arrowStyles={{display: 'none' }} 
                 heading={event.programName}
                 sTARTSON={event.startsOn}
                 december2023={event.date}

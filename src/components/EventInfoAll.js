@@ -141,6 +141,7 @@ const EventInfoAll = () => {
                 december2023={event.date}
                 dURATION="DURATION"
                 weeks={event.weeks}
+                hideEventInfoGrp1={{display: 'none' }} 
                 card = {Object.keys(event).length > 4 ? event : defaultCard }
                 // transitionStyle= {{ transform: `translateX(-${currentIndex * 100}%)` }}
               />

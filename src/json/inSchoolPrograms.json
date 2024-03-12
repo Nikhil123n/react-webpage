@@ -34,24 +34,24 @@
     "impact_stories": [
       {
         "id": 1,
-        "img": "/Gallery/Ahmedabad International School-India-HMCSF.jpeg",
-        "img_url": "url('/Gallery/Ahmedabad International School-India-HMCSF.jpeg')",
-        "location": "Ahmedabad",
-        "venue": "Stonehill School-Bangalore"
+        "img": "/Gallery/Hala-Osman.png",
+        "img_url": "url('/Gallery/Hala-Osman.png')",
+        "location": "UAE",
+        "venue": "Expanding Horizons & Breaking Stereotypes: My Journey through the Public Speaking Masterclass by Hala Osman"
       },
       {
         "id": 2,
-        "img": "/Gallery/Germany-St George British International School-HYPL.jpg",
-        "img_url": "url('/Gallery/Germany-St George British International School-HYPL.jpg')",
-        "location": "Germany",
-        "venue": "St George British International School-HYPL"
+        "img": "/Gallery/testimonials-img2.jpeg",
+        "img_url": "url('/Gallery/testimonials-img2.jpeg')",
+        "location": "Italy",
+        "venue": "Carla’s Journey: Empowering Youth, Advocating for Change, and Mastering the Art of Debate"
       },
       {
         "id": 3,
-        "img": "/Gallery/India-Stonehill School-Bangalore.png",
-        "img_url": "url('/Gallery/India-Stonehill School-Bangalore.png')",
-        "location": "India",
-        "venue": "Stonehill School-Bangalore"
+        "img": "/Gallery/testimonials-img3.jpg",
+        "img_url": "url('/Gallery/testimonials-img3.jpg')",
+        "location": "Bengaluru",
+        "venue": "My Leadership Journey: Riddhi Javali, Grade 12, Bengaluru, India"
       }
     
     ],

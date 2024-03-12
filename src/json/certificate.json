@@ -1,88 +1,4 @@
-[
-    {
-      "category": "Certificate programs",
-      "image": "/Certificate/world-debate.jpeg",
-      "programName": "World Debate Stars with the Harvard MUN Team (ICMUN)",
-      "programURL": "world-debate-stars-with-the-harvard-MUN-team-(ICMUN)",
-      "description": "A Unique and Intensive 2-Weekend Program on developing fundamental skills in argumentation and persuasion in personal and academic life.",
-      "hashtag": "#CertifcateLeadership",
-      "date": 1708773981000,
-      "eligibility": "Grades 6th-12th",
-      "duration": "2 Weekends",
-      "earlyApplicationDate": 1707996381000,
-      "programFee": "USD 300",
-      "regularFee": "USD 400",
-      "deadline": 1708601181000,
-      "about": "World Debate Stars with the Harvard MUN Team is a course spread over two weekends and is led by qualified Student Mentors who have gained valuable experience debating through their involvement competing on the collegiate MUN circuit.",
-      "schedule": [
-        {
-          "tabTitle": "Week 1| Day 1",
-          "date": "1708773981000",
-          "time": "9:00 am - 12:00 pm-EST",
-          "description": "Theme: The Fundamentals of Argumentation\nStudents will attend a webinar on creating convincing arguments, focusing on rhetorical strategies and selection of evidence for arguments.\nTopic 1: Rhetorical Strategies in Debate\nTopic 2: The Keystone of an Argument: Evidence"
-        },
-        {
-          "tabTitle": "Week 1| Day 2",
-          "date": "1708860381000",
-          "time": "9:00 am - 12:00 pm-EST",
-          "description": "Students will attend a webinar on counterarguments, focusing on anticipating what others might say and effective methods of rebuttal.\nTopic 1: Planning for Your Opponent’s Argument\nTopic 2: Refute and Rebut: The Core of a Counterargument"
-        },
-        {
-          "tabTitle": "Week 2| Day 1",
-          "date": "1709378781000",
-          "time": "9:00 am - 12:00 pm-EST",
-          "description": "Theme: Thinking on Your Feet\nStudents will attend a webinar on necessary debate skills, focusing on public speaking in debate and ways to capture attention in an argument.\nTopic 1: Being a Successful Orator in Debate\nTopic 2: All Eyes on Me: Standing Out in an Argument"
-        },
-        {
-          "tabTitle": "Week 2| Day 2",
-          "date": "1709465181000",
-          "time": "9:00 am - 12:00 pm-EST",
-          "description": "1 - Students will attend a session on coming up with arguments on the spot, focusing on general frameworks for building an argument and strategies for avoiding getting flustered in a debate.\n2 - Mock Debate"
-        }
-      ]
-    },
-    {
-      "category": "Certificate programs",
-      "image": "/Certificate/future-lawyer.jpeg",
-      "programName": "Future Lawyers Level 2 Program",
-      "programURL": "future-lawyers-level-2-program",
-      "description": "Dive deeper into the legal system & take a closer look into the specifics of law.",
-      "hashtag": "#CertifcateLaw",
-      "date": "1708773981000",
-      "eligibility": "Grades 8th-12th",
-      "duration": "2 Weekends",
-      "earlyApplicationDate": "1707564381000",
-      "programFee": "USD 300",
-      "regularFee": "USD 400",
-      "deadline": "1708428381000",
-      "about": " This course is an extension of Future Lawyers Level I and allows students to gain a further understanding of the legal system. Level II dives deeper into specific fields of law, such as constitutional, cyber, corporate, and international law, introduces students to the schools of legal philosophy, and takes a closer look at law school and jobs available in the legal system.",
-      "schedule": [
-        {
-          "tabTitle": "Week 1| Day 1",
-          "date": "1708773981000",
-          "time": "9:00 am - 12:00 pm-EST",
-          "description": "9:00-9:20: Introductions + Icebreakers\n9:20-9:50: Lecture: Constitutional Law\n9:50 - 10:15: Worksheet: Amendments and the Law\n10:15-10:20: Break\n10:20-10:50: Lecture: Cyber-Law\n10:50-11:15: Cyber Law Worksheet\n11:15-11:20: Break\n11:20-11:55: Case Study Research Project Introduction\n11:55-12:00: Feedback Form and Homework Reminder"
-        },
-        {
-          "tabTitle": "Week 1| Day 2",
-          "date": "1708860381000",
-          "time": "9:00 am - 12:00 pm-EST",
-          "description": "09:00-09:15: Icebreakers, Schedule Review\n09:15-09:55: Lecture: Corporate Law\n09:55 - 10:15: Corporate Law Kahoot\n10:15-10:20: Break\n10:20-11:00: Lecture: Legal Theory\n11:00-11:25: Worksheet: The Minds Behind Legal Philosophy\n11:25-11:30: Break\n11:30-11:55: Case Study Research Project Check-In and Work Session\n11:55-12:00: Feedback Form and Homework Reminder"
-        },
-        {
-          "tabTitle": "Week 2| Day 1",
-          "date": "1709378781000",
-          "time": "9:00 am - 12:00 pm-EST",
-          "description": "09:00-09:15: Icebreakers, Schedule Review\n09:15-09:55: Lecture: Law School 101\n09:55 - 10:15: LSAT Writing Section Activity\n10:15-10:20: Break\n10:20-11:00: Lecture: Jobs in the Legal System\n11:00-11:25: Worksheet: Jobs In Your Community\n11:25-11:30: Break\n11:30-11:55: Case Study Research Project Check-In\n11:55-12:00: Feedback Form and Homework Reminder"
-        },
-        {
-          "tabTitle": "Week 2| Day 2",
-          "date": "1709465181000",
-          "time": "9:00 am - 12:00 pm-EST",
-          "description": "09:00-09:15: Icebreakers, Schedule Review\n09:15-09:55: Lecture: International Law\n09:55 - 10:20: Worksheet: Law Across The Globe\n10:20-10:25: Break\n10:25-11:25: Final Project Presentations\n11:25-11:30: Break\n11:30-11:55: Harvard Q&A\n11:55-12:00: Final Feedback Form"
-        }
-      ]
-    },
+[    
     {
       "category": "Certificate programs",
       "image": "/Certificate/ai-ml.jpg",
@@ -210,7 +126,7 @@
       "category": "Certificate programs",
       "image": "/Certificate/future-lawyer.jpeg",
       "programName": "Future Lawyers’ Program by Harvard Student Agencies",
-      "description": "Use the power of  law to bring about a positive change.",
+      "description": "Use the power of law to bring about a positive change.",
       "hashtag": "#CertificateLaw",
       "date": "1713612381000",
       "eligibility": "Grades 8th-12th",
@@ -290,17 +206,17 @@
     },
     {
       "category": "Certificate programs",
-      "image": "/Certificate/world-debate.jpeg",
-      "programName": "World Debate Stars with the Harvard MUN Team (ICMUN)",
-      "description": "A Unique and Intensive 2-Weekend Program on developing fundamental skills in argumentation and persuasion in personal and academic life.",
+      "image": "/ent21jpg@2x.png",
+      "programName": "Future Entrepreneurs Program by Harvard Student Agencies",
+      "description": "Who Said Start-Ups Are Only For Grown-Ups?",
       "hashtag": "#CertificateLeadership",
-      "date": "1714217181000",
+      "date": "1714793610000",
       "eligibility": "Grades 6th-12th",
       "duration": "2 Weekends",
-      "earlyApplicationDate": "1707996381000",
+      "earlyApplicationDate": "1713152010000",
       "programFee": "USD 300",
       "regularFee": "USD 400",
-      "deadline": "1709205981000",
+      "deadline": "1714448010000",
       "about": "World Debate Stars with the Harvard MUN Team is a course spread over two weekends and is led by qualified Student Mentors who have gained valuable experience debating through their involvement competing on the collegiate MUN circuit.",
       "schedule": [
         {
@@ -328,5 +244,173 @@
           "description": "1 - Students will attend a session on coming up with arguments on the spot, focusing on general frameworks for building an argument and strategies for avoiding getting flustered in a debate.\n2 - Mock Debate"
         }
       ]
-    }                              
+    },
+    {
+      "category": "Certificate programs",
+      "image": "/Certificate/world-debate.jpeg",
+      "programName": "World Debate Stars with the Harvard MUN Team (ICMUN)",
+      "programURL": "world-debate-stars-with-the-harvard-MUN-team-(ICMUN)",
+      "description": "A Unique and Intensive 2-Weekend Program on developing fundamental skills in argumentation and persuasion in personal and academic life.",
+      "hashtag": "#CertifcateLeadership",
+      "date": 1708773981000,
+      "eligibility": "Grades 6th-12th",
+      "duration": "2 Weekends",
+      "earlyApplicationDate": 1707996381000,
+      "programFee": "USD 300",
+      "regularFee": "USD 400",
+      "deadline": 1708601181000,
+      "about": "World Debate Stars with the Harvard MUN Team is a course spread over two weekends and is led by qualified Student Mentors who have gained valuable experience debating through their involvement competing on the collegiate MUN circuit.",
+      "schedule": [
+        {
+          "tabTitle": "Week 1| Day 1",
+          "date": "1708773981000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Theme: The Fundamentals of Argumentation\nStudents will attend a webinar on creating convincing arguments, focusing on rhetorical strategies and selection of evidence for arguments.\nTopic 1: Rhetorical Strategies in Debate\nTopic 2: The Keystone of an Argument: Evidence"
+        },
+        {
+          "tabTitle": "Week 1| Day 2",
+          "date": "1708860381000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Students will attend a webinar on counterarguments, focusing on anticipating what others might say and effective methods of rebuttal.\nTopic 1: Planning for Your Opponent’s Argument\nTopic 2: Refute and Rebut: The Core of a Counterargument"
+        },
+        {
+          "tabTitle": "Week 2| Day 1",
+          "date": "1709378781000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Theme: Thinking on Your Feet\nStudents will attend a webinar on necessary debate skills, focusing on public speaking in debate and ways to capture attention in an argument.\nTopic 1: Being a Successful Orator in Debate\nTopic 2: All Eyes on Me: Standing Out in an Argument"
+        },
+        {
+          "tabTitle": "Week 2| Day 2",
+          "date": "1709465181000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "1 - Students will attend a session on coming up with arguments on the spot, focusing on general frameworks for building an argument and strategies for avoiding getting flustered in a debate.\n2 - Mock Debate"
+        }
+      ]
+    },
+    {
+      "category": "Certificate programs",
+      "image": "/Certificate/future-lawyer.jpeg",
+      "programName": "Future Lawyers Level 2 Program",
+      "programURL": "future-lawyers-level-2-program",
+      "description": "Dive deeper into the legal system & take a closer look into the specifics of law.",
+      "hashtag": "#CertifcateLaw",
+      "date": "1708773981000",
+      "eligibility": "Grades 8th-12th",
+      "duration": "2 Weekends",
+      "earlyApplicationDate": "1707564381000",
+      "programFee": "USD 300",
+      "regularFee": "USD 400",
+      "deadline": "1708428381000",
+      "about": " This course is an extension of Future Lawyers Level I and allows students to gain a further understanding of the legal system. Level II dives deeper into specific fields of law, such as constitutional, cyber, corporate, and international law, introduces students to the schools of legal philosophy, and takes a closer look at law school and jobs available in the legal system.",
+      "schedule": [
+        {
+          "tabTitle": "Week 1| Day 1",
+          "date": "1708773981000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "9:00-9:20: Introductions + Icebreakers\n9:20-9:50: Lecture: Constitutional Law\n9:50 - 10:15: Worksheet: Amendments and the Law\n10:15-10:20: Break\n10:20-10:50: Lecture: Cyber-Law\n10:50-11:15: Cyber Law Worksheet\n11:15-11:20: Break\n11:20-11:55: Case Study Research Project Introduction\n11:55-12:00: Feedback Form and Homework Reminder"
+        },
+        {
+          "tabTitle": "Week 1| Day 2",
+          "date": "1708860381000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "09:00-09:15: Icebreakers, Schedule Review\n09:15-09:55: Lecture: Corporate Law\n09:55 - 10:15: Corporate Law Kahoot\n10:15-10:20: Break\n10:20-11:00: Lecture: Legal Theory\n11:00-11:25: Worksheet: The Minds Behind Legal Philosophy\n11:25-11:30: Break\n11:30-11:55: Case Study Research Project Check-In and Work Session\n11:55-12:00: Feedback Form and Homework Reminder"
+        },
+        {
+          "tabTitle": "Week 2| Day 1",
+          "date": "1709378781000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "09:00-09:15: Icebreakers, Schedule Review\n09:15-09:55: Lecture: Law School 101\n09:55 - 10:15: LSAT Writing Section Activity\n10:15-10:20: Break\n10:20-11:00: Lecture: Jobs in the Legal System\n11:00-11:25: Worksheet: Jobs In Your Community\n11:25-11:30: Break\n11:30-11:55: Case Study Research Project Check-In\n11:55-12:00: Feedback Form and Homework Reminder"
+        },
+        {
+          "tabTitle": "Week 2| Day 2",
+          "date": "1709465181000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "09:00-09:15: Icebreakers, Schedule Review\n09:15-09:55: Lecture: International Law\n09:55 - 10:20: Worksheet: Law Across The Globe\n10:20-10:25: Break\n10:25-11:25: Final Project Presentations\n11:25-11:30: Break\n11:30-11:55: Harvard Q&A\n11:55-12:00: Final Feedback Form"
+        }
+      ]
+    },
+    {
+      "category": "Certificate programs",
+      "image": "/whatsappimage20230714at10028am1536x1025jpeg@2x.png",
+      "programName": "Future MUN Leaders by the Harvard MUN Team",
+      "programURL": "world-debate-stars-with-the-harvard-MUN-team-(ICMUN)",
+      "description": "Becoming a Best Delegate: A Step by Step Guide to the Gavel.",
+      "hashtag": "#CertifcateLeadership",
+      "date": 1708773981000,
+      "eligibility": "Grades 6th-12th",
+      "duration": "2 Weekends",
+      "earlyApplicationDate": 1707996381000,
+      "programFee": "USD 300",
+      "regularFee": "USD 400",
+      "deadline": 1708601181000,
+      "about": "World Debate Stars with the Harvard MUN Team is a course spread over two weekends and is led by qualified Student Mentors who have gained valuable experience debating through their involvement competing on the collegiate MUN circuit.",
+      "schedule": [
+        {
+          "tabTitle": "Week 1| Day 1",
+          "date": "1708773981000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Theme: The Fundamentals of Argumentation\nStudents will attend a webinar on creating convincing arguments, focusing on rhetorical strategies and selection of evidence for arguments.\nTopic 1: Rhetorical Strategies in Debate\nTopic 2: The Keystone of an Argument: Evidence"
+        },
+        {
+          "tabTitle": "Week 1| Day 2",
+          "date": "1708860381000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Students will attend a webinar on counterarguments, focusing on anticipating what others might say and effective methods of rebuttal.\nTopic 1: Planning for Your Opponent’s Argument\nTopic 2: Refute and Rebut: The Core of a Counterargument"
+        },
+        {
+          "tabTitle": "Week 2| Day 1",
+          "date": "1709378781000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "Theme: Thinking on Your Feet\nStudents will attend a webinar on necessary debate skills, focusing on public speaking in debate and ways to capture attention in an argument.\nTopic 1: Being a Successful Orator in Debate\nTopic 2: All Eyes on Me: Standing Out in an Argument"
+        },
+        {
+          "tabTitle": "Week 2| Day 2",
+          "date": "1709465181000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "1 - Students will attend a session on coming up with arguments on the spot, focusing on general frameworks for building an argument and strategies for avoiding getting flustered in a debate.\n2 - Mock Debate"
+        }
+      ]
+    },
+    {
+      "category": "Certificate programs",
+      "image": "/whatsappimage20230714at125208am1jpeg@2x.png",
+      "programName": "World Sustainability Stars Program by Harvard Undergraduate Clean Energy Group",
+      "programURL": "future-lawyers-level-2-program",
+      "description": "Kick-Start your Leadership Journey in Sustainability with Harvard Undergraduate Clean Energy Group mentors.",      
+      "hashtag": "#CertifcateLaw",
+      "date": "1716003210000",
+      "eligibility": "Grades 8th-12th",
+      "duration": "2 Weekends",
+      "earlyApplicationDate": "1713584010000",
+      "programFee": "USD 300",
+      "regularFee": "USD 400",
+      "deadline": "1714620810000",
+      "about": " This course is an extension of Future Lawyers Level I and allows students to gain a further understanding of the legal system. Level II dives deeper into specific fields of law, such as constitutional, cyber, corporate, and international law, introduces students to the schools of legal philosophy, and takes a closer look at law school and jobs available in the legal system.",
+      "schedule": [
+        {
+          "tabTitle": "Week 1| Day 1",
+          "date": "1708773981000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "9:00-9:20: Introductions + Icebreakers\n9:20-9:50: Lecture: Constitutional Law\n9:50 - 10:15: Worksheet: Amendments and the Law\n10:15-10:20: Break\n10:20-10:50: Lecture: Cyber-Law\n10:50-11:15: Cyber Law Worksheet\n11:15-11:20: Break\n11:20-11:55: Case Study Research Project Introduction\n11:55-12:00: Feedback Form and Homework Reminder"
+        },
+        {
+          "tabTitle": "Week 1| Day 2",
+          "date": "1708860381000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "09:00-09:15: Icebreakers, Schedule Review\n09:15-09:55: Lecture: Corporate Law\n09:55 - 10:15: Corporate Law Kahoot\n10:15-10:20: Break\n10:20-11:00: Lecture: Legal Theory\n11:00-11:25: Worksheet: The Minds Behind Legal Philosophy\n11:25-11:30: Break\n11:30-11:55: Case Study Research Project Check-In and Work Session\n11:55-12:00: Feedback Form and Homework Reminder"
+        },
+        {
+          "tabTitle": "Week 2| Day 1",
+          "date": "1709378781000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "09:00-09:15: Icebreakers, Schedule Review\n09:15-09:55: Lecture: Law School 101\n09:55 - 10:15: LSAT Writing Section Activity\n10:15-10:20: Break\n10:20-11:00: Lecture: Jobs in the Legal System\n11:00-11:25: Worksheet: Jobs In Your Community\n11:25-11:30: Break\n11:30-11:55: Case Study Research Project Check-In\n11:55-12:00: Feedback Form and Homework Reminder"
+        },
+        {
+          "tabTitle": "Week 2| Day 2",
+          "date": "1709465181000",
+          "time": "9:00 am - 12:00 pm-EST",
+          "description": "09:00-09:15: Icebreakers, Schedule Review\n09:15-09:55: Lecture: International Law\n09:55 - 10:20: Worksheet: Law Across The Globe\n10:20-10:25: Break\n10:25-11:25: Final Project Presentations\n11:25-11:30: Break\n11:30-11:55: Harvard Q&A\n11:55-12:00: Final Feedback Form"
+        }
+      ]
+    }                                
 ]

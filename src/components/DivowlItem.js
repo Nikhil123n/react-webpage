@@ -29,7 +29,9 @@ const DivowlItem = ({
   const navigate = useNavigate();
   const onCardClick = useCallback(() => {
     navigate("/certificate-program",{
-      state: card ? card : "The Leadership Competition by the Harvard MUN Team"
+      state: {
+        state: card ? card : "The Leadership Competition by the Harvard MUN Team"
+      }
     });
   }, [navigate]);
 

@@ -11,7 +11,7 @@ console.log(internshipFigureData)
 const EventImgOverlay = ({arrowStyles, programName, heading, paragraph, imgPath, deadline, startDate}) => {
   // console.log(arrowStyles)
   const imgDefault = "/whatsappimage20230714at011517scaledjpg@2x.png";
-  const programNameGolden = "corporate internship";
+  const programNameGolden = "corporate internship projects";
   const programNameGoldenURL = "/internship"
   
   const navigate = useNavigate();
@@ -21,24 +21,33 @@ const EventImgOverlay = ({arrowStyles, programName, heading, paragraph, imgPath,
   
   const [currentIndex, setCurrentIndex] = useState(0);
   const [slideDirection, setSlideDirection] = useState(null);
+  let [currentData, setCurrentData] = useState(internshipFigureData[currentIndex]);
 
-  const onNextClick = () => {
+  const onNextClick = () => {    
     if (currentIndex < internshipFigureData.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-      setSlideDirection("slide-left");
-      setTimeout(() => setSlideDirection(null), 500); // Reset slide direction after transition
+      setCurrentIndex((prevIndex) => {
+        const newIndex = prevIndex + 1;
+        setSlideDirection("slide-left");
+        setTimeout(() => setSlideDirection(null), 500); // Reset slide direction after transition
+        setCurrentData(internshipFigureData[newIndex]);
+        return newIndex;
+      });      
     }
   };
 
-  const onPrevClick = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-      setSlideDirection("slide-right");
-      setTimeout(() => setSlideDirection(null), 500); // Reset slide direction after transition
+  const onPrevClick = () => {    
+    if (currentIndex > 0 ) {
+      setCurrentIndex((prevIndex) => {
+        const newIndex = prevIndex - 1;
+        setSlideDirection("slide-right");
+        setTimeout(() => setSlideDirection(null), 500); // Reset slide direction after transition
+        setCurrentData(internshipFigureData[newIndex]);
+        return newIndex;
+      });      
     }
   };
 
-  const currentData = internshipFigureData[currentIndex];
+  console.log(currentIndex, currentData)  
 
 
   return (
@@ -83,6 +92,7 @@ const EventImgOverlay = ({arrowStyles, programName, heading, paragraph, imgPath,
               deadline={currentData.deadline}
               startDate={currentData.earlyApplicationDate}
               card={currentData}
+              jsonData = {require('../json/internship.json')}
 
             />
         </div>

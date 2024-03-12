@@ -12,27 +12,27 @@ const FutureDoctors = () => {
   const FutureDoctorsData = [
     {
       image: "/whatsappimage20230714at125555amjpeg-1@2x.png",
-      heading: "The Leadership Competition by th…",
-      description: "Learn leadership skills from Harvard stud…",      
-      startDate: "Start Date: 16th March 2024",
+      heading: "The Leadership Competition by the Harvard MUN Team",
+      description: "Learn leadership skills from Harvard student mentors, compete in challenges & develop project proposals to benefit your community.",
+      startDate: "Start Date: 23 March 2024",
+      rightArrowsvg: "/rightarrowsvg-9.svg",
+      figureData: competitionFigureData[0],
+    },
+    {
+      image: "/906241-830545776975015-583285608404393633-o1536x965jpg@2x.png",
+      heading: "The Wolves of Wall Street Competition",
+      description: "Harvard Student Agencies presents - The World’s first Global Stock Market Competition for the Youth.",
+      startDate: "Start Date: 20 April 2024",
       rightArrowsvg: "/rightarrowsvg-9.svg",
       figureData: competitionFigureData[1],
     },
     {
-      image: "/906241-830545776975015-583285608404393633-o1536x965jpg@2x.png",
-      heading: "The Wolves of Wall Street Compet…",
-      description: "Harvard Student Agencies presents – Th…",      
-      startDate: "Start Date: 20th April 2024",
+      image: "/feature400x60011jpg@2x.png",
+      heading: "The HUCEG Sustainability Leaders Challenge",
+      description: "Kick start your sustainability journey with mentors from Harvard HUCEG.",
+      startDate: "Start Date: 20 April 2024",
       rightArrowsvg: "/rightarrowsvg-9.svg",
       figureData: competitionFigureData[2],
-    },
-    {
-      image: "/feature400x60011jpg@2x.png",
-      heading: "The HUCEG Sustainability Leader…",
-      description: "Kick start your sustainability journey with…",      
-      startDate: "Start Date: 16th March 2024",
-      rightArrowsvg: "/rightarrowsvg-9.svg",
-      figureData: competitionFigureData[0],
     }
   ]
   return (
