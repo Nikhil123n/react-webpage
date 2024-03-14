@@ -60,18 +60,47 @@
     "testimonials": [
       {
         "id": 1,
-        "img": "/Gallery/Ahmedabad International School-India-HMCSF.jpeg",
-        "img_url": "url('/Gallery/Ahmedabad International School-India-HMCSF.jpeg')",
-        "location": "Ahmedabad",
-        "venue": "Stonehill School-Bangalore"
+        "img": "/Gallery/testimonials_01.jpg",
+        "img_url": "url('/Gallery/testimonials_01.jpg')",
+        "location": "Lucciana Zanella, Grade 10, Tomas Moro, Ecuador",
+        "venue": "I enjoyed the Take the World Forward Program and learned a lot about very important issues in our society and how to present in a better way."
       },
       {
         "id": 2,
-        "img": "/Gallery/Germany-St George British International School-HYPL.jpg",
-        "img_url": "url('/Gallery/Germany-St George British International School-HYPL.jpg')",
-        "location": "Germany",
-        "venue": "St George British International School-HYPL"
+        "img": "/Gallery/testimonials_02.jpg",
+        "img_url": "url('/Gallery/testimonials_02.jpg')",
+        "location": "Gunvir Singh Kohli, Grade 10, G.D. Goenka Public School, Model Town, Delhi",
+        "venue": "The Take the World Forward platform gave me the opportunity to grow and learn. I have gained knowledge on various topics like leadership, problem solving, debating and many more. I have become more confident as a speaker and a presenter."
+      },
+      {
+        "id": 3,
+        "img": "/Gallery/testimonials_03.jpg",
+        "img_url": "url('/Gallery/testimonials_03.jpg')",
+        "location": "Maria-Iliana Chiladki, Grade 9, Bavarian International School, Germany",
+        "venue": "The Research Scholars Program was an outstanding experience. I understood many approaches to learning such as organization, critical thinking, collaboration and communication skills."
+      },
+      {
+        "id": 4,
+        "img": "/Gallery/testimonials_04.jpg",
+        "img_url": "url('/Gallery/testimonials_04.jpg')",
+        "location": "Maria Paz Ormeno, Grade 9, Givat Haviva International School, Israel",
+        "venue": "“The TWF experience was an empowering one, I got a chance to interact with people from across the world who are leaders in their communities, & kickstart my own project to tackle food waste in schools."
+      },      
+      {
+        "id": 5,
+        "img": "/Gallery/testimonials_05.jpg",
+        "img_url": "url('/Gallery/testimonials_05.jpg')",
+        "location": "Walter Mchana, Grade 10, Makini Schools, Kenya",
+        "venue": "The Impact and Research Fellowship guided me on how to do passion projects.Today, I am the founder of a school mental health project that had a schoolwide mufti day dedicated to its launch."
+      },
+      {
+        "id": 6,
+        "img": "/Gallery/testimonials_07.jpg",
+        "img_url": "url('/Gallery/testimonials_07.jpg')",
+        "location": "Ipek Incel, Grade 10, Turkey",
+        "venue": "The best part of the program was the shared enthusiasm of our instructors. The program has taught me the fundamentals of medicine. I can now analyze and understand biomedical concepts in my daily life further."
       }
+      
       
     ],
 
