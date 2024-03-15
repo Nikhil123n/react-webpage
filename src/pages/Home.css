@@ -256,6 +256,33 @@
   color: var(--color-white);
   font-family: var(--font-inter);
 }
+.WorldMap {
+  width: 100%;
+  background-color: white;
+  display: flex;
+}
+.WorldMapOuter {
+  max-width: 980px !important;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+.WorldMapHeading {
+  text-align: center;
+  /* color: #333 !important; */
+  font-size: 35px;
+  margin: 6rem auto 3rem;
+  font-weight: 700;
+}
+.WorldMapImg {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
 @media screen and (max-width: 1350px) {
   .arrow-svg {
     padding-bottom: var(--padding-8xl);

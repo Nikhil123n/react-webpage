@@ -124,7 +124,7 @@ const Container = () => {
           <DivowlItem
             link900x5502Aboutjpg="/link--900x550about4jpg@2x.png"
             heading5InnovationLeaders="Take The World Forward Fellowship"
-            startDateOctober21st="Start Date: November 18th"
+            startDateOctober21st="Start Date: March 2nd"
             developSocialInnovationAn="Creating the next generation of"
             entrepreneurialSpirit="changemakers"
             rightArrowsvg="/rightarrowsvg-1@2x.png"

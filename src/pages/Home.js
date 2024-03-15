@@ -52,7 +52,8 @@ const Home = () => {
 
 
       <DivFusionColumnWrapper1 />
-      <FutureDoctors />
+      <FutureDoctors />      
+
       <section className="arrow-svg">
         <div className="event-img-overlay-parent">
           <EventImgOverlay 
@@ -74,6 +75,17 @@ const Home = () => {
       <EventInfoGrid />
       <EventInfoMasterclass />
       <EventInfoAll />
+      <section className="WorldMap" >
+        <div className="WorldMapOuter" >
+          {/* <div className="WorldMapHeading"> 
+            <h3>How me make a difference</h3>          
+          </div> */}
+          <div>
+            <img loading="lazy" decoding="async" className="WorldMapImg" src="LWL MAP@2x-100.jpg"></img>
+          </div>
+        </div>
+      </section>
+
       <ThePotentialToLearnForAM />
       <ConnectUs />
       <div className="s-2-wrapper">

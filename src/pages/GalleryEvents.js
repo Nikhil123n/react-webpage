@@ -65,12 +65,12 @@ const GalleryEvents = () => {
                             {Array.from( school_programs ).map((item, idx) => (
                                 
                                 <Col key={idx} className="col-12 col-md-6 col-lg-4 card-col-gallery">
-                                    <a key={idx} href={item.img_url}  style={{ textDecoration: 'none', cursor: 'pointer' }} >
+                                    <a key={idx} style={{ textDecoration: 'none', cursor: 'pointer' }} >
                                         <Card className="card-title-gallery bg-transparent">
                                             <Card.Img variant="top" src={item.img} />
                                             <Card.Body>
                                             <Card.Title >{item.location + '  |  ' } {item.venue} </Card.Title>                                    
-                                                <img src="/rightarrowsvg-3.svg" alt="" ></img>
+                                                {/* <img src="/rightarrowsvg-3.svg" alt="" ></img> */}
                                             </Card.Body>
                                         </Card>
                                     </a>
